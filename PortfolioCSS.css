@@ -1,0 +1,34 @@
+html,
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(247, 246, 242);
+    height: 100%;
+  }
+  
+  .leftMenuDiv {
+     
+    background-color: red;
+    width: 25%;
+    flex: 1;
+    height: 100%;
+    
+  }
+
+  .containerDiv{
+    display: flex;
+    height: 100%;
+    background-color: green;
+    width: 100%;
+    
+  }
+
+  .rightDiv{
+    height: 100%;
+    width: 75%;
+    background-color: orange;
+  }
+
+  .tempDiv{
+    background-color: aquamarine;
+  }
