@@ -8,10 +8,13 @@ body{
   
   .leftMenuDiv {
      
-    background-color: red;
-    width: 25%;
+    width: 20%;
     flex: 1;
     height: 100%;
+    background-image: var(--gradient);
+    background-size: 400%;
+    animation: bgAnimation 20s infinite alternate;
+
     
   }
 
@@ -23,12 +26,35 @@ body{
     
   }
 
+  :root {
+    --gradient: linear-gradient(
+    40deg,
+    #01061f,
+    #050e3d,
+    #1a2a7d,
+    #2e1a7d,
+    #12083b,
+    #363880,
+    #5b5c7d,
+    #8c8da8
+    );
+  }
+
   .rightDiv{
     height: 100%;
-    width: 75%;
-    background-color: orange;
+    width: 80%;
+    background-color: #d4d3db;
+   
   }
+
+@keyframes bgAnimation {
+  0% {background-position: left; }
+  100% {background-position: right;}
+}
+  
+
 
   .tempDiv{
     background-color: aquamarine;
+
   }
