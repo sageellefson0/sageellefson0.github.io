@@ -54,7 +54,8 @@ body{
   
 
 
-  .tempDiv{
-    background-color: aquamarine;
-
-  }
+.name{
+  color: white;
+  font-family: 'Monaco', 'Andale Mono', monospace;
+  padding-left: 20px;
+}
