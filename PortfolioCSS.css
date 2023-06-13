@@ -29,12 +29,12 @@ body{
   :root {
     --gradient: linear-gradient(
     40deg,
-    #01061f,
-    #050e3d,
-    #1a2a7d,
-    #2e1a7d,
-    #12083b,
-    #363880,
+    #51566f,
+    #2b304d,
+    #3b4369,
+    #9995ac,
+    #4117e8,
+    #696baa,
     #5b5c7d,
     #8c8da8
     );
@@ -55,7 +55,7 @@ body{
 
 
 .name{
-  color: white;
+  color: rgb(111, 111, 113);
   font-family: 'Monaco', 'Andale Mono', monospace;
   padding-left: 20px;
 }
