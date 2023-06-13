@@ -6,19 +6,9 @@ body{
     height: 100%;
   }
   
-  .leftMenuDiv {
-     
-    width: 20%;
-    flex: 1;
-    height: 100%;
-    background-image: var(--gradient);
-    background-size: 400%;
-    animation: bgAnimation 20s infinite alternate;
+ 
 
-    
-  }
-
-  .containerDiv{
+ /* .containerDiv{
     display: flex;
     height: 100%;
     background-color: green;
@@ -26,7 +16,7 @@ body{
     
   }
 
-  :root {
+  /*:root {
     --gradient: linear-gradient(
     40deg,
     #51566f,
@@ -38,24 +28,31 @@ body{
     #5b5c7d,
     #8c8da8
     );
-  }
+  } */
 
   .rightDiv{
     height: 100%;
-    width: 80%;
+    width: 100%;
     background-color: #d4d3db;
    
   }
 
-@keyframes bgAnimation {
+/*@keyframes bgAnimation {
   0% {background-position: left; }
   100% {background-position: right;}
-}
+} */
   
 
 
 .name{
-  color: rgb(199, 199, 229);
+  color: rgb(0, 0, 0);
   font-family: 'Monaco', 'Andale Mono', monospace;
-  padding-left: 20px;
+  padding-left: 12%;
+  padding-top: 7%;
+}
+
+.introLine{
+  color: rgb(0, 0, 0);
+  font-family: 'Monaco', 'Andale Mono', monospace;
+  padding-left: 12%;
 }
