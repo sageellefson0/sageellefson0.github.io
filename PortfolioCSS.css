@@ -2,7 +2,7 @@ html,
 body{
     margin: 0px;
     padding: 0px;
-    background-color: rgb(247, 246, 242);
+    background-color: rgb(220, 226, 240);
     height: 100%;
   }
   
@@ -30,12 +30,7 @@ body{
     );
   } */
 
-  .rightDiv{
-    height: 100%;
-    width: 100%;
-    background-color: #d4d3db;
-   
-  }
+
 
 /*@keyframes bgAnimation {
   0% {background-position: left; }
