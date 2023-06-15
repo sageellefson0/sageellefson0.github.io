@@ -2,52 +2,30 @@ html,
 body{
     margin: 0px;
     padding: 0px;
-    background-color: rgb(220, 226, 240);
+    background-color: rgb(234, 239, 250);
     height: 100%;
   }
   
- 
 
- /* .containerDiv{
-    display: flex;
-    height: 100%;
-    background-color: green;
-    width: 100%;
-    
-  }
-
-  /*:root {
-    --gradient: linear-gradient(
-    40deg,
-    #51566f,
-    #2b304d,
-    #3b4369,
-    #9995ac,
-    #a190e4,
-    #696baa,
-    #5b5c7d,
-    #8c8da8
-    );
-  } */
-
-
-
-/*@keyframes bgAnimation {
-  0% {background-position: left; }
-  100% {background-position: right;}
-} */
-  
 
 
 .name{
   color: rgb(0, 0, 0);
   font-family: 'Monaco', 'Andale Mono', monospace;
   padding-left: 12%;
-  padding-top: 7%;
+  padding-top: 5%;
 }
 
 .introLine{
   color: rgb(0, 0, 0);
   font-family: 'Monaco', 'Andale Mono', monospace;
   padding-left: 12%;
+}
+
+.navbar{
+  background-color: rgb(19, 8, 80);
+  padding-top: 3%;
+}
+.aboutButton{
+  
 }
