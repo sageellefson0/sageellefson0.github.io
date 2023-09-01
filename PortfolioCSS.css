@@ -20,8 +20,8 @@ html, body{
   width: 0;
   /*border-right: 2px solid;  - used for the cursor */
   animation: typing;
-  animation-duration: 1.5s;
-  animation-timing-function: steps(30, end);
+  animation-duration: 2s;
+  animation-timing-function: steps(40, end);
   animation-fill-mode: forwards;
 
 
@@ -45,7 +45,8 @@ html, body{
   padding: 14px 16px;
   text-align: center;
   overflow: hidden;
- 
+  border: solid #011638 2px;
+  width: 99%;
 
 }
 .navbar a {
@@ -75,9 +76,19 @@ font-family: 'Monaco', 'Andale Mono', monospace;
   text-align: center; 
 }
 
+
+
+/* ABOUT SECTION */
+
+.aboutDiv{
+  padding: 5%;
+
+}
+
 .headshotPic{
-  width: 30%;
-  height: 30%;
+  width: 25%;
+  height: 25%;
+  border: solid #011638 2px;
 }
 
 
