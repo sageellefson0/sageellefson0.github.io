@@ -44,13 +44,27 @@ html, body{
   background-color: #3A4F41;
   padding: 14px 16px;
   text-align: center;
+  overflow: hidden;
+ 
 
 }
+.navbar a {
+background-color: #3A4F41;
+text-decoration: none;
+color:#EAEFFA;
+font-family: 'Monaco', 'Andale Mono', monospace;
+}
+
+.navbar a:hover {
+  text-decoration: none;
+  color:#011638;
+  }
 
 .textDiv{
   width: 25%;
   display: inline-block;
   justify-content: center;
+  padding-top: 5%;
 }
 
 .parentDiv{
