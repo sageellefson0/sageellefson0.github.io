@@ -2,7 +2,7 @@
 html, body{
     margin: 0px;
     padding: 0px;
-    background-color: rgb(234, 239, 250);
+    background-color: #EAEFFA;
     height: 100%;
   }
   
@@ -12,31 +12,67 @@ html, body{
 .name{
   color: rgb(0, 0, 0);
   font-family: 'Monaco', 'Andale Mono', monospace;
-  padding-left: 12%;
-  padding-top: 5%;
+  border: solid red 1px;
+
+
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  /*border-right: 2px solid;  - used for the cursor */
+  animation: typing;
+  animation-duration: 1.5s;
+  animation-timing-function: steps(30, end);
+  animation-fill-mode: forwards;
+
+
+}
+
+@keyframes typing {
+  from { width: 0%}
+  to { width: 100% }
 }
 
 .introLine{
   color: rgb(0, 0, 0);
   font-family: 'Monaco', 'Andale Mono', monospace;
-  padding-left: 12%;
 }
 
 
 
 /* Navigation bar and buttons */
 .navbar{
-  background-color: rgb(19, 8, 80);
+  background-color: #3A4F41;
   padding: 14px 16px;
   text-align: center;
 
-
 }
 
-.aboutButton{
-  font-family: 'Monaco', 'Andale Mono', monospace;
-  background-color: rgb(19, 8, 80);
-  color: white;
-  border: none;
-
+.textDiv{
+  width: 25%;
+  display: inline-block;
+  justify-content: center;
 }
+
+.parentDiv{
+  border: solid blue 2px;
+  display: inline-block;
+  height: 50%;
+  width: 100%;
+  text-align: center; 
+}
+
+.headshotPic{
+  width: 30%;
+  height: 30%;
+}
+
+
+
+/* CIRCLE method
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+} */
