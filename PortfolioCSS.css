@@ -47,7 +47,7 @@ html, body{
 .parentDiv{
   /*border: solid blue 2px; */
   display: inline-block;
-  height: 70%;
+  height: 80%;
   width: 100%;
   text-align: center; 
   /*background-image: linear-gradient(#EAEFFA, #3A4F41); */
@@ -88,6 +88,25 @@ font-family: 'Monaco', 'Andale Mono', monospace;
 
 /* ABOUT SECTION */
 
+.aboutMe{
+  font-family: 'Monaco', 'Andale Mono', monospace;
+  color: #011638;
+  text-align: center;
+ /* text-decoration: underline;
+  text-decoration-color: #3A4F41;
+  text-decoration-thickness: 5px;  */
+}
+
+.aboutMe:before{
+  content: "";
+  position: absolute;
+  width: 10%;
+  left: 45%;
+  height: 1px;
+  bottom: 0;
+  border-bottom: 4px solid #3A4F41;
+} 
+
 .aboutDiv{
   display: inline-block;
   border: solid green 2px;
@@ -96,20 +115,19 @@ font-family: 'Monaco', 'Andale Mono', monospace;
 }
 
 .headshotPic{
-  width: 40%;
-  height: 40%;
-  border: solid #011638 2px;
-  border-radius: 50%;
-
+  width: 50%;
+  height: 50%;
+  /*border: solid #011638 2px; */
+  border-radius: 10%; 
+  box-shadow: -10px -10px 1px 10px #3A4F41;
 
 }
 
 .imageDiv{
   width: 49%;
-  border: solid purple 2px;
   float: left;
   height: 100%;
-  text-align: ;
+  text-align: center;
 
 }
 
@@ -117,7 +135,6 @@ font-family: 'Monaco', 'Andale Mono', monospace;
   width: 49%;
   font-family: 'Monaco', 'Andale Mono', monospace;
   color: #011638;
-  border: solid red 2px;
   float: right;
 
 
@@ -133,3 +150,6 @@ font-family: 'Monaco', 'Andale Mono', monospace;
   border-radius: 50%;
   display: inline-block;
 } */
+.fa_custom{
+  color: #3A4F41;
+}
