@@ -89,15 +89,36 @@ font-family: 'Monaco', 'Andale Mono', monospace;
 /* ABOUT SECTION */
 
 .aboutDiv{
-  padding: 5%;
+  display: inline-block;
+  border: solid green 2px;
+  padding: 3%;
 
 }
 
 .headshotPic{
-  width: 22%;
-  height: 22%;
+  width: 40%;
+  height: 40%;
   border: solid #011638 2px;
   border-radius: 50%;
+
+
+}
+
+.imageDiv{
+  width: 49%;
+  border: solid purple 2px;
+  float: left;
+  text-align: center;
+
+}
+
+.aboutText{
+  width: 49%;
+  font-family: 'Monaco', 'Andale Mono', monospace;
+  color: #011638;
+  border: solid red 2px;
+  float: right;
+
 
 }
 
