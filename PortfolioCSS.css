@@ -1,4 +1,5 @@
-/* Body styling */
+/* BODY */
+
 html, body{
     margin: 0px;
     padding: 0px;
@@ -8,11 +9,11 @@ html, body{
   
 
 
-/* Text on main page */
-.name{
-  color: rgb(0, 0, 0);
+/* WELCOME SECTION */
+  .name{
+  color: rgb(1, 22, 56);
   font-family: 'Monaco', 'Andale Mono', monospace;
-  border: solid red 1px;
+  /*border: solid red 1px; */
 
 
   overflow: hidden;
@@ -20,11 +21,9 @@ html, body{
   width: 0;
   /*border-right: 2px solid;  - used for the cursor */
   animation: typing;
-  animation-duration: 2s;
-  animation-timing-function: steps(40, end);
+  animation-duration: 3s;
+  animation-timing-function: typing 1sec steps(30, end);
   animation-fill-mode: forwards;
-
-
 }
 
 @keyframes typing {
@@ -33,48 +32,57 @@ html, body{
 }
 
 .introLine{
-  color: rgb(0, 0, 0);
+  color: #011638;
   font-family: 'Monaco', 'Andale Mono', monospace;
+  /*border: solid red 1px; */
 }
-
-
-
-/* Navigation bar and buttons */
-.navbar{
-  background-color: #3A4F41;
-  padding: 14px 16px;
-  text-align: center;
-  overflow: hidden;
-  border: solid #011638 2px;
-  width: 99%;
-
-}
-.navbar a {
-background-color: #3A4F41;
-text-decoration: none;
-color:#EAEFFA;
-font-family: 'Monaco', 'Andale Mono', monospace;
-}
-
-.navbar a:hover {
-  text-decoration: none;
-  color:#011638;
-  }
 
 .textDiv{
   width: 25%;
   display: inline-block;
   justify-content: center;
-  padding-top: 5%;
+  padding-top: 10%;
 }
 
 .parentDiv{
-  border: solid blue 2px;
+  /*border: solid blue 2px; */
   display: inline-block;
-  height: 50%;
+  height: 70%;
   width: 100%;
   text-align: center; 
+  /*background-image: linear-gradient(#EAEFFA, #3A4F41); */
+  background-image: url("images/triangleBackground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+
+
+/* NAVBAR */
+.navbar{
+  background-color: #011638;
+  text-align: center;
+  overflow: hidden;
+  border: solid #011638 2px;
+  font-size: 18px;
+  padding: 14px 16px;
+
+
+}
+.navbar a {
+background-color: #011638;
+text-decoration: none;
+color:#EAEFFA;
+font-family: 'Monaco', 'Andale Mono', monospace;
+
+}
+
+.navbar a:hover {
+  text-decoration: none;
+  color: #3A4F41;
+  font-size: 20px;
+
+  }
 
 
 
@@ -86,9 +94,11 @@ font-family: 'Monaco', 'Andale Mono', monospace;
 }
 
 .headshotPic{
-  width: 25%;
-  height: 25%;
+  width: 22%;
+  height: 22%;
   border: solid #011638 2px;
+  border-radius: 50%;
+
 }
 
 
