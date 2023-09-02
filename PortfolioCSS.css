@@ -108,7 +108,8 @@ font-family: 'Monaco', 'Andale Mono', monospace;
   width: 49%;
   border: solid purple 2px;
   float: left;
-  text-align: center;
+  height: 100%;
+  text-align: ;
 
 }
 
