@@ -6,6 +6,10 @@ html, body{
     background-color: #EAEFFA;
     height: 100%;
   }
+
+  html{
+    scroll-behavior:smooth;
+  }
   
 
 
@@ -99,7 +103,7 @@ font-size: 18px;
   color: #0E1638;
   text-align: center;
   text-decoration: underline;
-  text-underline-offset: 8px;
+  text-underline-offset: 9px;
   text-decoration-color: #3A4F41;
   text-decoration-thickness: 5px;  
   padding-top: 2%;
@@ -134,9 +138,10 @@ font-size: 18px;
 
 .aboutText{
   width: 49%;
-  font-family: 'Monaco', 'Andale Mono', monospace;
+  font-family: 'Verdana', 'Andale Mono', monospace;
   color: #0E1638;
   float: right;
+  font-size: 20px;
 
 
 }
@@ -185,4 +190,15 @@ font-size: 18px;
 .ammaDiv, .numberGenDiv{
   border: solid 2px orange;
   display: inline-block;
+  margin-top: 4%;
+  
+}
+
+p {
+  font-family: 'Verdana', 'Andale Mono', monospace;
+  color: #0E1638;
+  text-align: center;
+  border: solid purple 2px;
+  width: 50%;
+  margin-left: 20px;
 }
