@@ -11,19 +11,16 @@ html, body{
 
 /* WELCOME SECTION */
   .name{
-  color: rgb(1, 22, 56);
+  color: rgb(14, 22, 56);
   font-family: 'Monaco', 'Andale Mono', monospace;
-  /*border: solid red 1px; */
-
 
   overflow: hidden;
+  border-right: .15em solid #0E1638;
   white-space: nowrap;
-  width: 0;
-  /*border-right: 2px solid;  - used for the cursor */
-  animation: typing;
-  animation-duration: 3s;
-  animation-timing-function: typing 1sec steps(30, end);
-  animation-fill-mode: forwards;
+  margin: 0 auto;
+  /*width: 0;*/
+  animation: typing 2s steps(35, end), blink-caret .75s step-end infinite;
+  /*animation-fill-mode: forwards; */
 }
 
 @keyframes typing {
@@ -31,8 +28,13 @@ html, body{
   to { width: 100% }
 }
 
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #0E1638; }
+}
+
 .introLine{
-  color: #011638;
+  color: #0E1638;
   font-family: 'Monaco', 'Andale Mono', monospace;
   /*border: solid red 1px; */
 }
@@ -47,10 +49,9 @@ html, body{
 .parentDiv{
   /*border: solid blue 2px; */
   display: inline-block;
-  height: 80%;
+  height: 83%;
   width: 100%;
   text-align: center; 
-  /*background-image: linear-gradient(#EAEFFA, #3A4F41); */
   background-image: url("images/triangleBackground.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -60,22 +61,25 @@ html, body{
 
 /* NAVBAR */
 .navbar{
-  background-color: #011638;
+  background-color: #0E1638;
   text-align: center;
   overflow: hidden;
-  border: solid #011638 2px;
   font-size: 18px;
-  padding: 14px 16px;
+  padding: 12px 14px;
+  position:fixed;
+  width: 100%;
 
 
 }
 .navbar a {
-background-color: #011638;
+background-color: #0E1638;
 text-decoration: none;
 color:#EAEFFA;
 font-family: 'Monaco', 'Andale Mono', monospace;
+font-size: 18px;
 
 }
+
 
 .navbar a:hover {
   text-decoration: none;
@@ -84,40 +88,37 @@ font-family: 'Monaco', 'Andale Mono', monospace;
 
   }
 
+  
+
 
 
 /* ABOUT SECTION */
 
-.aboutMe{
+.aboutMe, .projects{
   font-family: 'Monaco', 'Andale Mono', monospace;
-  color: #011638;
+  color: #0E1638;
   text-align: center;
- /* text-decoration: underline;
+  text-decoration: underline;
+  text-underline-offset: 8px;
   text-decoration-color: #3A4F41;
-  text-decoration-thickness: 5px;  */
+  text-decoration-thickness: 5px;  
+  padding-top: 2%;
+
 }
 
-.aboutMe:before{
-  content: "";
-  position: absolute;
-  width: 10%;
-  left: 45%;
-  height: 1px;
-  bottom: 0;
-  border-bottom: 4px solid #3A4F41;
-} 
+
+
 
 .aboutDiv{
   display: inline-block;
-  border: solid green 2px;
   padding: 3%;
+  border-bottom: 2px solid #0E1638;
 
 }
 
 .headshotPic{
   width: 50%;
   height: 50%;
-  /*border: solid #011638 2px; */
   border-radius: 10%; 
   box-shadow: -10px -10px 1px 10px #3A4F41;
 
@@ -134,7 +135,7 @@ font-family: 'Monaco', 'Andale Mono', monospace;
 .aboutText{
   width: 49%;
   font-family: 'Monaco', 'Andale Mono', monospace;
-  color: #011638;
+  color: #0E1638;
   float: right;
 
 
@@ -150,6 +151,38 @@ font-family: 'Monaco', 'Andale Mono', monospace;
   border-radius: 50%;
   display: inline-block;
 } */
+
+/* SOCIAL ICON BAR*/
 .fa_custom{
-  color: #3A4F41;
+  color: #EAEFFA;
+  text-decoration: none;
+  padding-left: 20px;
+}
+
+.socialIconDiv{
+  background-color: #0E1638;
+  padding: 10px;
+  text-align: center;
+}
+
+.fa_custom:hover{
+  color:#3A4F41;
+}
+
+
+/* PROJECT SECTION */
+
+
+.placeholderImage, .ammaImage{
+  width: 550px;
+  height: 300px;
+  border-radius: 8%;
+  float: right;
+
+  border: solid 2px red;
+}
+
+.ammaDiv, .numberGenDiv{
+  border: solid 2px orange;
+  display: inline-block;
 }
