@@ -7,12 +7,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 
 <script src="https://web3forms.com/client/script.js" async defer></script>
-<script src="https://www.google.com/recaptcha/api.js"></script>
-<script>
-    function onSubmit(token) {
-      document.getElementById("form").submit();
-    }
-  </script>
+<script src="https://js.hcaptcha.com/1/api.js" async defer></script>
 
 
 <meta charset="UTF-8">
@@ -119,7 +114,8 @@
     <input type="text" name="name" required>
     <input type="email" name="email" required>
     <textarea name="message" required></textarea>
-    <button class="g-recaptcha" data-sitekey="6LfZsgooAAAAALIPo2t3w6uQHvOoqAV_FueeEY0O" data-callback='onSubmit'data-action='submit'>Submit Form</button>
+    <div class="h-captcha" data-sitekey="101633a0-d5b0-4b71-8751-f61a4c2db3d2"></div>
+    <button data-callback='onSubmit'data-action='submit'>Submit Form</button>
 
 </form>
 </div>      
