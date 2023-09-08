@@ -8,7 +8,6 @@
 
 <script src="https://web3forms.com/client/script.js" async defer></script>
 
-
 <meta charset="UTF-8">
 </head>
 <body>
@@ -105,15 +104,26 @@
  <h1 class = "contact"> Contact </h1>
 
 <div class ="contactDiv">
- <form id="form" action="https://api.web3forms.com/submit" method="POST">
+ <!--<form  id="form" action="https://api.web3forms.com/submit" method="POST">
 
-    <input type="hidden" name="access_key" value=5e44dbb4-fb0d-434b-9325-dc320bbde441
-    >
+    <input type="hidden" name="access_key" value=5e44dbb4-fb0d-434b-9325-dc320bbde441>
 
     <input type="text" name="name" required>
     <input type="email" name="email" required>
     <textarea name="message" required></textarea>
     <div class="h-captcha" data-captcha="true" ></div>
+    <button type="submit">Submit Form</button>
+
+</form> -->
+
+<form action="https://api.web3forms.com/submit" method="POST">
+
+    <input type="hidden" name="access_key" value="5e44dbb4-fb0d-434b-9325-dc320bbde441">
+
+    <input type="text" name="name" required>
+    <input type="email" name="email" required>
+    <textarea name="message" required></textarea>
+    <div class="h-captcha" data-captcha="true"></div>
     <button type="submit">Submit Form</button>
 
 </form>
