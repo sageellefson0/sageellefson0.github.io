@@ -110,8 +110,8 @@
 
  <h1 class = "contact"> Contact </h1>
 
-
- <form action="https://api.web3forms.com/submit" method="POST">
+<div class ="contactDiv">
+ <form id="form" action="https://api.web3forms.com/submit" method="POST">
 
     <input type="hidden" name="access_key" value=5e44dbb4-fb0d-434b-9325-dc320bbde441
     >
@@ -119,11 +119,10 @@
     <input type="text" name="name" required>
     <input type="email" name="email" required>
     <textarea name="message" required></textarea>
-    <div class="g-recaptcha" data-sitekey="6LfZsgooAAAAALIPo2t3w6uQHvOoqAV_FueeEY0O"></div>
-    <button class="g-recaptcha" data-sitekey="reCAPTCHA_site_key" data-callback='onSubmit'data-action='submit'>    <button type="submit">Submit Form</button>
+    <button class="g-recaptcha" data-sitekey="6LfZsgooAAAAALIPo2t3w6uQHvOoqAV_FueeEY0O" data-callback='onSubmit'data-action='submit'>Submit Form</button>
 
 </form>
-        
+</div>      
 
 <footer>
 
