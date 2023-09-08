@@ -4,6 +4,31 @@
 <title> Portfolio </title>
 <link rel="stylesheet" href="PortfolioCSS.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+    (function() {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init('nt6HghqesKaolw8cI');
+    })();
+</script>
+<script type="text/javascript">
+    window.onload = function() {
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // generate a five digit number for the contact_number variable
+            this.contact_number.value = Math.random() * 100000 | 0;
+            // these IDs from the previous steps
+            emailjs.sendForm('contact_service', 'contact_form', this)
+                .then(function() {
+                    console.log('SUCCESS!');
+                }, function(error) {
+                    console.log('FAILED...', error);
+                });
+        });
+    }
+</script>
 
 <meta charset="UTF-8">
 </head>
@@ -51,26 +76,69 @@
 
 </div>
 
-<div class = "projectsDiv" id = "projects"> 
     <h1 class = "projects"> Projects </h1>
+
+    
+
+    <div class = "projectsDiv"> 
+
+        <div class = "ammaDiv">
+            <img class = "ammaImage" src="images/projectAmmaImage.png" alt="An image of the Appointment Maangement Mobile Application project.">
+            <span> Lorem ipsumLorem ipsumLorem ipsumLorem ipsum
+                Lorem ipsumLorem ipsumLorem ipsumLorem ipsum
+                Lorem ipsumLorem ipsumLorem ipsumLorem ipsum
+                Lorem ipsumLorem ipsumLorem ipsumLorem ipsum</span>
+                <i class="devicon-java-plain-wordmark"></i>
+                <i class="devicon-android-plain-wordmark"></i>
+    
+            </div>
 
         <div class = "numberGenDiv">
         <img class = "placeholderImage" src="images/PlaceholderProjectImage.png" alt="A placeholder image for a future project.">
-        <p> Lorem ipsumLorem ipsumLorem ipsumLorem ipsum
+        <span> Lorem ipsumLorem ipsumLorem ipsumLorem ipsum
             Lorem ipsumLorem ipsumLorem ipsumLorem ipsum
             Lorem ipsumLorem ipsumLorem ipsumLorem ipsum
-            Lorem ipsumLorem ipsumLorem ipsumLorem ipsum</p>
+            Lorem ipsumLorem ipsumLorem ipsumLorem ipsum</span>
+            <i class="devicon-java-plain-wordmark"></i>
         </div>
-    
-        <div class = "ammaDiv">
-        <img class = "ammaImage" src="images/projectAmmaImage.png" alt="An image of the Appointment Maangement Mobile Application project.">
-        <p> Lorem ipsumLorem ipsumLorem ipsumLorem ipsum
-            Lorem ipsumLorem ipsumLorem ipsumLorem ipsum
-            Lorem ipsumLorem ipsumLorem ipsumLorem ipsum
-            Lorem ipsumLorem ipsumLorem ipsumLorem ipsum</p>
+
+        <div class = "partProductDiv">
+            <img class = "partProductImage" src="images/PartProductProjectImage.png" alt="An image of the Inventory Management System project.">
+            <span> Lorem ipsumLorem ipsumLorem ipsumLorem ipsum
+                Lorem ipsumLorem ipsumLorem ipsumLorem ipsum
+                Lorem ipsumLorem ipsumLorem ipsumLorem ipsum
+                Lorem ipsumLorem ipsumLorem ipsumLorem ipsum</span>
+                <i class="devicon-java-plain-wordmark"></i>
+            </div>
+
+            <div class = "pythonProjectDiv">
+                <img class = "pythonImage" src="images/PlaceholderProjectImage.png" alt="An image of the Inventory Management System project.">
+                <span> Lorem ipsumLorem ipsumLorem ipsumLorem ipsum
+                    Lorem ipsumLorem ipsumLorem ipsumLorem ipsum
+                    Lorem ipsumLorem ipsumLorem ipsumLorem ipsum
+                    Lorem ipsumLorem ipsumLorem ipsumLorem ipsum</span>
+                    <i class="devicon-python-plain-wordmark"></i>
+                </div>
+            </div>
+
         </div>
-</div>
-    
+
+ <h1 class = "contact"> Contact </h1>
+
+
+ <form id="contact-form">
+    <input type="hidden" name="contact_number">
+    <label>Name</label>
+    <input type="text" name="user_name">
+    <label>Email</label>
+    <input type="email" name="user_email">
+    <label>Message</label>
+    <textarea name="message"></textarea>
+    <input type="submit" value="Send">
+</form>
+
+
+        
 
 <footer>
 

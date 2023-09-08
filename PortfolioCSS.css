@@ -81,6 +81,8 @@ text-decoration: none;
 color:#EAEFFA;
 font-family: 'Monaco', 'Andale Mono', monospace;
 font-size: 18px;
+margin: 2%;
+
 
 }
 
@@ -88,8 +90,6 @@ font-size: 18px;
 .navbar a:hover {
   text-decoration: none;
   color: #3A4F41;
-  font-size: 20px;
-
   }
 
   
@@ -98,7 +98,7 @@ font-size: 18px;
 
 /* ABOUT SECTION */
 
-.aboutMe, .projects{
+.aboutMe, .projects, .contact{
   font-family: 'Monaco', 'Andale Mono', monospace;
   color: #0E1638;
   text-align: center;
@@ -111,12 +111,9 @@ font-size: 18px;
 }
 
 
-
-
 .aboutDiv{
   display: inline-block;
   padding: 3%;
-  border-bottom: 2px solid #0E1638;
 
 }
 
@@ -178,27 +175,46 @@ font-size: 18px;
 /* PROJECT SECTION */
 
 
-.placeholderImage, .ammaImage{
-  width: 550px;
-  height: 300px;
-  border-radius: 8%;
-  float: right;
-
-  border: solid 2px red;
-}
-
-.ammaDiv, .numberGenDiv{
-  border: solid 2px orange;
+.projectsDiv{
   display: inline-block;
-  margin-top: 4%;
-  
+  text-align: center;
+  width: 100%;
+
+} 
+
+.placeholderImage, .ammaImage, .partProductImage, .pythonImage{
+  width: 300px;
+  height: 175px;
+  box-shadow: 0 0 15px 4px rgba(23, 31, 25, 0.8);
 }
 
-p {
-  font-family: 'Verdana', 'Andale Mono', monospace;
-  color: #0E1638;
+.ammaDiv, .numberGenDiv, .partProductDiv, .pythonProjectDiv{
+  margin: 2%;
+  vertical-align: top;
+  display: inline-block;
   text-align: center;
-  border: solid purple 2px;
+  width: 350px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: #0E1638;
+  border-radius: 5%;
+  box-shadow: 0 0 15px 4px rgba(23, 31, 25, 0.8);
+
+}
+
+span {
+  font-family: 'Verdana', 'Andale Mono', monospace;
+  color: #EAEFFA;
   width: 50%;
-  margin-left: 20px;
+  display: inline-block;
+  width: 300px;
+  padding-bottom: 10px;
+
+}
+
+
+
+.devicon-java-plain-wordmark, .devicon-android-plain-wordmark, .devicon-python-plain-wordmark{
+  font-size: 50px;
+  color: #EAEFFA;
 }
