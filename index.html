@@ -6,29 +6,14 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-<script type="text/javascript">
-    (function() {
-        // https://dashboard.emailjs.com/admin/account
-        emailjs.init('nt6HghqesKaolw8cI');
-    })();
-</script>
-<script type="text/javascript">
-    window.onload = function() {
-        document.getElementById('contact-form').addEventListener('submit', function(event) {
-            event.preventDefault();
-            // generate a five digit number for the contact_number variable
-            this.contact_number.value = Math.random() * 100000 | 0;
-            // these IDs from the previous steps
-            emailjs.sendForm('contact_service', 'contact_form', this)
-                .then(function() {
-                    console.log('SUCCESS!');
-                }, function(error) {
-                    console.log('FAILED...', error);
-                });
-        });
+<script src="https://web3forms.com/client/script.js" async defer></script>
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<script>
+    function onSubmit(token) {
+      document.getElementById("form").submit();
     }
-</script>
+  </script>
+
 
 <meta charset="UTF-8">
 </head>
@@ -126,18 +111,18 @@
  <h1 class = "contact"> Contact </h1>
 
 
- <form id="contact-form">
-    <input type="hidden" name="contact_number">
-    <label>Name</label>
-    <input type="text" name="user_name">
-    <label>Email</label>
-    <input type="email" name="user_email">
-    <label>Message</label>
-    <textarea name="message"></textarea>
-    <input type="submit" value="Send">
+ <form action="https://api.web3forms.com/submit" method="POST">
+
+    <input type="hidden" name="access_key" value=5e44dbb4-fb0d-434b-9325-dc320bbde441
+    >
+
+    <input type="text" name="name" required>
+    <input type="email" name="email" required>
+    <textarea name="message" required></textarea>
+    <div class="g-recaptcha" data-sitekey="6LfZsgooAAAAALIPo2t3w6uQHvOoqAV_FueeEY0O"></div>
+    <button class="g-recaptcha" data-sitekey="reCAPTCHA_site_key" data-callback='onSubmit'data-action='submit'>    <button type="submit">Submit Form</button>
+
 </form>
-
-
         
 
 <footer>
