@@ -159,6 +159,7 @@ margin: 2%;
   color: #EAEFFA;
   text-decoration: none;
   padding-left: 20px;
+  padding-right: 20px;
 }
 
 .socialIconDiv{
@@ -217,5 +218,74 @@ span {
 .devicon-java-plain-wordmark, .devicon-android-plain-wordmark, .devicon-python-plain-wordmark{
   font-size: 50px;
   color: #EAEFFA;
+}
+
+.devicon-java-plain-wordmark:hover, .devicon-android-plain-wordmark:hover, .devicon-python-plain-wordmark:hover{
+  color:#3A4F41;
+}
+
+
+
+/* CONTACT */
+
+
+.contactDiv{
+  text-align: center;
+  width: 40%;
+  margin: auto;
+  background-color: #EAEFFA;
+  border-top: solid #0E1638 2px;
+  border-bottom: solid #0E1638 2px;
+  border-width: 10px;
+  padding-top: 4%;
+  padding-bottom: 4%;
+}
+
+
+
+.contactInput, .contactInputMessage{
+  outline: none;
+  border: none;
+  width: 30%;
+  border-bottom: #0E1638 2px solid;
+  background-color: inherit;
+  padding: 10px;
+  margin: 10px;
+  font-family: 'Verdana', 'Andale Mono', monospace;
+  color: #0E1638;
+
+}
+
+.contactInputMessage{
+  width: 40%;
+}
+
+
+::placeholder { 
+  color: #0E1638;
+}
+
+.contactSubmitButton{
+  border: none;
+  background-color: #3A4F41;
+  color:#EAEFFA;
+  font-family: 'Verdana', 'Andale Mono', monospace;
+  border: solid green 2px;
+  padding: 10px;
+
+}
+
+
+
+/* FOOTER */
+footer{
+  font-family: 'Verdana', 'Andale Mono', monospace;
+  color:#EAEFFA;
+  text-align:center;
+  background-color: #0E1638;
+  padding: 15px;
+  margin-top: 30px;
+
+
 }
 
