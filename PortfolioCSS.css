@@ -246,7 +246,7 @@ span {
 .contactInput, .contactInputMessage{
   outline: none;
   border: none;
-  width: 30%;
+  width: 40%;
   border-bottom: #0E1638 2px solid;
   background-color: inherit;
   padding: 10px;
@@ -256,9 +256,6 @@ span {
 
 }
 
-.contactInputMessage{
-  width: 40%;
-}
 
 
 ::placeholder { 
@@ -267,11 +264,19 @@ span {
 
 .contactSubmitButton{
   border: none;
-  background-color: #3A4F41;
+  background-color: #0E1638;;
   color:#EAEFFA;
   font-family: 'Verdana', 'Andale Mono', monospace;
-  border: solid green 2px;
   padding: 10px;
+  border-radius: 5%;
+  border: solid 2px #3A4F41;
+}
+
+.contactSubmitButton:hover{
+  color: #EAEFFA;
+  background-color: #3A4F41;
+  border: solid 2px #0E1638;
+
 
 }
 
@@ -285,7 +290,15 @@ footer{
   background-color: #0E1638;
   padding: 15px;
   margin-top: 30px;
+}
 
+.fa_custom_footer{
+  color: #EAEFFA;
+  text-decoration: none;
+  padding-left: 10px;
+}
 
+.fa_custom_footer:hover{
+  color:#3A4F41;
 }
 
