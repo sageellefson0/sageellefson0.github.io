@@ -173,8 +173,8 @@ margin: 2%;
 }
 
 
-/* PROJECT SECTION */
 
+/* PROJECT SECTION */
 
 .projectsDiv{
   display: inline-block;
@@ -187,7 +187,17 @@ margin: 2%;
   width: 300px;
   height: 175px;
   box-shadow: 0 0 15px 4px rgba(23, 31, 25, 0.8);
+  transition: transform .4s;
+
 }
+
+.placeholderImage:hover, .ammaImage:hover{
+transform: scale(1.05);
+filter: brightness(.9);
+
+}
+
+
 
 .ammaDiv, .numberGenDiv, .partProductDiv, .pythonProjectDiv{
   margin: 2%;
