@@ -11,21 +11,32 @@ html, body{
     scroll-behavior:smooth;
   }
   
-
+  
 
 /* WELCOME SECTION */
   .name{
   color: rgb(14, 22, 56);
   font-family: 'Monaco', 'Andale Mono', monospace;
-
   overflow: hidden;
   border-right: .15em solid #0E1638;
   white-space: nowrap;
   margin: 0 auto;
-  /*width: 0;*/
   animation: typing 2s steps(35, end), blink-caret .75s step-end infinite;
-  /*animation-fill-mode: forwards; */
+  animation-fill-mode: forwards;
 }
+
+.introLine{
+  color: #0E1638;
+  font-family: 'Monaco', 'Andale Mono', monospace;
+  animation: fadeIn 3s; 
+
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
 
 @keyframes typing {
   from { width: 0%}
@@ -37,25 +48,22 @@ html, body{
   50% { border-color: #0E1638; }
 }
 
-.introLine{
-  color: #0E1638;
-  font-family: 'Monaco', 'Andale Mono', monospace;
-  /*border: solid red 1px; */
-}
+
 
 .textDiv{
-  width: 25%;
+  width: 26%;
   display: inline-block;
-  justify-content: center;
-  padding-top: 10%;
+  padding-top: 15%;
+  margin-left: 10%;
+
 }
 
-.parentDiv{
+.introParentDiv{
   /*border: solid blue 2px; */
   display: inline-block;
   height: 83%;
   width: 100%;
-  text-align: center; 
+  text-align: left; 
   background-image: url("images/triangleBackground.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -65,7 +73,8 @@ html, body{
 
 /* NAVBAR */
 .navbar{
-  background-color: #0E1638;
+  background-color: rgba(14,22,56, .9);
+  backdrop-filter: blur(2px);
   text-align: center;
   overflow: hidden;
   font-size: 18px;
@@ -76,7 +85,6 @@ html, body{
 
 }
 .navbar a {
-background-color: #0E1638;
 text-decoration: none;
 color:#EAEFFA;
 font-family: 'Monaco', 'Andale Mono', monospace;
@@ -140,23 +148,20 @@ margin: 2%;
   float: right;
   font-size: 20px;
 
+}
 
+.aboutDiv{
+  margin-top: 5%;
+}
+
+.aboutMe{
+  margin-top: 5%;
 }
 
 
-
-/* CIRCLE method
-.dot {
-  height: 25px;
-  width: 25px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-} */
-
 /* SOCIAL ICON BAR*/
 .fa_custom{
-  color: #EAEFFA;
+  color: #0E1638;
   text-decoration: none;
   padding-left: 20px;
   padding-right: 20px;
@@ -191,7 +196,7 @@ margin: 2%;
 
 }
 
-.placeholderImage:hover, .ammaImage:hover{
+.placeholderImage:hover, .ammaImage:hover, .pythonImage:hover, .partProductImage:hover{
 transform: scale(1.05);
 filter: brightness(.9);
 
@@ -310,5 +315,109 @@ footer{
 
 .fa_custom_footer:hover{
   color:#3A4F41;
+}
+
+
+
+/* Circles stuff - possible design idea
+.circles{
+  width: 60%;
+  border: solid 2px green;
+  float:right;
+  margin-top: 10%;
+}
+
+
+
+.dot {
+  height: 200px;
+  width: 200px;
+  background-color: #bbb;
+  border-radius: 50%;
+  float: right;
+  margin-right:5%;
+  animation: bubbles 3s;
+} 
+
+@keyframes bubbles {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+} */
+
+
+#terminal{
+  width: 40%;
+  float: right; 
+  display: inline;
+  margin-top: 10%;
+  margin-right: 10%;
+  
+}
+
+#bar {
+  text-align: center;
+  width: 475px;
+  height: 25px;
+  background-color: #DAD9D9;
+  font-family: monospace;
+  float: right;
+  border-radius: 5px;
+  padding: auto;
+  margin-bottom: 0;
+  display: flex; /* Use flex display to arrange the circles */
+  justify-content: flex-start;
+
+}
+
+#screen {
+  background-color: rgba(36, 51, 61, .8);
+  width: 475px;
+  height: 250px;
+  border-radius: 2%;
+  float: right;
+  margin-top: 0;
+  
+
+}
+#red {
+  background-color: #E94B35;
+  border-radius: 100%;
+  width: 13px;
+  height: 13px;
+  display: inline-block;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+
+
+}
+#yellow {
+  background-color: #f0f000;
+  border-radius: 100%;
+  width: 13px;
+  height: 13px;
+  display: inline-block;
+  margin-top: 5px;
+  margin-right: 5px;
+
+
+}
+#green {
+  background-color: #1AAF5C;
+  border-radius: 100%;
+  width: 13px;
+  height: 13px;
+  display: inline-block;
+  margin-top: 5px;
+  margin-right: 5px;
+
+}
+ 
+.font {
+  color: #fff;
+  font-family: monospace;
+  font-size: 15px;
+  text-align: left;
+  position: static;
 }
 
