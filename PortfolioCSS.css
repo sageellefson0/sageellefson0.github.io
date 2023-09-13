@@ -18,7 +18,7 @@ html, body{
   color: rgb(14, 22, 56);
   font-family: 'Monaco', 'Andale Mono', monospace;
   overflow: hidden;
-  border-right: .15em solid #0E1638;
+  /*border-right: .15em solid #0E1638;*/
   white-space: nowrap;
   margin: 0 auto;
   animation: typing 2s steps(35, end), blink-caret .75s step-end infinite;
@@ -31,7 +31,7 @@ html, body{
   animation: fadeIn 3s; 
 
 }
-
+/*
 @keyframes fadeIn {
   0% { opacity: 0; }
   100% { opacity: 1; }
@@ -47,7 +47,7 @@ html, body{
   from, to { border-color: transparent }
   50% { border-color: #0E1638; }
 }
-
+*/
 
 
 .textDiv{
