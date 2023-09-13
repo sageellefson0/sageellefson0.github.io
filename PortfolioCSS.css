@@ -412,7 +412,7 @@ footer{
 
 }
  
-.font, .text-1 {
+.font, .text-1, .text-2 {
   color: #fff;
   font-family: monospace;
   font-size: 15px;
@@ -429,18 +429,18 @@ footer{
   animation: text2;
 }
 
-.text-1 {
+.text-1, .text-2{
   overflow: hidden;
   white-space: nowrap;
   display: inline-block;
   position: relative;
   animation-duration: 20s;
-  animation-timing-function: steps(40, end);
+  animation-timing-function: steps(25, end);
   animation-iteration-count: infinite;
-  border: red solid 2px;
+  height: 5px;
 }
 
-.text-1::after {
+.text-1::after, .text-2::after {
   content: "|";
   position: absolute;
   right: 0;
@@ -456,8 +456,20 @@ footer{
     width: 0;
   }
   10%,
+  40% {
+    width: 24%;
+  }
+}
+
+@keyframes text2 {
+  0%,
+  50%,
+  100% {
+    width: 0;
+  }
+  60%,
   90% {
-    width: ;
+    width: 33%;
   }
 }
 
