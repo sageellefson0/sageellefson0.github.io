@@ -54,7 +54,7 @@ html, body{
   width: 26%;
   display: inline-block;
   padding-top: 15%;
-  margin-left: 10%;
+  margin-left: 12%;
 
 }
 
@@ -79,7 +79,7 @@ html, body{
   overflow: hidden;
   font-size: 18px;
   padding: 12px 14px;
-  width: 100%;
+  width: auto;
 
 
 }
@@ -357,7 +357,7 @@ footer{
   text-align: center;
   width: 475px;
   height: 25px;
-  background-color: #DAD9D9;
+  background-color: rgba(218, 217, 217, .9);
   font-family: monospace;
   float: right;
   border-radius: 5px;
@@ -412,7 +412,7 @@ footer{
 
 }
  
-.font, .text-1, .text-2 {
+.font, .text-1 {
   color: #fff;
   font-family: monospace;
   font-size: 15px;
@@ -429,20 +429,18 @@ footer{
   animation: text2;
 }
 
-.text-1,
-.text-2 {
+.text-1 {
   overflow: hidden;
   white-space: nowrap;
   display: inline-block;
   position: relative;
   animation-duration: 20s;
-  animation-timing-function: steps(25, end);
+  animation-timing-function: steps(40, end);
   animation-iteration-count: infinite;
   border: red solid 2px;
 }
 
-.text-1::after,
-.text-2::after {
+.text-1::after {
   content: "|";
   position: absolute;
   right: 0;
@@ -451,17 +449,6 @@ footer{
   animation-timing-function: steps(1, end);
 }
 
-@keyframes text2 {
-  0%,
-  50%,
-  100% {
-    width: 0;
-  }
-  60%,
-  90% {
-    width: 21.2em;
-  }
-}
 @keyframes text1 {
   0%,
   50%,
@@ -470,7 +457,7 @@ footer{
   }
   10%,
   90% {
-    width: auto;
+    width: ;
   }
 }
 
