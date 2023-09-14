@@ -15,10 +15,11 @@ html, body{
 
 /* WELCOME SECTION */
   .name{
-  color: rgb(14, 22, 56);
-  font-family: 'Monaco', 'Andale Mono', monospace;
+    color:  #EAEFFA;
+    font-family: 'Monaco', 'Andale Mono', monospace;
   overflow: hidden;
   /*border-right: .15em solid #0E1638;*/
+  font-size: 40px;
   white-space: nowrap;
   margin: 0 auto;
   animation: typing 2s steps(35, end), blink-caret .75s step-end infinite;
@@ -26,10 +27,15 @@ html, body{
 }
 
 .introLine{
-  color: #0E1638;
+  color:  #EAEFFA;
   font-family: 'Monaco', 'Andale Mono', monospace;
   animation: fadeIn 3s; 
 
+}
+
+.greeting{
+  color:  #EAEFFA;
+  font-family: 'Monaco', 'Andale Mono', monospace;
 }
 /*
 @keyframes fadeIn {
@@ -53,15 +59,18 @@ html, body{
 .textDiv{
   width: 26%;
   display: inline-block;
-  padding-top: 15%;
   margin-left: 12%;
+  margin-top: 13%;
+  padding: 5%;
+  background-color: #0E1638;
+  border-radius: 30% 70% 63% 37% / 47% 37% 63% 53%;
 
 }
 
 .introParentDiv{
   /*border: solid blue 2px; */
   display: inline-block;
-  height: 83%;
+  height: 93%;
   width: 100%;
   text-align: left; 
   background-image: url("images/triangleBackground.png");
@@ -150,11 +159,11 @@ margin: 2%;
 }
 
 .aboutDiv{
-  margin-top: 5%;
+  margin-top: 1%;
 }
 
 .aboutMe{
-  margin-top: 5%;
+  margin-top: 1%;
 }
 
 
