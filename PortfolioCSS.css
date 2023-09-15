@@ -15,7 +15,7 @@ html, body{
 
 /* WELCOME SECTION */
   .name{
-    color:  #EAEFFA;
+    color:  #0E1638;
     font-family: 'Monaco', 'Andale Mono', monospace;
   overflow: hidden;
   /*border-right: .15em solid #0E1638;*/
@@ -26,8 +26,9 @@ html, body{
   animation-fill-mode: forwards;
 }
 
+
 .introLine{
-  color:  #EAEFFA;
+  color:  #0E1638;
   font-family: 'Monaco', 'Andale Mono', monospace;
   animation: fadeIn 3s; 
 
@@ -60,12 +61,17 @@ html, body{
   width: 26%;
   display: inline-block;
   margin-left: 12%;
-  margin-top: 13%;
+  margin-top: 11%;
   padding: 5%;
-  background-color: #0E1638;
-  border-radius: 30% 70% 63% 37% / 47% 37% 63% 53%;
-
+  /*border-radius: 30% 70% 63% 37% / 47% 37% 63% 53%;
+  animation: mymove 5s infinite; */
 }
+
+
+@keyframes mymove {
+  50% {box-shadow: 0 0 30px 20px #3A4F41;}
+}
+
 
 .introParentDiv{
   /*border: solid blue 2px; */
@@ -126,6 +132,13 @@ margin: 2%;
 
 }
 
+.aboutTextDiv
+{
+  float: right;
+  width: 50%;
+  height: 100%;
+
+}
 
 .aboutDiv{
   display: inline-block;
@@ -150,12 +163,15 @@ margin: 2%;
 }
 
 .aboutText{
-  width: 49%;
   font-family: 'Verdana', 'Andale Mono', monospace;
   color: #0E1638;
-  float: right;
-  font-size: 20px;
+  font-size: 18px;
 
+}
+.aboutTextCerts{
+  font-family: 'Verdana', 'Andale Mono', monospace;
+  color: #0E1638;
+  font-size: 16px;
 }
 
 .aboutDiv{
@@ -357,7 +373,7 @@ footer{
   width: 40%;
   float: right; 
   display: inline;
-  margin-top: 10%;
+  margin-top: 11%;
   margin-right: 10%;
   
 }
@@ -378,7 +394,7 @@ footer{
 }
 
 #screen {
-  background-color: rgba(36, 51, 61, .8);
+  background-color: rgba(14, 22,56, .9);
   width: 475px;
   height: 250px;
   border-radius: 2%;
