@@ -15,35 +15,24 @@ html, body{
 
 /* WELCOME SECTION */
   .name{
-    color:  #0E1638;
-    font-family: 'Monaco', 'Andale Mono', monospace;
+  color :#0E1638;
+  font-family: 'Monaco', 'Andale Mono', monospace;
   overflow: hidden;
-  /*border-right: .15em solid #0E1638;*/
   font-size: 40px;
+  border-right: .08em solid #0E1638;
   white-space: nowrap;
   margin: 0 auto;
   animation: typing 2s steps(35, end), blink-caret .75s step-end infinite;
   animation-fill-mode: forwards;
+  
 }
 
 
 .introLine{
-  color:  #0E1638;
+  color :#0E1638;
   font-family: 'Monaco', 'Andale Mono', monospace;
-  animation: fadeIn 3s; 
 
 }
-
-.greeting{
-  color:  #EAEFFA;
-  font-family: 'Monaco', 'Andale Mono', monospace;
-}
-/*
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-}
-
 
 @keyframes typing {
   from { width: 0%}
@@ -54,23 +43,20 @@ html, body{
   from, to { border-color: transparent }
   50% { border-color: #0E1638; }
 }
-*/
 
 
-.textDiv{
-  width: 26%;
+
+.textDiv {
+  width: 22%;
   display: inline-block;
-  margin-left: 12%;
   margin-top: 11%;
   padding: 5%;
-  /*border-radius: 30% 70% 63% 37% / 47% 37% 63% 53%;
-  animation: mymove 5s infinite; */
+  text-align: center;
 }
 
 
-@keyframes mymove {
-  50% {box-shadow: 0 0 30px 20px #3A4F41;}
-}
+
+
 
 
 .introParentDiv{
@@ -78,7 +64,7 @@ html, body{
   display: inline-block;
   height: 93%;
   width: 100%;
-  text-align: left; 
+  text-align: center; 
   background-image: url("images/triangleBackground.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -111,7 +97,10 @@ margin: 2%;
 
 .navbar a:hover {
   text-decoration: none;
-  color: #3A4F41;
+  text-decoration: underline;
+  text-underline-offset: 9px;
+  text-decoration-color: #EAEFFA;
+  text-decoration-thickness: 3px;  
   }
 
   
