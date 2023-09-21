@@ -502,28 +502,28 @@ footer{
 
 
 /* Add mobile rules for the name */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .name {
     font-size: 28px;
   }
 }
 
 /* Add mobile rules for .navbar */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .navbar {
     font-size: 16px;
   }
 }
 
 /* Add mobile rules for .aboutMe, .projects, and .contact */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .aboutMe, .projects, .contact {
     font-size: 24px;
   }
 }
 
 /* Add mobile rules for .textDiv and .introParentDiv */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .textDiv {
     width: 100%;
     margin-top: 10%;
@@ -542,7 +542,7 @@ footer{
 }
 
 /* Add mobile rules for .placeholderImage, .ammaImage, .partProductImage, .pythonImage */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .placeholderImage, .ammaImage, .pythonImage, .partProductImage {
     width: 100%;
     height: auto;
@@ -552,7 +552,7 @@ footer{
 }
 
 /* Add mobile rules for .ammaDiv, .numberGenDiv, .partProductDiv, .pythonProjectDiv, and span */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .ammaDiv, .numberGenDiv, .partProductDiv, .pythonProjectDiv {
     margin: 2%;
     vertical-align: top;
@@ -576,7 +576,7 @@ footer{
 }
 
 /* Add mobile rules for .contactInput, .contactInputMessage, and .contactSubmitButton */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .contactInput, .contactInputMessage {
     outline: none;
     border: none;
@@ -601,7 +601,7 @@ footer{
 }
 
 /* Add mobile rules for .fa_custom_footer */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .fa_custom_footer {
     color: #EAEFFA;
     text-decoration: none;
@@ -610,7 +610,7 @@ footer{
 }
 
 /* Add mobile rules for footer */
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   footer {
     font-family: 'Verdana', 'Andale Mono', monospace;
     color: #EAEFFA;
