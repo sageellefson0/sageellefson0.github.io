@@ -27,6 +27,12 @@ html, body{
   
 }
 
+@media screen and (max-width: 768px) { /* Adjust the breakpoint as needed */
+  .name {
+    font-size: 4vw; /* Adjust the font size for mobile */
+  }
+}
+
 
 .introLine{
   color :#0E1638;
@@ -329,33 +335,6 @@ footer{
 .fa_custom_footer:hover{
   color:#3A4F41;
 }
-
-
-
-/* Circles stuff - possible design idea
-.circles{
-  width: 60%;
-  border: solid 2px green;
-  float:right;
-  margin-top: 10%;
-}
-
-
-
-.dot {
-  height: 200px;
-  width: 200px;
-  background-color: #bbb;
-  border-radius: 50%;
-  float: right;
-  margin-right:5%;
-  animation: bubbles 3s;
-} 
-
-@keyframes bubbles {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
-} */
 
 
 #terminal{
