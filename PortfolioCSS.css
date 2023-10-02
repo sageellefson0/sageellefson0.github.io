@@ -31,8 +31,9 @@ html, body{
   .name {
     font-size: 6vw; /* Adjust the font size for mobile */
     animation: none;
-    border: red solid 2px;
     width: 100%;
+    border: none;
+    margin-top: 55%;
   }
 }
 
@@ -73,7 +74,6 @@ html, body{
 @media screen and (max-width: 768px) {
   .textDiv{
     width: auto;
-    border: red solid 2px;
 
   }
 }
