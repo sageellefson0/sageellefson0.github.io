@@ -33,14 +33,16 @@ html, body{
     animation: none;
     width: 100%;
     border: none;
-    margin-top: 55%;
+    font-size: 200%;
+    margin-top: 60%;
   }
 }
 
 
 @media screen and (max-width: 768px) { /* Adjust the breakpoint as needed */
   .introLine {
-    font-size: 4vw; /* Adjust the font size for mobile */
+    font-size: 150%;
+
   }
 }
 
