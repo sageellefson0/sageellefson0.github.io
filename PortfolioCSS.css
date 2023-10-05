@@ -172,24 +172,12 @@ margin: 2%;
 
 @media screen and (max-width: 768px) { /* Adjust the breakpoint as needed */
   
-  .aboutDiv
-  {
-    border: solid green 2px;
-  }
 
-  .imageDiv{
+  .imageDiv, .aboutTextDiv{
     display: block; 
     float: none; 
     width: 100%;
 }
-  
-  .aboutTextDiv
-  {
-    display: block; 
-    float: none; 
-    width: 100%;
-
-  }
 
   
 }
