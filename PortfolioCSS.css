@@ -146,6 +146,14 @@ margin: 2%;
 
 }
 
+
+.aboutDiv{
+  display: inline-block;
+  padding: 3%;
+
+
+}
+
 .aboutTextDiv
 {
   float: right;
@@ -154,10 +162,36 @@ margin: 2%;
 
 }
 
-.aboutDiv{
-  display: inline-block;
-  padding: 3%;
+.imageDiv{
+  width: 50%;
+  float: left;
+  height: 100%;
+  text-align: center;
 
+}
+
+@media screen and (max-width: 768px) { /* Adjust the breakpoint as needed */
+  
+  .aboutDiv
+  {
+    border: solid green 2px;
+  }
+
+  .imageDiv{
+    display: block; 
+    float: none; 
+    width: 100%;
+}
+  
+  .aboutTextDiv
+  {
+    display: block; 
+    float: none; 
+    width: 100%;
+
+  }
+
+  
 }
 
 .headshotPic{
@@ -168,13 +202,6 @@ margin: 2%;
 
 }
 
-.imageDiv{
-  width: 49%;
-  float: left;
-  height: 100%;
-  text-align: center;
-
-}
 
 .aboutText{
   font-family: 'Verdana', 'Andale Mono', monospace;
