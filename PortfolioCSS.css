@@ -5,6 +5,7 @@ html, body{
     padding: 0px;
     background-color: #EAEFFA;
     height: 100%;
+
   }
 
   html{
@@ -44,6 +45,7 @@ html, body{
     font-size: 150%;
 
   }
+
 }
 
 
@@ -72,13 +74,14 @@ html, body{
   padding: 5%;
   text-align: center;
   border-radius: 2%;
-  background-color:rgba(234,239,250,0.5); 
+  /*background-color:rgba(234,239,250,0.5);  LIGHTER BACKGROUND COLOR FOR BEHIND WORDS*/
+
 }
 
 @media screen and (max-width: 768px) {
   .textDiv{
     width: auto;
-
+ 
   }
 }
 
@@ -96,59 +99,71 @@ html, body{
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-
+@media screen and (max-width: 768px) {
+  .introParentDiv{
+background: url("images/triangleBackground.png") no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+  }
+}
 
 /* NAVBAR */
-.navbar{
-  background-color: rgba(14,22,56, .9);
+.navbar-container {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(14, 22, 56, 0.9);
   backdrop-filter: blur(2px);
+}
+
+.navbar {
   text-align: center;
-  overflow: hidden;
   font-size: 18px;
   padding: 12px 14px;
-  width: auto;
-  position: sticky;
-  top: 0px;
-
 }
+
 .navbar a {
-text-decoration: none;
-color:#EAEFFA;
-font-family: 'Monaco', 'Andale Mono', monospace;
-font-size: 18px;
-margin: 2%;
-
-
-
+  text-decoration: none;
+  color: #EAEFFA;
+  font-family: 'Monaco', 'Andale Mono', monospace;
+  font-size: 18px;
+  margin: 2%;
 }
-
 
 .navbar a:hover {
   text-decoration: none;
   text-decoration: underline;
-  text-underline-offset: 9px;
   text-decoration-color: #EAEFFA;
-  text-decoration-thickness: 3px;  
-  }
+  text-decoration-thickness: 3px;
+  text-underline-offset: 9px;
+}
 
-  
 
 
 
 /* ABOUT SECTION */
 
-.aboutMe, .projects, .contact{
+.aboutMe, .projects, .contact {
   font-family: 'Monaco', 'Andale Mono', monospace;
   color: #0E1638;
   text-align: center;
-  text-decoration: underline;
-  text-underline-offset: 9px;
-  text-decoration-color: #3A4F41;
-  text-decoration-thickness: 5px;  
   padding-top: 2%;
+  position: relative; /* Add position:relative to the element */
 
 }
+
+.aboutMe::after, .projects::after, .contact::after {
+  content: ''; /* Add content to the pseudo-element */
+  position: absolute;
+  bottom: -10%; /* Position it at the bottom of the element */
+  left: 50%; /* Position it at the middle of the element */
+  transform: translateX(-50%); /* Center it horizontally */
+  width: 7%; /* Adjust the width as needed (e.g., 50% for half the width) */
+  border-bottom: 5px solid #3A4F41; /* Set the underline properties */
+}
+
 
 
 .aboutDiv{
@@ -282,10 +297,9 @@ filter: brightness(.9);
   width: 350px;
   padding-top: 25px;
   padding-bottom: 25px;
-  background-color: #3A4F41;
+  background-color: #0E1638;
   border-radius: 2%;
   box-shadow: 0 0 20px 3px rgba(23, 31, 25, 0.8);
-
 }
 
 span {
@@ -298,12 +312,6 @@ span {
 
 }
 
-button {
-
-margin: 10px;
-}
-
-
 
 .devicon-java-plain-wordmark, .devicon-android-plain-wordmark, .devicon-python-plain-wordmark{
   font-size: 50px;
@@ -314,10 +322,23 @@ margin: 10px;
   color:#3A4F41;
 }
 
+/* Design for the "View Code" buttons on the project tabs. */
+.button {
+  font: bold 11px Verdana;
+  text-decoration: none;
+  background-color: #EAEFFA;
+  color: #0E1638;
+  padding: 4px 6px 4px 6px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}
+
+
 
 
 /* CONTACT */
-
 
 .contactDiv{
   text-align: center;
@@ -331,8 +352,6 @@ margin: 10px;
   padding-bottom: 4%;
 }
 
-
-
 .contactInput, .contactInputMessage{
   outline: none;
   border: none;
@@ -345,8 +364,6 @@ margin: 10px;
   color: #0E1638;
 
 }
-
-
 
 ::placeholder { 
   color: #0E1638;
@@ -367,8 +384,8 @@ margin: 10px;
   background-color: #3A4F41;
   border: solid 2px #0E1638;
 
-
 }
+
 
 
 
@@ -391,158 +408,4 @@ footer{
 .fa_custom_footer:hover{
   color:#3A4F41;
 }
-
-
-#terminal{
-  width: 40%;
-  float: right; 
-  display: inline;
-  margin-top: 11%;
-  margin-right: 10%;
-  
-}
-
-#bar {
-  text-align: center;
-  width: 475px;
-  height: 25px;
-  background-color: rgba(218, 217, 217, .9);
-  font-family: monospace;
-  float: right;
-  border-radius: 5px;
-  padding: auto;
-  margin-bottom: 0;
-  display: flex; /* Use flex display to arrange the circles */
-  justify-content: flex-start;
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-#screen {
-  background-color: rgba(14, 22,56, .9);
-  width: 475px;
-  height: 250px;
-  border-radius: 2%;
-  float: right;
-  margin-top: 0;
-  
-
-}
-#red {
-  background-color: #E94B35;
-  border-radius: 100%;
-  width: 13px;
-  height: 13px;
-  display: inline-block;
-  margin-top: 5px;
-  margin-left: 5px;
-  margin-right: 5px;
-
-
-}
-#yellow {
-  background-color: #f0f000;
-  border-radius: 100%;
-  width: 13px;
-  height: 13px;
-  display: inline-block;
-  margin-top: 5px;
-  margin-right: 5px;
-
-
-}
-#green {
-  background-color: #1AAF5C;
-  border-radius: 100%;
-  width: 13px;
-  height: 13px;
-  display: inline-block;
-  margin-top: 5px;
-  margin-right: 5px;
-
-}
- 
-.font, .text-1, .text-2 {
-  color: #fff;
-  font-family: monospace;
-  font-size: 15px;
-  text-align: left;
-  position: static;
-}
-
-
-
-.text-1 {
-  animation: text1;
-}
-.text-2 {
-  animation: text2;
-}
-
-.text-1, .text-2{
-  overflow: hidden;
-  white-space: nowrap;
-  display: inline-block;
-  position: relative;
-  animation-duration: 20s;
-  animation-timing-function: steps(25, end);
-  animation-iteration-count: infinite;
-  height: 5px;
-}
-
-.text-1::after, .text-2::after {
-  content: "|";
-  position: absolute;
-  right: 0;
-  animation: caret infinite;
-  animation-duration: 1s;
-  animation-timing-function: steps(1, end);
-}
-
-@keyframes text1 {
-  0%,
-  50%,
-  100% {
-    width: 0;
-  }
-  10%,
-  40% {
-    width: 24%;
-  }
-}
-
-@keyframes text2 {
-  0%,
-  50%,
-  100% {
-    width: 0;
-  }
-  60%,
-  90% {
-    width: 33%;
-  }
-}
-
-@keyframes caret {
-  0%,
-  100% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-}
-
-
-
 
