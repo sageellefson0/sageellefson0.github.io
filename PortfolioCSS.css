@@ -71,6 +71,8 @@ html, body{
   margin-top: 11%;
   padding: 5%;
   text-align: center;
+  border-radius: 2%;
+  background-color:rgba(234,239,250,0.5); 
 }
 
 @media screen and (max-width: 768px) {
@@ -106,7 +108,8 @@ html, body{
   font-size: 18px;
   padding: 12px 14px;
   width: auto;
-
+  position: sticky;
+  top: 0px;
 
 }
 .navbar a {
@@ -115,6 +118,7 @@ color:#EAEFFA;
 font-family: 'Monaco', 'Andale Mono', monospace;
 font-size: 18px;
 margin: 2%;
+
 
 
 }
@@ -185,7 +189,6 @@ margin: 2%;
 
 .aboutTextDiv{
   padding: 10px;
-
 }
 
 .aboutMe{
@@ -279,9 +282,9 @@ filter: brightness(.9);
   width: 350px;
   padding-top: 25px;
   padding-bottom: 25px;
-  background-color: #0E1638;
-  border-radius: 5%;
-  box-shadow: 0 0 15px 4px rgba(23, 31, 25, 0.8);
+  background-color: #3A4F41;
+  border-radius: 2%;
+  box-shadow: 0 0 20px 3px rgba(23, 31, 25, 0.8);
 
 }
 
@@ -293,6 +296,11 @@ span {
   width: 300px;
   padding-bottom: 10px;
 
+}
+
+button {
+
+margin: 10px;
 }
 
 
@@ -316,9 +324,9 @@ span {
   width: 40%;
   margin: auto;
   background-color: #EAEFFA;
-  border-top: solid #0E1638 2px;
-  border-bottom: solid #0E1638 2px;
-  border-width: 10px;
+  border-top: solid #0E1638 1px;
+  border-bottom: solid #0E1638 1px;
+  border-width: 7px;
   padding-top: 4%;
   padding-bottom: 4%;
 }
@@ -408,6 +416,17 @@ footer{
   justify-content: flex-start;
 
 }
+
+
+
+
+
+
+
+
+
+
+
 
 #screen {
   background-color: rgba(14, 22,56, .9);
