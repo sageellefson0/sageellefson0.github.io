@@ -374,16 +374,16 @@ span {
   background-color: #0E1638;;
   color:#EAEFFA;
   font-family: 'Verdana', 'Andale Mono', monospace;
-  padding: 10px;
   border-radius: 5%;
-  border: solid 2px #3A4F41;
+  padding: 6px 8px 6px 8px;
+  border-top: 4px solid #0E1638;
+  border-right: 1px solid #333333;
+  border-bottom: 4px solid #0E1638;
+  border-left: 1px solid #CCCCCC;
 }
 
 .contactSubmitButton:hover{
-  color: #EAEFFA;
-  background-color: #3A4F41;
-  border: solid 2px #0E1638;
-
+  border-bottom: 4px solid #3A4F41;
 }
 
 
