@@ -28,25 +28,8 @@ html, body{
   
 }
 
-@media screen and (max-width: 768px) {
-  .name {
-    font-size: 6vw; /* Adjust the font size for mobile */
-    animation: none;
-    width: 100%;
-    border: none;
-    font-size: 200%;
-    margin-top: 60%;
-  }
-}
 
 
-@media screen and (max-width: 768px) { /* Adjust the breakpoint as needed */
-  .introLine {
-    font-size: 150%;
-
-  }
-
-}
 
 
 .introLine{
@@ -78,12 +61,7 @@ html, body{
 
 }
 
-@media screen and (max-width: 768px) {
-  .textDiv{
-    width: auto;
- 
-  }
-}
+
 
 
 
@@ -99,15 +77,7 @@ html, body{
   background-repeat: no-repeat;
   background-size: cover;
 }
-@media screen and (max-width: 768px) {
-  .introParentDiv{
-background: url("images/triangleBackground.png") no-repeat center center fixed; 
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-  }
-}
+
 
 /* NAVBAR */
 .navbar-container {
@@ -191,40 +161,7 @@ background-size: cover;
 
 }
 
-@media screen and (max-width: 768px) { /* Adjust the breakpoint as needed */
-  
 
-.imageDiv, .aboutTextDiv{
-    display: block; 
-    float: none; 
-    width: 100%;
-}
-
-.imageDiv{
-  padding-top: 2%;
-}
-
-.aboutTextDiv{
-  padding: 10px;
-}
-
-.aboutMe{
-  padding-top: 3%;
-}
-
-.aboutMe::after, .projects::after, .contact::after {
-  content: ''; /* Add content to the pseudo-element */
-  position: absolute;
-  bottom: -10%; /* Position it at the bottom of the element */
-  left: 50%; /* Position it at the middle of the element */
-  transform: translateX(-50%); /* Center it horizontally */
-  width: 26%; /* Adjust the width as needed (e.g., 50% for half the width) */
-  border-bottom: 5px solid #3A4F41; /* Set the underline properties */
-}
-
-
-  
-}
 
 .headshotPic{
   width: 50%;
@@ -399,11 +336,6 @@ span {
 }
 
 
-@media screen and (max-width: 768px) { 
-  .contactDiv{
-    width: 70%;
-  }
-}
 
 
 
@@ -428,3 +360,70 @@ footer{
   color:#3A4F41;
 }
 
+
+
+
+
+
+/* MOBILE IMPLEMENTATION */
+@media screen and (max-width: 768px) { 
+  .contactDiv{
+    width: 70%;
+  }
+
+
+.imageDiv, .aboutTextDiv{
+  display: block; 
+  float: none; 
+  width: 100%;
+}
+
+.imageDiv{
+padding-top: 2%;
+}
+
+.aboutTextDiv{
+padding: 10px;
+}
+
+.aboutMe{
+padding-top: 3%;
+}
+
+.aboutMe::after, .projects::after, .contact::after {
+content: ''; /* Add content to the pseudo-element */
+position: absolute;
+bottom: -10%; /* Position it at the bottom of the element */
+left: 50%; /* Position it at the middle of the element */
+transform: translateX(-50%); /* Center it horizontally */
+width: 26%; /* Adjust the width as needed (e.g., 50% for half the width) */
+border-bottom: 5px solid #3A4F41; /* Set the underline properties */
+}
+
+.name {
+  font-size: 6vw; /* Adjust the font size for mobile */
+  animation: none;
+  width: 100%;
+  border: none;
+  font-size: 200%;
+  margin-top: 60%;
+}
+
+.introLine {
+  font-size: 150%;
+
+}
+
+.textDiv{
+  width: auto;
+
+}
+
+.introParentDiv{
+  background: url("images/triangleBackground.png") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    }
+}
