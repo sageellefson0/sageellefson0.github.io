@@ -166,6 +166,8 @@ background-size: cover;
 
 
 
+
+
 .aboutDiv{
   display: inline-block;
   padding: 3%;
@@ -208,6 +210,16 @@ background-size: cover;
 
 .aboutMe{
   padding-top: 3%;
+}
+
+.aboutMe::after, .projects::after, .contact::after {
+  content: ''; /* Add content to the pseudo-element */
+  position: absolute;
+  bottom: -10%; /* Position it at the bottom of the element */
+  left: 50%; /* Position it at the middle of the element */
+  transform: translateX(-50%); /* Center it horizontally */
+  width: 26%; /* Adjust the width as needed (e.g., 50% for half the width) */
+  border-bottom: 5px solid #3A4F41; /* Set the underline properties */
 }
 
 
