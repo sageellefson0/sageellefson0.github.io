@@ -82,7 +82,7 @@ html, body{
   position: sticky;
   top: 0;
   z-index: 1;
-  width: 100%;
+  width: auto;
   text-align: center;
   background-color: rgba(14, 22, 56, 0.9);
   backdrop-filter: blur(2px);
