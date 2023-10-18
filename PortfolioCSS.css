@@ -193,8 +193,8 @@ html, body{
 .fa_custom{
   color: #0E1638;
   text-decoration: none;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .socialIconDiv{
@@ -344,10 +344,11 @@ span {
 /* FOOTER */
 footer{
   font-family: 'Verdana', 'Andale Mono', monospace;
+  font-size: small;
   color:#EAEFFA;
   text-align:center;
   background-color: #0E1638;
-  padding: 15px;
+  padding: 13px;
   margin-top: 30px;
 }
 
@@ -355,6 +356,7 @@ footer{
   color: #EAEFFA;
   text-decoration: none;
   padding-left: 10px;
+  padding-bottom: 5px;
 }
 
 .fa_custom_footer:hover{
