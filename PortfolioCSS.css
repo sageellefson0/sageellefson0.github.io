@@ -81,6 +81,7 @@ html, body{
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  z-index: 1;
   width: 100%;
   text-align: center;
   background-color: rgba(14, 22, 56, 0.9);
@@ -114,7 +115,7 @@ html, body{
   font-family: 'Monaco', 'Andale Mono', monospace;
   color: #0E1638;
   text-align: center;
-  padding-top: 2%;
+  padding-top: 4%;
   position: relative; /* Add position:relative to the element */
 
 }
