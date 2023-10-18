@@ -280,6 +280,11 @@ span {
   border-left: 1px solid #CCCCCC;
 }
 
+.button:hover{
+  background-color: #C9C9C9;
+
+}
+
 
 
 
