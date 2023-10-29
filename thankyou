@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Thank you for your submission </title>
+<link rel="stylesheet" href="PortfolioCSS.css">
+
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <div>
+        <a href="thankyou.html"> Thank you page</a>
+    </div>
+</body>
+
+</html>
