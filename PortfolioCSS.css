@@ -96,7 +96,9 @@ html, body{
   font-family: 'Monaco', 'Andale Mono', monospace;
   font-size: 18px;
   margin: 2%;
+
 }
+
 
 .navbar a:hover {
   text-decoration: none;
@@ -242,6 +244,55 @@ html, body{
 }
 
 
+.resumeDownload{
+  background-color: #0E1638;
+  text-decoration: none;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+  margin-top:3%;
+  width: 35%;
+  border-radius: 5px;
+  animation: shadowPulse 3s linear infinite; /* Use the "shadowPulse" animation */
+  transition: background-color 0.3s ease-out; /* Transition for the background color on hover */
+
+}
+@keyframes shadowPulse {
+  0% {
+    box-shadow: 0 0 0px #3A4F41; /* Start with a green box shadow */
+  }
+  25% {
+    box-shadow: 0 0 30px #3A4F41; /* Keep the shadow green */
+  }
+  50% {
+    box-shadow: 0 0 50px #3A4F41; /* Increase shadow size */
+  }
+  75% {
+    box-shadow: 0 0 30px #3A4F41; /* Reduce shadow size */
+  }
+  100% {
+    box-shadow: 0 0 0px #3A4F41; /* End with a green box shadow */
+  }
+}
+.resumeDownload a{
+  text-decoration: none;
+  font-family: 'Verdana', 'Andale Mono', monospace;
+  font-size: 18px;
+  color: #EAEFFA;
+  display:inline-block;
+  width:100%;
+  height:100%;
+  padding: 3%;
+
+
+}
+
+.resumeDownload:hover {
+  background-color: #3A4F41; /* Change background color on hover */
+}
+
+
+
 /* SOCIAL ICON BAR*/
 .fa_custom{
   color: #0E1638;
@@ -331,6 +382,8 @@ span {
   border-right: 1px solid #333333;
   border-bottom: 1px solid #333333;
   border-left: 1px solid #CCCCCC;
+  transition: background-color 0.2s ease-out; /* Transition for the background color on hover */
+
 }
 
 .button:hover{
