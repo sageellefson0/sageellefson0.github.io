@@ -475,14 +475,14 @@ footer{
 /* Thank you page styling */
 .thankYouMessage{
   font-family: 'Verdana', 'Andale Mono', monospace;
-  font-size: 30px;
+  font-size: 25px;
   color:#0E1638;
   text-align:center;
-  margin-top: 18%;
+  margin-top: 12%;
 }
 
 .returnHomeBttn{
-  margin-bottom: 205px;
+  margin-bottom: 155px;
 }
 
 
