@@ -538,7 +538,6 @@ padding-top: 3%;
 
 }
 
-
 .certDiv{
   margin-bottom: 50px;
 }
@@ -606,12 +605,13 @@ border-bottom: 5px solid #3A4F41; /* Set the underline properties */
   margin-bottom: 70px;
 }
 
-   
-}
-
 #links {
   display: none;
 }
+   
+}
+
+
 
 
 /* Desktop */
