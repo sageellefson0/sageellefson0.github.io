@@ -257,6 +257,7 @@ html, body{
   transition: background-color 0.3s ease-out; /* Transition for the background color on hover */
 
 }
+
 @keyframes shadowPulse {
   0% {
     box-shadow: 0 0 0px #3A4F41; /* Start with a green box shadow */
@@ -289,7 +290,7 @@ html, body{
 
 }
 
-.resumeDownload:hover, .returnHomeBttn:hover {
+.resumeDownload:hover, .returnHomeBttn:hover, .contactSubmitButton:hover {
   background-color: #3A4F41; /* Change background color on hover */
 }
 
@@ -407,13 +408,13 @@ span {
   border-bottom: solid #0E1638 1px;
   border-width: 7px;
   padding-top: 4%;
-  padding-bottom: 4%;
+  padding-bottom: 4%;  
 }
 
 .contactInput, .contactInputMessage{
   outline: none;
   border: none;
-  width: 40%;
+  width: 50%;
   border-bottom: #0E1638 2px solid;
   background-color: inherit;
   padding: 10px;
@@ -433,16 +434,14 @@ span {
   color:#EAEFFA;
   font-family: 'Verdana', 'Andale Mono', monospace;
   border-radius: 5%;
-  padding: 6px 8px 6px 8px;
-  border-top: 4px solid #0E1638;
-  border-right: 1px solid #333333;
-  border-bottom: 4px solid #0E1638;
-  border-left: 1px solid #CCCCCC;
+  padding: 10px 12px 10px 12px;
+  margin-top: 40px;
+  animation: shadowPulse 3s linear infinite; /* Use the "shadowPulse" animation */
+  transition: background-color 0.3s ease-out; /* Transition for the background color on hover */
+  
 }
 
-.contactSubmitButton:hover{
-  border-bottom: 4px solid #3A4F41;
-}
+
 
 
 
@@ -609,6 +608,9 @@ border-bottom: 5px solid #3A4F41; /* Set the underline properties */
   display: none;
 }
    
+
+.contactInput, .contactInputMessage{
+  width: 70%;
 }
 
 
