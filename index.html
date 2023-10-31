@@ -31,29 +31,12 @@
             }
         }
 
-    
-
-   // Initial state: Menu is closed
-var menuIsOpen = false;
-
-function toggleMenu() {
-    var x = document.getElementById("links");
-    if (!menuIsOpen) {
-        x.style.display = "block";
-    } else {
-        x.style.display = "none";
-    }
-    menuIsOpen = !menuIsOpen; // Toggle the state
-}
-
-function closeMenu() {
-    var x = document.getElementById("links");
-    if (menuIsOpen) {
-        x.style.display = "none";
-        menuIsOpen = false; // Ensure the state is updated
-    }
-}
-
+        function closeMenu() {
+            var x = document.getElementById("links");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            }
+        }
 
         // Add this script to close the menu by default when the page loads
         window.onload = function () {
