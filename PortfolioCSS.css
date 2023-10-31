@@ -600,6 +600,10 @@ border-bottom: 5px solid #3A4F41; /* Set the underline properties */
    
 }
 
+#links {
+  display: none;
+}
+
 
 /* Desktop */
 

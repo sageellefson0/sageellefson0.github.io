@@ -18,11 +18,17 @@
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 <meta name="msapplication-TileColor" content="#2b5797">
 <meta name="theme-color" content="#ffffff">
+
 <script type="text/javascript">
     function onSubmit(token) {
       document.getElementById('my-form').submit();
     }
-    function toggleMenu() {
+
+    // Add this script to close the menu by default when the page loads
+    window.onload = function () {
+            closeMenu();
+        };
+        function toggleMenu() {
             var x = document.getElementById("links");
             if (x.style.display === "block") {
                 x.style.display = "none";
@@ -38,11 +44,7 @@
             }
         }
 
-        // Add this script to close the menu by default when the page loads
-        window.onload = function () {
-            closeMenu();
-        };
-
+    
 
   </script>
 </head>
@@ -57,7 +59,7 @@
 </div>
 
 <nav class="navbar"> 
-    <a href="javascript:void(0);" class="icon" size="small" onclick="toggleMenu()">
+    <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
         <i class="fa fa-bars"></i>
       </a>
       <div id="links">
