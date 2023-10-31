@@ -514,6 +514,48 @@ padding: 10px;
 padding-top: 3%;
 }
 
+.certDiv, .eduDiv{
+  display: block; 
+  float: none; 
+  width: 100%;
+}
+
+.resumeDownload, .returnHomeBttn{
+  width: 50%;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.links {
+  display: none;
+}
+
+.navbar{
+  position: fixed;
+  width: 100%;
+
+}
+
+/* Style navigation menu links */
+.navbar a {
+  color: #EAEFFA;
+  padding: 7px 8px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.navbar a.icon {
+  background: #0E1638;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+
+
+
 .aboutMe::after, .projects::after, .contact::after {
 content: ''; /* Add content to the pseudo-element */
 position: absolute;
