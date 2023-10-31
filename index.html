@@ -17,6 +17,11 @@
 <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 <meta name="msapplication-TileColor" content="#2b5797">
 <meta name="theme-color" content="#ffffff">
+<script type="text/javascript">
+    function onSubmit(token) {
+      document.getElementById('my-form').submit();
+    }
+  </script>
 </head>
 <body>
     <div class="introParentDiv" id="home">
@@ -58,10 +63,10 @@
         My long term goal....errr I don't think I have that figured out yet! I'm willing to go in most any direction if I can be growing and learning along the way.
        <br>
        <br>
-        Check out my Github or the Projects tab for a look at what I'm currently working on! 
+        Check out my GitHub or the Projects tab for a look at what I'm currently working on! 
     </p>
    
-    <a title="Github" href="https://github.com/sageellefson0" class="fa fa-github fa_custom" style="font-size:44px" target ="_blank"></a>
+    <a title="GitHub" href="https://github.com/sageellefson0" class="fa fa-github fa_custom" style="font-size:44px" target ="_blank"></a>
     <a title="LinkedIn" href="https://www.linkedin.com/in/sage-ellefson-aa2405211/" class="fa fa-linkedin-square fa_custom" style="font-size:44px" target ="_blank"></a>
 </div>
 </div>
@@ -115,7 +120,7 @@
     <div class = "projectsDiv"> 
 
         <div class = "ammaDiv">
-        <a title="View on Github" href="https://github.com/sageellefson0/ProjectAMMA"> <img class = "ammaImage" src="images/projectAmmaImage.png" alt="An image of the Appointment Maangement Mobile Application project."> </a>
+        <a title="View on GitHub" href="https://github.com/sageellefson0/ProjectAMMA"> <img class = "ammaImage" src="images/projectAmmaImage.png" alt="An image of the Appointment Maangement Mobile Application project."> </a>
             <span> 
             <br>
             <b> Appointment Management Mobile App </b> <br>
@@ -124,7 +129,7 @@
             </span>
             <br>
             <br>
-            <a class ="button" title="View on Github" href="https://github.com/sageellefson0/ProjectAMMA"> View Code </a>
+            <a class ="button" title="View on GitHub" href="https://github.com/sageellefson0/ProjectAMMA"> View Code </a>
             <br>
             <br>
                 <i class="devicon-java-plain-wordmark"></i>
@@ -134,7 +139,7 @@
             </div>
 
         <div class = "numberGenDiv">
-       <a title="View on Github" href= "https://github.com/sageellefson0/Number_Generator_Game" target="_blank"> <img class = "placeholderImage" src="images/PlaceholderProjectImage.png" alt="A placeholder image for a future project."> </a>
+       <a title="View on GitHub" href= "https://github.com/sageellefson0/Number_Generator_Game" target="_blank"> <img class = "placeholderImage" src="images/PlaceholderProjectImage.png" alt="A placeholder image for a future project."> </a>
         <span>  
             <br>
             <b>Digit Disorder </b> <br>
@@ -144,7 +149,7 @@
             <br>
         </span>
         <br>
-        <a class ="button" title="View on Github" href="https://github.com/sageellefson0/Number_Generator_Game"> View Code </a>
+        <a class ="button" title="View on GitHub" href="https://github.com/sageellefson0/Number_Generator_Game"> View Code </a>
         <br>
         <br>
             <i class="devicon-java-plain-wordmark"></i>
@@ -163,7 +168,7 @@
                 <br>
             </span>
             <br>
-            <a class ="button" title="View on Github" href="https://github.com/sageellefson0/ProjectAMMA"> View Code </a>
+            <a class ="button" title="View on GitHub" href="https://github.com/sageellefson0/ProjectAMMA"> View Code </a>
             <br>
             <br>
                 <i class="devicon-java-plain-wordmark"></i>
@@ -176,7 +181,7 @@
                     Lorem ipsumLorem ipsumLorem ipsumLorem ipsum
                     Lorem ipsumLorem ipsumLorem ipsumLorem ipsum</span>
                     <br>
-                    <a class ="button" title="View on Github" href="https://github.com/sageellefson0/ProjectAMMA"> View Code </a>
+                    <a class ="button" title="View on GitHub" href="https://github.com/sageellefson0/ProjectAMMA"> View Code </a>
                     <br>
                     <br>
                     <i class="devicon-python-plain-wordmark"></i>
@@ -188,7 +193,7 @@
  <h1 class = "contact" id = "contact"> Contact </h1>
 
 <div class ="contactDiv">
-<form action="https://api.web3forms.com/submit" method="POST">
+<form action="https://api.web3forms.com/submit" method="POST" id="my-form">
 
     <input type="hidden" name="access_key" value="5e44dbb4-fb0d-434b-9325-dc320bbde441">
 
@@ -196,15 +201,14 @@
 
     <input class="contactInput" type="email" placeholder="Email" name="email" required><br>
     <textarea class="contactInputMessage" name="message" placeholder="Message" required rows="6" ></textarea><br>
-    <div class="h-captcha" data-captcha="true" data-size="compact" required> </div>
     <input type="hidden" name="redirect" value="https://sageellefson.com/thankyou.html">
-    <button class="contactSubmitButton" type="submit">Submit</button>
+    <button class="contactSubmitButton" type="submit" class="h-captcha" data-sitekey="15d5f54a-f07e-4c5f-9886-1217ae7ea101" data-callback="onSubmit">Submit</button>
 
 </form>
 </div>      
 
 <footer>
-    <a title="Github" href="https://github.com/sageellefson0" class="fa fa-github fa_custom_footer" style="font-size:30px" target ="_blank"></a>
+    <a title="GitHub" href="https://github.com/sageellefson0" class="fa fa-github fa_custom_footer" style="font-size:30px" target ="_blank"></a>
     <a title="LinkedIn"href="https://www.linkedin.com/in/sage-ellefson-aa2405211/" class="fa fa-linkedin-square fa_custom_footer" style="font-size:30px" target ="_blank"></a>
     <br>
     Sage Ellefson © 2023 | sageellefson.com 
