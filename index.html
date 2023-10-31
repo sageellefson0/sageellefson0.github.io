@@ -38,6 +38,18 @@
             }
         }
 
+        function closeMenu() {
+            var x = document.getElementById("links");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            }
+        }
+
+        // Add this script to close the menu by default when the page loads
+        window.onload = function () {
+            closeMenu();
+        };
+
 
   </script>
 </head>
