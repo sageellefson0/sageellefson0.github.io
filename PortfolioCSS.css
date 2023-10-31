@@ -591,11 +591,5 @@ border-bottom: 5px solid #3A4F41; /* Set the underline properties */
 
 }
 
-.introParentDiv{
-  background: url("images/triangleBackground.png") no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-    }
+
 }
