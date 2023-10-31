@@ -536,7 +536,7 @@ padding-top: 3%;
 }
 
 /* Style navigation menu links */
-.navbar a {
+#links a {
   color: #EAEFFA;
   padding: 7px 8px;
   text-decoration: none;
