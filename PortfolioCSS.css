@@ -535,10 +535,16 @@ padding-top: 3%;
 
 }
 
+.certDiv{
+  margin-bottom: 50px;
+}
+
+.resumeDownload{
+  margin-bottom: 50px;
+}
 /* Style navigation menu links */
 #links a {
   color: #EAEFFA;
-  padding: 7px 8px;
   text-decoration: none;
   font-size: 17px;
   display: block;
