@@ -531,7 +531,7 @@ padding-top: 3%;
 
 .navbar{
   position: fixed;
-  width: 100%;  
+  width: 100%;
   justify-content: center;
 
 }
@@ -553,7 +553,6 @@ padding-top: 3%;
 
 /* Style the hamburger menu */
 .navbar a.icon {
-  background: #0E1638;
   display: block;
   position: absolute;
   top: 0;
