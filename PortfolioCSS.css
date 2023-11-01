@@ -537,8 +537,6 @@ padding-top: 3%;
 .navbar{
   width: 100%;
   justify-content: center;
-  padding: 0;
-  margin: 0;
 
 }
 
@@ -630,7 +628,6 @@ border-bottom: 5px solid #3A4F41; /* Set the underline properties */
 
 
 /* Desktop */
-
 
 @media screen and (min-width: 768px) {
   a.icon {
