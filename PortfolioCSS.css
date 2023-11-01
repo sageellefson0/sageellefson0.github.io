@@ -544,7 +544,10 @@ padding-top: 3%;
   padding-top: 6px;
   padding-bottom: 6px;
 
+
 }
+
+
 
 .certDiv{
   margin-bottom: 50px;
@@ -628,6 +631,10 @@ border-bottom: 5px solid #3A4F41; /* Set the underline properties */
   margin-bottom: 20px;
 
 
+}
+
+.aboutMe, .projects{
+  margin-top:50px;
 }
 
 
