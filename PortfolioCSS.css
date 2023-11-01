@@ -491,6 +491,13 @@ footer{
 }
 
 
+/* Desktop */
+
+@media screen and (min-width: 768px) {
+  a.icon {
+      display: none;
+  }
+}
 
 
 
@@ -623,14 +630,5 @@ border-bottom: 5px solid #3A4F41; /* Set the underline properties */
 
 
 }
-
-
-
-
-/* Desktop */
-
-@media screen and (min-width: 768px) {
-  a.icon {
-      display: none;
-  }
 }
+
