@@ -447,9 +447,6 @@ span {
 
 
 
-
-
-
 /* FOOTER */
 footer{
   font-family: 'Verdana', 'Andale Mono', monospace;
@@ -459,6 +456,7 @@ footer{
   background-color: #0E1638;
   padding: 13px;
   margin-top: 30px;
+  bottom: 0;
 }
 
 .fa_custom_footer{
