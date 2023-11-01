@@ -578,7 +578,7 @@ padding-top: 3%;
 
 
 
-.aboutMe::after, .projects::after, .contact::after {
+.aboutMe::after, .projects::after, .contact::after, .aboutTextHeader::after {
 content: ''; /* Add content to the pseudo-element */
 position: absolute;
 bottom: -10%; /* Position it at the bottom of the element */
@@ -634,5 +634,7 @@ border-bottom: 5px solid #3A4F41; /* Set the underline properties */
 
 
 }
+
+
 }
 
