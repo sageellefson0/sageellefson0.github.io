@@ -526,7 +526,7 @@ padding-top: 3%;
   width: 100%;
 }
 
-.resumeDownload, .returnHomeBttn{
+.resumeDownload{
   width: 50%;
 }
 
@@ -626,6 +626,19 @@ border-bottom: 5px solid #3A4F41; /* Set the underline properties */
 
 
 }
+
+.returnHomeBttn{
+  width: 60%;
+  margin-bottom: 300px;
+}
+
+.thankYouMessage{
+  margin-top: 223px;
+}
+
+
+
+
 
 
 
