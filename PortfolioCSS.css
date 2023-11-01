@@ -1,9 +1,15 @@
 /* BODY */
 
+html{
+  height: 100%;
+}
+
+
 html, body{
     margin: 0px;
     padding: 0px;
     background-color: #EAEFFA;
+    height: auto;
     /*height: 100%; CAUSES STICKY NAV NOT TO WORK - DO NOT UNCOMMENT TILL ISSUE IS*/ 
 
   }
