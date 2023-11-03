@@ -28,14 +28,19 @@
     window.onload = function () {
             closeMenu();
         };
-        function toggleMenu() {
-            var x = document.getElementById("links");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
+    function toggleMenu() {
+        var navbar = document.querySelector(".navbar");
+        var links = document.getElementById("links");
+
+        if (navbar.style.display === "block" || navbar.style.display === "") {
+            navbar.style.display = "none";
+            links.style.display = "none";
+        } else {
+            navbar.style.display = "block";
+            links.style.display = "block";
         }
+    }
+  
 
         function closeMenu() {
             var x = document.getElementById("links");
@@ -59,9 +64,7 @@
 </div>
 
 <nav class="navbar"> 
-    <a href="javascript:void(0);" class="mobile-icon" onclick="toggleMenu()" style="font-size:24px">
-        <i class="fa fa-bars"></i>
-      </a>
+
       <div id="links">
         <a href="#home" onclick="closeMenu()">Home</a>
         <a href="#about" onclick="closeMenu()">About</a>
@@ -71,6 +74,10 @@
     </div>
  
 </nav>
+
+<a href="javascript:void(0);" class="icon" onclick="toggleMenu()" style="font-size:px">
+    <i class="fa fa-bars"></i>
+  </a>
 
 
 <h1 class = "aboutMe" id = "about"> About Me </h1>

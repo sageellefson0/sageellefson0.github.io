@@ -536,9 +536,9 @@ padding-top: 3%;
   margin: 0;
   padding-top: 6px;
   padding-bottom: 6px;
-  bottom: 0; 
+  top: 0; 
   position: fixed;
-
+  display:none
 }
 
 
@@ -560,14 +560,23 @@ padding-top: 3%;
 }
 
 /* Style the hamburger menu */
-.navbar a.icon {
+.icon {
   display: block;
-  justify-content: center;
-  top: 0;
+  color: #EAEFFA;
+  font-size: 25px;
+  text-align: center;
+  top: 10px;
+  left: 10px;
+  background-color: #0E1638;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 0;
+  margin: 0;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  position: fixed;
 }
-
-
-
 
 
 .aboutMe::after, .projects::after, .contact::after, .aboutTextHeader::after {
@@ -644,48 +653,4 @@ border-bottom: 5px solid #3A4F41; /* Set the underline properties */
 
 
 }
-
-/* Existing styles for the mobile icon */
-.mobile-icon {
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  background-color: #3A4F41;
-  color: #EAEFFA;
-  border-radius: 50%;
-  font-size: 24px;
-  padding: 10px;
-  z-index: 2;
-  cursor: pointer;
-  display: none; /* Hide the mobile icon by default */
-}
-
-/* Updated styles for the expanded navbar */
-.navbar {
-  /* Existing styles for the expanded navbar */
-}
-
-@media screen and (max-width: 768px) {
-  /* Show the mobile icon on mobile devices */
-  .mobile-icon {
-    display: block;
-  }
-
-  /* Hide the expanded navbar links by default on mobile devices */
-  .navbar {
-    display: none;
-  }
-
-  /* Show the expanded navbar links when the mobile icon is clicked */
-  .navbar.active {
-    display: block;
-  }
-
-  /* Restyle the mobile icon when active */
-  .mobile-icon.active {
-    background-color: #3A4F41;
-  }
-}
-
-
 
