@@ -2,6 +2,7 @@
 
 html{
   scroll-behavior:smooth;
+  height: auto;
 
 
 }
@@ -452,9 +453,23 @@ footer{
   color:#EAEFFA;
   text-align:center;
   background-color: #0E1638;
-  margin-top: 30px;
   padding-top: 13px;
   padding-bottom: 13px;
+  margin-top: 30px;
+  bottom: 0;
+  position: relative;
+  width:100%;
+}
+
+.thankYouFooter{
+  font-family: 'Verdana', 'Andale Mono', monospace;
+  font-size: small;
+  color:#EAEFFA;
+  text-align:center;
+  background-color: #0E1638;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  margin-top: 30px;
   bottom: 0;
   position: absolute;
   width:100%;
