@@ -453,11 +453,12 @@ footer{
   color:#EAEFFA;
   text-align:center;
   background-color: #0E1638;
-  padding: 13px;
   margin-top: 30px;
+  padding-top: 13px;
+  padding-bottom: 13px;
   bottom: 0;
-  position: fixed;
-  width: 100%;
+  position:static;
+  width:100%;
 }
 
 .fa_custom_footer{
