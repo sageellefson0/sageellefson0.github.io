@@ -15,6 +15,11 @@ html, body{
     /*height: 100%; CAUSES STICKY NAV NOT TO WORK - DO NOT UNCOMMENT TILL ISSUE IS*/ 
 
   }
+  .thankYouBody, .thankYouHTML{
+    height: auto;
+    scroll-behavior:smooth;
+
+  }
 
   
   
