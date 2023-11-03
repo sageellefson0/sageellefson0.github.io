@@ -1,122 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<title> Sage Ellefson</title>
-<link rel="stylesheet" href="PortfolioCSS.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title> Sage Ellefson</title>
 
-<script src="https://web3forms.com/client/script.js" async defer></script>
+    <link rel="stylesheet" href="PortfolioCSS.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 
-<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#2b5797">
-<meta name="theme-color" content="#ffffff">
+    <script src="https://web3forms.com/client/script.js" async defer></script>
 
-<script type="text/javascript">
-    function onSubmit(token) {
-      document.getElementById('my-form').submit();
-    }
-
-    // Add this script to close the menu by default when the page loads
-    window.onload = function () {
+    <script type="text/javascript">
+        function onSubmit(token) {
+            document.getElementById('my-form').submit();
+        }
+        // Closes the menu by default when the page loads
+        window.onload = function () {
             closeMenu();
         };
-    function toggleMenu() {
-        var navbar = document.querySelector(".navbar");
-        var links = document.getElementById("links");
+        // Toggles the navigation menu
+        function toggleMenu() {
+            var navbar = document.querySelector(".navbar");
+            var links = document.getElementById("links");
 
-        if (navbar.style.display === "block" || navbar.style.display === "") {
-            navbar.style.display = "none";
-            links.style.display = "none";
-
-        } else {
-            links.style.display = "block";
-            navbar.style.display = "block";
-
+            if (navbar.style.display === "block" || navbar.style.display === "") {
+                navbar.style.display = "none";
+                links.style.display = "none";
+            } else {
+                links.style.display = "block";
+                navbar.style.display = "block";
+            }
         }
-    }
-  
-
+        // Closes the navigation menu
         function closeMenu() {
             var links = document.getElementById("links");
             var navbar = document.querySelector(".navbar");
             if (links.style.display === "block") {
                 links.style.display = "none";
                 navbar.style.display = "none";
-
-
             }
         }
-
-    
-
-  </script>
+    </script>
 </head>
+
 <body>
+
+     <!-- Intro Text Section -->
     <div class="introParentDiv" id="home">
 
-    <div class = "textDiv">
-        <h1 class ="name"> Sage Ellefson</h1>
-        <h2 class ="introLine"> Full-stack software developer bringing ideas to life. </h2>
+        <div class="textDiv">
+            <h1 class="name"> Sage Ellefson</h1>
+            <h2 class="introLine"> Full-stack software developer bringing ideas to life. </h2>
+        </div>
+
     </div>
 
-</div>
 
-<nav class="navbar"> 
+    <!-- Navbar  Section -->
+    <nav class="navbar">
 
-      <div id="links">
-        <a href="#home" onclick="closeMenu()">Home</a>
-        <a href="#about" onclick="closeMenu()">About</a>
-        <a href="assets/Resume_SageEllefson.pdf" target="_blank" onclick="closeMenu()">Resume</a>
-        <a href="#projects" onclick="closeMenu()">Projects</a>
-        <a href="#contact" onclick="closeMenu()">Contact</a>
+        <div id="links">
+            <a href="#home" onclick="closeMenu()">Home</a>
+            <a href="#about" onclick="closeMenu()">About</a>
+            <a href="assets/Resume_SageEllefson.pdf" target="_blank" onclick="closeMenu()">Resume</a>
+            <a href="#projects" onclick="closeMenu()">Projects</a>
+            <a href="#contact" onclick="closeMenu()">Contact</a>
+        </div>
+
+    </nav>
+
+    <a href="javascript:void(0);" class="icon" onclick="toggleMenu()" style="font-size:px">
+        <i class="fa fa-bars"></i>
+    </a>
+
+
+    <!-- About Section -->
+    <h1 class="aboutMe" id="about"> About Me </h1>
+    <div class="aboutDiv">
+
+        <!-- About Image Section -->
+        <div class="imageDiv">
+            <img class="headshotPic" src="images/headshotPic.jpg" alt="A photo of Sage">
+        </div>
+
+        <!-- About Text Section -->
+        <div class="aboutTextDiv">
+            <p class="aboutText"> My name is Sage Ellefson and I'm an aspiring full-stack software developer and a
+                recent graduate from Western Governor's University with a Bachelors of Science in Software Engineering.
+                <br>
+                <br>
+                I'm an eager learner and always looking to expand my development toolkit.
+                I'm open to most any experience that will allow me to grow as a programmer.
+                The technologies I'm primarily using right now are Java, Python, HTML, CSS, and MySQL. The languages I'm
+                actively learning include JavaScript, PHP, and Ruby.
+                <br>
+                <br>
+                My long term goal....errr I don't think I have that figured out yet! I'm willing to go in most any
+                direction if I can be growing and learning along the way.
+                <br>
+                <br>
+                Check out my GitHub or the Projects tab for a look at what I'm currently working on!
+            </p>
+
+            <a title="GitHub" href="https://github.com/sageellefson0" class="fa fa-github fa_custom"
+                style="font-size:44px" target="_blank"></a>
+            <a title="LinkedIn" href="https://www.linkedin.com/in/sage-ellefson-aa2405211/"
+                class="fa fa-linkedin-square fa_custom" style="font-size:44px" target="_blank"></a>
+        </div>
     </div>
- 
-</nav>
-
-<a href="javascript:void(0);" class="icon" onclick="toggleMenu()" style="font-size:px">
-    <i class="fa fa-bars"></i>
-  </a>
 
 
-<h1 class = "aboutMe" id = "about"> About Me </h1>
-
-
-<div class = "aboutDiv"> 
-
-<div class ="imageDiv">
-    <img class="headshotPic" src="images/headshotPic.jpg" alt="A photo of Sage">
-</div>
-
-<div class="aboutTextDiv">
-    <p class = "aboutText"> My name is Sage Ellefson and I'm an aspiring full-stack software developer and a recent graduate from Western Governor's University with a Bachelors of Science in Software Engineering. 
-        <br>
-        <br>
-        I'm an eager learner and always looking to expand my development toolkit.
-        I'm open to most any experience that will allow me to grow as a programmer. 
-        The technologies I'm primarily using right now are Java, Python, HTML, CSS, and MySQL. The languages I'm actively learning include JavaScript, PHP, and Ruby.
-        <br>
-        <br> 
-        My long term goal....errr I don't think I have that figured out yet! I'm willing to go in most any direction if I can be growing and learning along the way.
-       <br>
-       <br>
-        Check out my GitHub or the Projects tab for a look at what I'm currently working on! 
-    </p>
-   
-    <a title="GitHub" href="https://github.com/sageellefson0" class="fa fa-github fa_custom" style="font-size:44px" target ="_blank"></a>
-    <a title="LinkedIn" href="https://www.linkedin.com/in/sage-ellefson-aa2405211/" class="fa fa-linkedin-square fa_custom" style="font-size:44px" target ="_blank"></a>
-</div>
-</div>
-<div class="certEduDiv">
+    <!-- Education and Certifications section -->
+    <div class="certEduDiv">
         <div class="eduDiv">
-            <h2 class ="aboutTextHeader">Education</h2>
+            <h2 class="aboutTextHeader">Education</h2>
             <img class="eduImg" src="images/WGU.jpg" alt="Western Governor's Univeristy Logo">
             <br>
             <b>Bachelor of Science, Software Engineering</b>
@@ -124,140 +130,162 @@
             September 2023
             <br>
             <i>Western Governor's University, Salt Lake City, UT (Remote)</i>
-    
+
         </div>
         <div class="certDiv">
-    <p class ="aboutTextCerts">
-        <h2 class ="aboutTextHeader">Certifications</h2>
-        <div class="certImages">
-        <img class="certImg" src="images/AWS.jpg" alt="AWS Certification Logo">
-        <img class="certImg" src="images/ITIL.jpg" alt="ITIL Certification Logo">
-        <img class="certImg" src="images/CompTIA.jpg" alt="CompTIA Project+ Certification Logo">
-        <img class="certImg" src="images/Google.jpg" alt="Google Certification Logo">
+            <p class="aboutTextCerts">
+            <h2 class="aboutTextHeader">Certifications</h2>
+            <div class="certImages">
+                <img class="certImg" src="images/AWS.jpg" alt="AWS Certification Logo">
+                <img class="certImg" src="images/ITIL.jpg" alt="ITIL Certification Logo">
+                <img class="certImg" src="images/CompTIA.jpg" alt="CompTIA Project+ Certification Logo">
+                <img class="certImg" src="images/Google.jpg" alt="Google Certification Logo">
+            </div>
+            <div class="certList">
+                &#x2022; AWS Cloud Practioner
+                <br>
+                <br>
+                &#x2022; IT Information Library Foundations
+                <br>
+                <br>
+                &#x2022; CompTIA Project+
+                <br>
+                <br>
+                &#x2022; Google IT Support Professional
+                <br>
+            </div>
+            </p>
         </div>
-        <div class="certList">
-        &#x2022; AWS Cloud Practioner
-        <br>
-        <br>
-        &#x2022; IT Information Library Foundations
-        <br>
-        <br>
-        &#x2022; CompTIA Project+
-        <br>
-        <br>
-        &#x2022; Google IT Support Professional
-        <br>
     </div>
-    </p>
+
     </div>
-</div>
 
-</div>
-<section class="resumeDownload">
-    <a href="assets/Resume_SageEllefson.docx" type="button" download>Download My Current Resume</a>
-</section>
 
-    <h1 class = "projects" id = "projects"> Projects </h1>
+    <!-- Resume download button -->
+    <section class="resumeDownload">
+        <a href="assets/Resume_SageEllefson.docx" type="button" download>Download My Current Resume</a>
+    </section>
 
-    
 
-    <div class = "projectsDiv"> 
+    <!-- Project Sections -->
+    <h1 class="projects" id="projects"> Projects </h1>
 
-        <div class = "ammaDiv">
-        <a title="View on GitHub" href="https://github.com/sageellefson0/ProjectAMMA"> <img class = "ammaImage" src="images/projectAmmaImage.png" alt="An image of the Appointment Maangement Mobile Application project."> </a>
-            <span> 
-            <br>
-            <b> Appointment Management Mobile App </b> <br>
-            <br>
-            A mobile application used to manage appointments and clients. Includes search, CRUD operations, reports, notifications, and sharing features. Implements the Room database. <br>
+    <!-- Project #1 Section -->
+    <div class="projectsDiv">
+
+        <div class="ammaDiv">
+            <a title="View on GitHub" href="https://github.com/sageellefson0/ProjectAMMA"> <img class="ammaImage"
+                    src="images/projectAmmaImage.png"
+                    alt="An image of the Appointment Maangement Mobile Application project."> </a>
+            <span>
+                <br>
+                <b> Appointment Management Mobile App </b> <br>
+                <br>
+                A mobile application used to manage appointments and clients. Includes search, CRUD operations, reports,
+                notifications, and sharing features. Implements the Room database. <br>
             </span>
             <br>
             <br>
-            <a class ="button" title="View on GitHub" href="https://github.com/sageellefson0/ProjectAMMA"> View Code </a>
+            <a class="button" title="View on GitHub" href="https://github.com/sageellefson0/ProjectAMMA"> View Code </a>
             <br>
             <br>
-                <i class="devicon-java-plain-wordmark"></i>
-                <i class="devicon-android-plain-wordmark"></i>
+            <i class="devicon-java-plain-wordmark"></i>
+            <i class="devicon-android-plain-wordmark"></i>
 
-    
-            </div>
+        </div>
 
-        <div class = "numberGenDiv">
-       <a title="View on GitHub" href= "https://github.com/sageellefson0/Number_Generator_Game" target="_blank"> <img class = "placeholderImage" src="images/PlaceholderProjectImage.png" alt="A placeholder image for a future project."> </a>
-        <span>  
+        <!-- Project #2 Section -->
+        <div class="numberGenDiv">
+            <a title="View on GitHub" href="https://github.com/sageellefson0/Number_Generator_Game" target="_blank">
+                <img class="placeholderImage" src="images/PlaceholderProjectImage.png"
+                    alt="A placeholder image for a future project."> </a>
+            <span>
+                <br>
+                <b>Digit Disorder </b> <br>
+                <br>
+                A fun number ordering game. <br>
+                The object is to place 10-20 randomly generated numbers from 1-1000 in the correct order. Optionally
+                tracks game statistics by printing to a textfile. <br>
+                <br>
+            </span>
             <br>
-            <b>Digit Disorder </b> <br>
+            <a class="button" title="View on GitHub" href="https://github.com/sageellefson0/Number_Generator_Game"> View
+                Code </a>
             <br>
-             A fun number ordering game. <br>
-            The object is to place 10-20 randomly generated numbers from 1-1000 in the correct order. Optionally tracks game statistics by printing to a textfile. <br>
             <br>
-        </span>
-        <br>
-        <a class ="button" title="View on GitHub" href="https://github.com/sageellefson0/Number_Generator_Game"> View Code </a>
-        <br>
-        <br>
             <i class="devicon-java-plain-wordmark"></i>
         </div>
 
-        <div class = "partProductDiv">
-            <img class = "partProductImage" src="images/PartProductProjectImage.png" alt="An image of the Inventory Management System project.">
-            <span> 
+        <!-- Project #3 Section -->
+        <div class="partProductDiv">
+            <img class="partProductImage" src="images/PartProductProjectImage.png"
+                alt="An image of the Inventory Management System project.">
+            <span>
                 <br>
                 <b> Inventory Management </b>
                 <br>
                 <br>
-                An inventory management solution for managing parts and products within. 
+                An inventory management solution for managing parts and products within.
                 The application includes search, tableviews, part and product association, and static CRUD operations.
                 <br>
                 <br>
             </span>
             <br>
-            <a class ="button" title="View on GitHub" href="https://github.com/sageellefson0/ProjectAMMA"> View Code </a>
+            <a class="button" title="View on GitHub" href="https://github.com/sageellefson0/ProjectAMMA"> View Code </a>
             <br>
             <br>
-                <i class="devicon-java-plain-wordmark"></i>
-            </div>
-
-            <div class = "pythonProjectDiv">
-                <img class = "pythonImage" src="images/PlaceholderProjectImage.png" alt="An image of the Inventory Management System project.">
-                <span> Lorem ipsumLorem ipsumLorem ipsumLorem ipsum
-                    Lorem ipsumLorem ipsumLorem ipsumLorem ipsum
-                    Lorem ipsumLorem ipsumLorem ipsumLorem ipsum
-                    Lorem ipsumLorem ipsumLorem ipsumLorem ipsum</span>
-                    <br>
-                    <a class ="button" title="View on GitHub" href="https://github.com/sageellefson0/ProjectAMMA"> View Code </a>
-                    <br>
-                    <br>
-                    <i class="devicon-python-plain-wordmark"></i>
-                </div>
-            </div>
-
+            <i class="devicon-java-plain-wordmark"></i>
         </div>
 
- <h1 class = "contact" id = "contact"> Contact </h1>
+        <!-- Project #4 Section -->
+        <div class="pythonProjectDiv">
+            <img class="pythonImage" src="images/PlaceholderProjectImage.png"
+                alt="An image of the Inventory Management System project.">
+            <span> Lorem ipsumLorem ipsumLorem ipsumLorem ipsum
+                Lorem ipsumLorem ipsumLorem ipsumLorem ipsum
+                Lorem ipsumLorem ipsumLorem ipsumLorem ipsum
+                Lorem ipsumLorem ipsumLorem ipsumLorem ipsum</span>
+            <br>
+            <a class="button" title="View on GitHub" href="https://github.com/sageellefson0/ProjectAMMA"> View Code </a>
+            <br>
+            <br>
+            <i class="devicon-python-plain-wordmark"></i>
+        </div>
+    </div>
 
-<div class ="contactDiv">
-<form action="https://api.web3forms.com/submit" method="POST" id="my-form">
+    </div>
 
-    <input type="hidden" name="access_key" value="5e44dbb4-fb0d-434b-9325-dc320bbde441">
 
-    <input class="contactInput" type="text" placeholder="Full Name" name="name" required><br>
+    <!-- Contact Section -->
+    <h1 class="contact" id="contact"> Contact </h1>
 
-    <input class="contactInput" type="email" placeholder="Email" name="email" required><br>
-    <textarea class="contactInputMessage" name="message" placeholder="Message" required rows="6" ></textarea><br>
-    <input type="hidden" name="redirect" value="https://sageellefson.com/thankyou.html">
-    <button class="contactSubmitButton" type="submit" class="h-captcha" data-sitekey="15d5f54a-f07e-4c5f-9886-1217ae7ea101" data-callback="onSubmit">Send Message</button>
+    <div class="contactDiv">
+        <form action="https://api.web3forms.com/submit" method="POST" id="my-form">
 
-</form>
-</div>      
+            <input type="hidden" name="access_key" value="5e44dbb4-fb0d-434b-9325-dc320bbde441">
 
-<footer>
-    <a title="GitHub" href="https://github.com/sageellefson0" class="fa fa-github fa_custom_footer" style="font-size:30px" target ="_blank"></a>
-    <a title="LinkedIn"href="https://www.linkedin.com/in/sage-ellefson-aa2405211/" class="fa fa-linkedin-square fa_custom_footer" style="font-size:30px" target ="_blank"></a>
-    <br>
-    Sage Ellefson © 2023 | sageellefson.com 
+            <input class="contactInput" type="text" placeholder="Full Name" name="name" required><br>
 
-</footer>
+            <input class="contactInput" type="email" placeholder="Email" name="email" required><br>
+            <textarea class="contactInputMessage" name="message" placeholder="Message" required rows="6"></textarea><br>
+            <input type="hidden" name="redirect" value="https://sageellefson.com/thankyou.html">
+            <button class="contactSubmitButton" type="submit" class="h-captcha"
+                data-sitekey="15d5f54a-f07e-4c5f-9886-1217ae7ea101" data-callback="onSubmit">Send Message</button>
+
+        </form>
+    </div>
+
+
+    <!-- Footer Section -->
+    <footer>
+        <a title="GitHub" href="https://github.com/sageellefson0" class="fa fa-github fa_custom_footer"
+            style="font-size:30px" target="_blank"></a>
+        <a title="LinkedIn" href="https://www.linkedin.com/in/sage-ellefson-aa2405211/"
+            class="fa fa-linkedin-square fa_custom_footer" style="font-size:30px" target="_blank"></a>
+        <br>
+        Sage Ellefson © 2023 | sageellefson.com
+
+    </footer>
 
 </body>
 
