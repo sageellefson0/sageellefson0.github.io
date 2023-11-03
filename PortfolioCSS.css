@@ -3,7 +3,6 @@
 html{
   scroll-behavior:smooth;
   min-height: 100vh;
-
 }
 
 
@@ -13,7 +12,6 @@ html, body{
     background-color: #EAEFFA;
     height: auto;
   
-
 }
 body{
   position: relative; 
