@@ -13,6 +13,7 @@ html, body{
     padding: 0px;
     background-color: #EAEFFA;
     height: auto;
+    overflow:auto;
 }
 
   
