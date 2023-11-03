@@ -14,7 +14,10 @@ html, body{
     background-color: #EAEFFA;
     height: auto;
     overflow:auto;
+    position: relative;
+
 }
+
 
   
   
@@ -405,6 +408,7 @@ span {
   text-align: center;
   width: 40%;
   margin: auto;
+  margin-bottom: 100px;
   background-color: #EAEFFA;
   border-top: solid #0E1638 1px;
   border-bottom: solid #0E1638 1px;
@@ -440,7 +444,7 @@ span {
   margin-top: 40px;
   animation: shadowPulse 3s linear infinite; /* Use the "shadowPulse" animation */
   transition: background-color 0.3s ease-out; /* Transition for the background color on hover */
-  
+
 }
 
 
@@ -456,11 +460,14 @@ footer{
   background-color: #0E1638;
   padding-top: 13px;
   padding-bottom: 13px;
-  margin-top: 30px;
   margin-bottom: 0;
   bottom: 0;
-  position: relative;
+  position: absolute;
   width:100%;
+}
+
+.wrapper{
+position: relative;
 }
 
 .thankYouFooter{
