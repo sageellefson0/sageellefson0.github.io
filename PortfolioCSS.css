@@ -1,7 +1,6 @@
 /* BODY */
 
 html{
-  height: 100%;
   scroll-behavior:smooth;
 
 
@@ -457,7 +456,7 @@ footer{
   padding-top: 13px;
   padding-bottom: 13px;
   bottom: 0;
-  position:static;
+  position: absolute;
   width:100%;
 }
 
