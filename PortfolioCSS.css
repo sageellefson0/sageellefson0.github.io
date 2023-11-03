@@ -530,6 +530,17 @@ padding-top: 3%;
   width: 50%;
 }
 
+.navbar{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  bottom: 0; 
+  position: fixed;
+
+}
+
 
 
 .certDiv{
@@ -539,7 +550,7 @@ padding-top: 3%;
 .resumeDownload{
   margin-bottom: 50px;
 }
-/* Style navigation menu links 
+/* Style navigation menu links */
 #links a {
   color: #EAEFFA;
   text-decoration: none;
@@ -548,22 +559,12 @@ padding-top: 3%;
   padding-bottom: 5px;
 }
 
-/* Style the hamburger menu 
+/* Style the hamburger menu */
 .navbar a.icon {
   display: block;
   justify-content: center;
   top: 0;
 }
-
-.navbar{
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  padding-top: 6px;
-  padding-bottom: 6px;
-
-} */
-
 
 
 
@@ -641,45 +642,50 @@ border-bottom: 5px solid #3A4F41; /* Set the underline properties */
 }
 
 
-/* Add this code to your CSS file */
 
-/* Mobile Navigation Bar */
-.navbar{
+}
+
+/* Existing styles for the mobile icon */
+.mobile-icon {
   position: fixed;
-  top: 5px;
-  left: 20px;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: rgba(14, 22, 56, 0.9);
-  z-index: 2;
-  text-align: center;
-  justify-content: center;
-  cursor: pointer;
-  display: block;
-
-}
-
-.navbar a.icon {
-  display: block;
-  justify-content: center;
-}
-
-#links a {
+  bottom: 10px;
+  right: 10px;
+  background-color: #3A4F41;
   color: #EAEFFA;
-  font-size: 18px;
-  text-decoration: none;
-  background-color:rgba(14, 22, 56, 0.9);
-  padding: 0;
-  margin: 0;
-  width: 100%;
+  border-radius: 50%;
+  font-size: 24px;
   padding: 10px;
-  display: inline-block;
+  z-index: 2;
+  cursor: pointer;
+  display: none; /* Hide the mobile icon by default */
+}
+
+/* Updated styles for the expanded navbar */
+.navbar {
+  /* Existing styles for the expanded navbar */
+}
+
+@media screen and (max-width: 768px) {
+  /* Show the mobile icon on mobile devices */
+  .mobile-icon {
+    display: block;
+  }
+
+  /* Hide the expanded navbar links by default on mobile devices */
+  .navbar {
+    display: none;
+  }
+
+  /* Show the expanded navbar links when the mobile icon is clicked */
+  .navbar.active {
+    display: block;
+  }
+
+  /* Restyle the mobile icon when active */
+  .mobile-icon.active {
+    background-color: #3A4F41;
+  }
 }
 
 
-
-
-
-}
 
