@@ -569,13 +569,13 @@ padding-top: 3%;
   left: 10px;
   background-color: #0E1638;
   width: 50px;
-  height: 50px;
+  height: 40px;
   border-radius: 50%;
   padding: 0;
   margin: 0;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding-top: 11px;
   position: fixed;
+  z-index: 2;
 }
 
 
