@@ -4,6 +4,7 @@ html{
   height: 100%;
   scroll-behavior:smooth;
 
+
 }
 
 
@@ -455,6 +456,8 @@ footer{
   padding: 13px;
   margin-top: 30px;
   bottom: 0;
+  position: fixed;
+  width: 100%;
 }
 
 .fa_custom_footer{
@@ -476,10 +479,6 @@ footer{
   color:#0E1638;
   text-align:center;
   margin-top: 12%;
-}
-
-.returnHomeBttn{
-  margin-bottom: 155px;
 }
 
 
@@ -634,7 +633,7 @@ border-bottom: 5px solid #3A4F41; /* Set the underline properties */
 
 
 }
-
+/*
 .returnHomeBttn{
   width: 60%;
   margin-bottom: 155px;
@@ -642,7 +641,7 @@ border-bottom: 5px solid #3A4F41; /* Set the underline properties */
 
 .thankYouMessage{
   margin-top: 155px;
-}
+} */
 
 .introParentDiv{
   height: 608px;
