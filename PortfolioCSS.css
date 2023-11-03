@@ -530,15 +530,6 @@ padding-top: 3%;
   width: 50%;
 }
 
-.navbar{
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  padding-top: 6px;
-  padding-bottom: 6px;
-
-}
-
 
 
 .certDiv{
@@ -548,7 +539,7 @@ padding-top: 3%;
 .resumeDownload{
   margin-bottom: 50px;
 }
-/* Style navigation menu links */
+/* Style navigation menu links 
 #links a {
   color: #EAEFFA;
   text-decoration: none;
@@ -557,12 +548,22 @@ padding-top: 3%;
   padding-bottom: 5px;
 }
 
-/* Style the hamburger menu */
+/* Style the hamburger menu 
 .navbar a.icon {
   display: block;
   justify-content: center;
   top: 0;
 }
+
+.navbar{
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  padding-top: 6px;
+  padding-bottom: 6px;
+
+} */
+
 
 
 
@@ -646,18 +647,22 @@ border-bottom: 5px solid #3A4F41; /* Set the underline properties */
 .navbar{
   position: fixed;
   top: 5px;
-  right: 20px;
-  width: 50px;
-  height: 50px;
+  left: 20px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background-color: rgba(14, 22, 56, 0.9);
   z-index: 2;
   text-align: center;
-  align-items: center;
   justify-content: center;
   cursor: pointer;
   display: block;
 
+}
+
+.navbar a.icon {
+  display: block;
+  justify-content: center;
 }
 
 #links a {
@@ -665,8 +670,11 @@ border-bottom: 5px solid #3A4F41; /* Set the underline properties */
   font-size: 18px;
   text-decoration: none;
   background-color:rgba(14, 22, 56, 0.9);
-  padding: 10px;
+  padding: 0;
+  margin: 0;
   width: 100%;
+  padding: 10px;
+  display: inline-block;
 }
 
 
