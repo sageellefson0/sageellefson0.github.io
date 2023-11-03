@@ -33,8 +33,9 @@
         var links = document.getElementById("links");
 
         if (navbar.style.display === "block" || navbar.style.display === "") {
-            navbar.style.display = "none";
             links.style.display = "none";
+            navbar.style.display = "none";
+
         } else {
             links.style.display = "block";
             navbar.style.display = "block";
@@ -44,9 +45,13 @@
   
 
         function closeMenu() {
-            var x = document.getElementById("links");
-            if (x.style.display === "block") {
-                x.style.display = "none";
+            var links = document.getElementById("links");
+            var navbar = document.querySelector(".navbar");
+            if (links.style.display === "block") {
+                links.style.display = "none";
+                navbar.style.display = "none";
+
+
             }
         }
 
