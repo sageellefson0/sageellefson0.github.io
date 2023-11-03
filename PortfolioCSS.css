@@ -536,9 +536,6 @@ padding-top: 3%;
   margin: 0;
   padding-top: 6px;
   padding-bottom: 6px;
-  top: auto; 
-  position: fixed;
-  bottom: 0; 
 
 }
 
@@ -641,6 +638,38 @@ border-bottom: 5px solid #3A4F41; /* Set the underline properties */
   height: 608px;
 
 }
+
+
+/* Add this code to your CSS file */
+
+/* Mobile Navigation Bar */
+.navbar{
+  position: fixed;
+  top: 5px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(14, 22, 56, 0.9);
+  z-index: 2;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  display: block;
+
+}
+
+#links a {
+  color: #EAEFFA;
+  font-size: 18px;
+  text-decoration: none;
+  background-color:rgba(14, 22, 56, 0.9);
+  padding: 10px;
+  width: 100%;
+}
+
+
 
 
 
