@@ -12,14 +12,7 @@ html, body{
     padding: 0px;
     background-color: #EAEFFA;
     height: auto;
-    /*height: 100%; CAUSES STICKY NAV NOT TO WORK - DO NOT UNCOMMENT TILL ISSUE IS*/ 
-
-  }
-  .thankYouBody, .thankYouHTML{
-    height: auto;
-    scroll-behavior:smooth;
-
-  }
+}
 
   
   
@@ -648,7 +641,7 @@ border-bottom: 5px solid #3A4F41; /* Set the underline properties */
 }
 
 .thankYouMessage{
-  margin-top: 200px;
+  margin-top: 150px;
 }
 
 .introParentDiv{
