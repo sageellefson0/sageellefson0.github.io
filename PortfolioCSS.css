@@ -69,7 +69,6 @@ body{
 
 
 .introParentDiv{
-  /*border: solid blue 2px; */
   display: inline-block;
   height: 618px;
   width: 100%;
@@ -296,7 +295,7 @@ body{
 }
 
 .resumeDownload:hover, .returnHomeBttn:hover, .contactSubmitButton:hover {
-  background-color: #3A4F41; /* Change background color on hover */
+  background-color: #3A4F41; 
 }
 
 
@@ -390,7 +389,7 @@ span {
   border-right: 1px solid #333333;
   border-bottom: 1px solid #333333;
   border-left: 1px solid #CCCCCC;
-  transition: background-color 0.2s ease-out; /* Transition for the background color on hover */
+  transition: background-color 0.2s ease-out; 
 
 }
 
@@ -465,8 +464,6 @@ footer{
   position: relative;
   width:100%;
 }
-
-
 
 .thankYouFooter{
   font-family: 'Verdana', 'Andale Mono', monospace;
@@ -645,7 +642,6 @@ border-bottom: 5px solid #3A4F41; /* Set the underline properties */
   display: none;
 }
    
-
 .contactInput, .contactInputMessage{
   width: 70%;
 }
@@ -654,7 +650,6 @@ border-bottom: 5px solid #3A4F41; /* Set the underline properties */
   margin-top: 25px;
   margin-bottom: 20px;
 
-
 }
 
 .returnHomeBttn{
@@ -662,7 +657,7 @@ border-bottom: 5px solid #3A4F41; /* Set the underline properties */
 }
 
 .thankYouMessage{
-  margin-top: 55%
+  margin-top: 45%
 } 
 
 .introParentDiv{
