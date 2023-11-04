@@ -478,8 +478,9 @@ footer{
   padding-bottom: 13px;
   margin-top: 30px;
   bottom: 0;
-  position: absolute;
+  position: fixed;
   width:100%;
+
 }
 
 .fa_custom_footer{
@@ -666,7 +667,7 @@ border-bottom: 5px solid #3A4F41; /* Set the underline properties */
 } */
 
 .introParentDiv{
-  height: 608px;
+  height: 618px;
 
 }
 
