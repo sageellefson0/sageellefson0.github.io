@@ -11,12 +11,11 @@ body {
   padding: 0px;
   background-color: #EAEFFA;
   height: auto;
-
+  overflow-x: hidden;
 }
 
 body {
   position: relative;
-  overflow: auto;
 }
 
 
@@ -673,27 +672,23 @@ footer {
 
 @media (min-width: 768px) and (max-width: 1024px) {
 
-  .certImg {
-    width: 115px;
-    height: 110px;
-  }
-
-  .aboutDiv{
-    display:inline;
+  .aboutDiv {
+    display: inline;
     justify-content: center;
   }
-  .aboutTextDiv{
-    width: 100%;
+
+  .aboutTextDiv {
+    width: 92%;
     justify-content: center;
     float: none;
     margin-left: 20px;
   }
 
-  .imageDiv{
+  .imageDiv {
     width: 100%;
     margin-bottom: 5%;
   }
-  
+
   .headshotPic {
     width: 35%;
     height: 35%;
@@ -701,13 +696,13 @@ footer {
     box-shadow: -10px -10px 1px 10px #3A4F41;
   }
 
-  .certDiv{
+  .certDiv {
     width: 100%;
     float: none;
     margin-bottom: 5%;
   }
 
-  .eduDiv{
+  .eduDiv {
     width: 100%;
     float: none;
     margin-bottom: 5%;
@@ -717,8 +712,8 @@ footer {
     padding-left: 20%;
   }
 
-  .aboutTextHeader{
-    margin: 0; 
+  .aboutTextHeader {
+    margin: 0;
     text-align: center;
   }
 
@@ -733,5 +728,24 @@ footer {
     transform: translateX(-50%);
     width: 13%;
     border-bottom: 5px solid #3A4F41;
+  }
+
+  .textDiv {
+    width: 40%;
+    display: inline-block;
+    margin-top: 11%;
+    padding: 5%;
+    padding-top: 16%;
+    text-align: center;
+    border-radius: 2%;
+  }
+
+  .name {
+    animation: none;
+    border-right: none;
+  }
+
+  .introParentDiv {
+    justify-content: center;
   }
 }
