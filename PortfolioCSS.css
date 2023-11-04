@@ -674,3 +674,38 @@ footer {
   }
 
 }
+
+
+/******************************* TABLET SPECIFIC SECTION *********************************/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .certImg {
+    width: 115px;
+    height: 110px;
+  }
+
+  .aboutDiv{
+    display:inline;
+    justify-content: center;
+  }
+  .aboutTextDiv{
+    width: 100%;
+    justify-content: center;
+    float: none;
+    margin-left: 20px;
+    margin-bottom: 5%;
+  }
+
+  .imageDiv{
+    width: 100%;
+    margin-bottom: 5%;
+  }
+  
+  .headshotPic {
+    width: 35%;
+    height: 35%;
+    border-radius: 10%;
+    box-shadow: -10px -10px 1px 10px #3A4F41;
+  }
+}
