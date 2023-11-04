@@ -656,15 +656,14 @@ border-bottom: 5px solid #3A4F41; /* Set the underline properties */
 
 
 }
-/*
+
 .returnHomeBttn{
   width: 60%;
-  margin-bottom: 155px;
 }
 
 .thankYouMessage{
-  margin-top: 155px;
-} */
+  margin-top: 55%
+} 
 
 .introParentDiv{
   height: 654px;
