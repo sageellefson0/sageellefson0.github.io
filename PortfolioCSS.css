@@ -565,15 +565,16 @@ footer {
   .aboutTextDiv {
     display: block;
     float: none;
-    width: 100%;
   }
 
   .imageDiv {
     padding-top: 2%;
+    width: 100%;
   }
 
   .aboutTextDiv {
     padding: 10px;
+    width: 95%;
   }
 
   .aboutMe {
