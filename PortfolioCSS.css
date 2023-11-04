@@ -602,23 +602,16 @@ footer {
   .contact::after,
   .aboutTextHeader::after {
     content: '';
-    /* Add content to the pseudo-element */
     position: absolute;
     bottom: -10%;
-    /* Position it at the bottom of the element */
     left: 50%;
-    /* Position it at the middle of the element */
     transform: translateX(-50%);
-    /* Center it horizontally */
     width: 26%;
-    /* Adjust the width as needed (e.g., 50% for half the width) */
     border-bottom: 5px solid #3A4F41;
-    /* Set the underline properties */
   }
 
   .name {
     font-size: 6vw;
-    /* Adjust the font size for mobile */
     animation: none;
     width: 100%;
     border: none;
@@ -694,7 +687,6 @@ footer {
     justify-content: center;
     float: none;
     margin-left: 20px;
-    margin-bottom: 5%;
   }
 
   .imageDiv{
@@ -707,5 +699,39 @@ footer {
     height: 35%;
     border-radius: 10%;
     box-shadow: -10px -10px 1px 10px #3A4F41;
+  }
+
+  .certDiv{
+    width: 100%;
+    float: none;
+    margin-bottom: 5%;
+  }
+
+  .eduDiv{
+    width: 100%;
+    float: none;
+    margin-bottom: 5%;
+  }
+
+  .certList {
+    padding-left: 20%;
+  }
+
+  .aboutTextHeader{
+    margin: 0; 
+    text-align: center;
+  }
+
+  .aboutMe::after,
+  .projects::after,
+  .contact::after,
+  .aboutTextHeader::after {
+    content: '';
+    position: absolute;
+    bottom: -10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 13%;
+    border-bottom: 5px solid #3A4F41;
   }
 }
