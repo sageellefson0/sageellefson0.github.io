@@ -1,60 +1,65 @@
-/* BODY */
+/* HTML and BODY */
 
-html{
-  scroll-behavior:smooth;
+html {
+  scroll-behavior: smooth;
   min-height: 100vh;
 }
 
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #EAEFFA;
+  height: auto;
 
-html, body{
-    margin: 0px;
-    padding: 0px;
-    background-color: #EAEFFA;
-    height: auto;
-  
-}
-body{
-  position: relative; 
-  overflow:auto;
 }
 
+body {
+  position: relative;
+  overflow: auto;
+}
 
-  
-  
 
-/* WELCOME SECTION */
-  .name{
-  color :#0E1638;
+/* HOME SECTION */
+.name {
+  color: #0E1638;
   font-family: 'Monaco', 'Andale Mono', monospace;
-  overflow: hidden; 
+  overflow: hidden;
   font-size: 2.7vw;
   border-right: .08em solid #0E1638;
   white-space: nowrap;
   margin: 0 auto;
   animation: typing 2s steps(30, end), blink-caret .75s step-end infinite;
   animation-fill-mode: forwards;
-  
+
 }
 
-
-
-.introLine{
-  color :#0E1638;
+.introLine {
+  color: #0E1638;
   font-family: 'Monaco', 'Andale Mono', monospace;
-
 }
 
 @keyframes typing {
-  from { width: 0%}
-  to { width: 100% }
+  from {
+    width: 0%
+  }
+
+  to {
+    width: 100%
+  }
 }
 
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: #0E1638; }
+
+  from,
+  to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: #0E1638;
+  }
 }
-
-
 
 .textDiv {
   width: 22%;
@@ -63,24 +68,21 @@ body{
   padding: 5%;
   text-align: center;
   border-radius: 2%;
-
 }
 
-
-
-.introParentDiv{
+.introParentDiv {
   display: inline-block;
   height: 618px;
   width: 100%;
-  text-align: center; 
+  text-align: center;
   background-image: url("images/triangleBackground.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 
-/* NAVBAR */
 
+/* NAVBAR */
 .navbar {
   position: -webkit-sticky;
   position: sticky;
@@ -100,9 +102,7 @@ body{
   font-family: 'Monaco', 'Andale Mono', monospace;
   font-size: 18px;
   margin: 2%;
-
 }
-
 
 .navbar a:hover {
   text-decoration: none;
@@ -114,238 +114,245 @@ body{
 
 
 
-
-/* ABOUT SECTION */
-
-.aboutMe, .projects, .contact, .aboutTextHeader {
+/* HEADERS SECTION */
+.aboutMe,
+.projects,
+.contact,
+.aboutTextHeader {
   font-family: 'Verdana', 'Andale Mono', monospace;
   color: #0E1638;
   text-align: center;
   padding-top: 4%;
-  position: relative; /* Add position:relative to the element */
-
+  position: relative;
 }
 
-.aboutMe::after, .projects::after, .contact::after {
-  content: ''; /* Add content to the pseudo-element */
+.aboutMe::after,
+.projects::after,
+.contact::after {
+  content: '';
   position: absolute;
-  bottom: -10%; /* Position it at the bottom of the element */
-  left: 50%; /* Position it at the middle of the element */
-  transform: translateX(-50%); /* Center it horizontally */
-  width: 7%; /* Adjust the width as needed (e.g., 50% for half the width) */
-  border-bottom: 5px solid #3A4F41; /* Set the underline properties */
+  bottom: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 7%;
+  border-bottom: 5px solid #3A4F41;
 }
 
-.aboutTextHeader::after{
-  content: ''; /* Add content to the pseudo-element */
+.aboutTextHeader::after {
+  content: '';
   position: absolute;
-  bottom: -12%; /* Position it at the bottom of the element */
-  left: 50%; /* Position it at the middle of the element */
-  transform: translateX(-50%); /* Center it horizontally */
-  width: 14%; /* Adjust the width as needed (e.g., 50% for half the width) */
-  border-bottom: 5px solid #3A4F41; /* Set the underline properties */
-
+  bottom: -12%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 14%;
+  border-bottom: 5px solid #3A4F41;
 }
 
 
 
-
-
-.aboutDiv{
+/* ABOUT SECTION */
+.aboutDiv {
   display: inline-block;
   padding: 3%;
-
-
 }
 
-.aboutTextDiv
-{
+.aboutTextDiv {
   float: right;
   width: 50%;
   height: 100%;
-
-
 }
 
-.aboutTextHeader{
+.aboutTextHeader {
   text-align: center;
 }
 
-.certEduDiv{
-  width: 100%;
-  font-family: 'Verdana', 'Andale Mono', monospace;
-  color: #0E1638;
-  font-size: 18px;
-  display: inline-block;
-
-
-}
-
-.certDiv{
-  width: 50%;
-  float: right;
-}
-
-.certImages{
-  text-align: center;
-}
-
-.certList{
-  padding-left: 15%;
-}
-
-.certImg{
-  width: 125px;
-  height: 120px;
-}
-
-.eduDiv{
-  width: 50%;
-  float: left;
-  text-align: center;
-}
-
-
-
-.imageDiv{
+/* Headshot image */
+.imageDiv {
   width: 50%;
   float: left;
   height: 100%;
   text-align: center;
-
-
 }
 
-
-
-.headshotPic{
+.headshotPic {
   width: 50%;
   height: 50%;
-  border-radius: 10%; 
+  border-radius: 10%;
   box-shadow: -10px -10px 1px 10px #3A4F41;
-
 }
 
-
-.aboutText{
+.aboutText {
   font-family: 'Verdana', 'Andale Mono', monospace;
   color: #0E1638;
   font-size: 18px;
 
 }
-.aboutTextCerts{
+
+.aboutTextCerts {
   font-family: 'Verdana', 'Andale Mono', monospace;
   color: #0E1638;
   font-size: 16px;
 }
 
-.aboutDiv{
+.aboutDiv {
   margin-top: 1%;
 }
 
-.aboutMe{
+.aboutMe {
   margin-top: 1%;
 }
 
 
-.resumeDownload, .returnHomeBttn{
+
+/* EDUCATION AND CERTIFICATION SECTION*/
+.certEduDiv {
+  width: 100%;
+  font-family: 'Verdana', 'Andale Mono', monospace;
+  color: #0E1638;
+  font-size: 18px;
+  display: inline-block;
+}
+
+.certDiv {
+  width: 50%;
+  float: right;
+}
+
+.certImages {
+  text-align: center;
+}
+
+.certList {
+  padding-left: 15%;
+}
+
+.certImg {
+  width: 125px;
+  height: 120px;
+}
+
+.eduDiv {
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+
+
+
+/* RESUME AND RETURN HOME BUTTONS */
+.resumeDownload,
+.returnHomeBttn {
   background-color: #0E1638;
   text-decoration: none;
   text-align: center;
   justify-content: center;
   margin: auto;
-  margin-top:3%;
+  margin-top: 3%;
   width: 35%;
   border-radius: 5px;
-  animation: shadowPulse 3s linear infinite; /* Use the "shadowPulse" animation */
-  transition: background-color 0.3s ease-out; /* Transition for the background color on hover */
-
+  animation: shadowPulse 3s linear infinite;
+  /* Use the "shadowPulse" animation */
+  transition: background-color 0.3s ease-out;
+  /* Transition for the background color on hover */
 }
 
 @keyframes shadowPulse {
   0% {
-    box-shadow: 0 0 0px #3A4F41; /* Start with a green box shadow */
+    box-shadow: 0 0 0px #3A4F41;
+    /* Start with a green box shadow */
   }
+
   25% {
-    box-shadow: 0 0 30px #3A4F41; /* Keep the shadow green */
+    box-shadow: 0 0 30px #3A4F41;
+    /* Keep the shadow green */
   }
+
   50% {
-    box-shadow: 0 0 50px #3A4F41; /* Increase shadow size */
+    box-shadow: 0 0 50px #3A4F41;
+    /* Increase shadow size */
   }
+
   75% {
-    box-shadow: 0 0 30px #3A4F41; /* Reduce shadow size */
+    box-shadow: 0 0 30px #3A4F41;
+    /* Reduce shadow size */
   }
+
   100% {
-    box-shadow: 0 0 0px #3A4F41; /* End with a green box shadow */
+    box-shadow: 0 0 0px #3A4F41;
+    /* End with a green box shadow */
   }
 }
-.resumeDownload a, .returnHomeBttn a{
+
+.resumeDownload a,
+.returnHomeBttn a {
   text-decoration: none;
   font-family: 'Verdana', 'Andale Mono', monospace;
   font-size: 18px;
   color: #EAEFFA;
-  display:inline-block;
-  width:100%;
-  height:100%;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
   padding-top: 3%;
   padding-bottom: 3%;
-
-
-
 }
 
-.resumeDownload:hover, .returnHomeBttn:hover, .contactSubmitButton:hover {
-  background-color: #3A4F41; 
+.resumeDownload:hover,
+.returnHomeBttn:hover,
+.contactSubmitButton:hover {
+  background-color: #3A4F41;
 }
 
 
 
 /* SOCIAL ICON BAR*/
-.fa_custom{
+.fa_custom {
   color: #0E1638;
   text-decoration: none;
   padding-left: 10px;
   padding-right: 10px;
 }
 
-.socialIconDiv{
+.socialIconDiv {
   background-color: #0E1638;
   padding: 10px;
   text-align: center;
 }
 
-.fa_custom:hover{
-  color:#3A4F41;
+.fa_custom:hover {
+  color: #3A4F41;
 }
 
 
 
 /* PROJECT SECTION */
-
-.projectsDiv{
+.projectsDiv {
   display: inline-block;
   text-align: center;
   width: 100%;
+}
 
-} 
-
-.placeholderImage, .ammaImage, .partProductImage, .pythonImage{
+.placeholderImage,
+.ammaImage,
+.partProductImage,
+.pythonImage {
   width: 300px;
   height: 175px;
   box-shadow: 0 0 15px 4px rgba(23, 31, 25, 0.8);
   transition: transform .4s;
-
 }
 
-.placeholderImage:hover, .ammaImage:hover, .pythonImage:hover, .partProductImage:hover{
-transform: scale(1.05);
-filter: brightness(.9);
-
+.placeholderImage:hover,
+.ammaImage:hover,
+.pythonImage:hover,
+.partProductImage:hover {
+  transform: scale(1.05);
+  filter: brightness(.9);
 }
 
-
-
-.ammaDiv, .numberGenDiv, .partProductDiv, .pythonProjectDiv{
+.ammaDiv,
+.numberGenDiv,
+.partProductDiv,
+.pythonProjectDiv {
   margin: 2%;
   vertical-align: top;
   display: inline-block;
@@ -365,17 +372,20 @@ span {
   display: inline-block;
   width: 300px;
   padding-bottom: 10px;
-
 }
 
-
-.devicon-java-plain-wordmark, .devicon-android-plain-wordmark, .devicon-python-plain-wordmark{
+/* Language icons */
+.devicon-java-plain-wordmark,
+.devicon-android-plain-wordmark,
+.devicon-python-plain-wordmark {
   font-size: 50px;
   color: #EAEFFA;
 }
 
-.devicon-java-plain-wordmark:hover, .devicon-android-plain-wordmark:hover, .devicon-python-plain-wordmark:hover{
-  color:#3A4F41;
+.devicon-java-plain-wordmark:hover,
+.devicon-android-plain-wordmark:hover,
+.devicon-python-plain-wordmark:hover {
+  color: #3A4F41;
 }
 
 /* Design for the "View Code" buttons on the project tabs. */
@@ -389,21 +399,17 @@ span {
   border-right: 1px solid #333333;
   border-bottom: 1px solid #333333;
   border-left: 1px solid #CCCCCC;
-  transition: background-color 0.2s ease-out; 
-
+  transition: background-color 0.2s ease-out;
 }
 
-.button:hover{
+.button:hover {
   background-color: #C9C9C9;
-
 }
-
 
 
 
 /* CONTACT */
-
-.contactDiv{
+.contactDiv {
   text-align: center;
   width: 40%;
   margin: auto;
@@ -412,10 +418,11 @@ span {
   border-bottom: solid #0E1638 1px;
   border-width: 7px;
   padding-top: 4%;
-  padding-bottom: 4%;  
+  padding-bottom: 4%;
 }
 
-.contactInput, .contactInputMessage{
+.contactInput,
+.contactInputMessage {
   outline: none;
   border: none;
   width: 50%;
@@ -425,36 +432,33 @@ span {
   margin: 10px;
   font-family: 'Verdana', 'Andale Mono', monospace;
   color: #0E1638;
-
 }
 
-::placeholder { 
+::placeholder {
   color: #0E1638;
 }
 
-.contactSubmitButton{
+.contactSubmitButton {
   border: none;
-  background-color: #0E1638;;
-  color:#EAEFFA;
+  background-color: #0E1638;
+  ;
+  color: #EAEFFA;
   font-family: 'Verdana', 'Andale Mono', monospace;
   border-radius: 5%;
   padding: 10px 12px 10px 12px;
   margin-top: 40px;
-  animation: shadowPulse 3s linear infinite; /* Use the "shadowPulse" animation */
-  transition: background-color 0.3s ease-out; /* Transition for the background color on hover */
-  
+  animation: shadowPulse 3s linear infinite;
+  transition: background-color 0.3s ease-out;
 }
 
 
 
-
-
 /* FOOTER */
-footer{
+footer {
   font-family: 'Verdana', 'Andale Mono', monospace;
   font-size: small;
-  color:#EAEFFA;
-  text-align:center;
+  color: #EAEFFA;
+  text-align: center;
   background-color: #0E1638;
   padding-top: 13px;
   padding-bottom: 13px;
@@ -462,210 +466,211 @@ footer{
   margin-bottom: 0;
   bottom: 0;
   position: relative;
-  width:100%;
+  width: 100%;
 }
 
-.thankYouFooter{
+
+/*************************** THANK YOU PAGE HTML FILE *****************************/
+
+
+/* FOOTER FOR THANK YOU PAGE */
+.thankYouFooter {
   font-family: 'Verdana', 'Andale Mono', monospace;
   font-size: small;
-  color:#EAEFFA;
-  text-align:center;
+  color: #EAEFFA;
+  text-align: center;
   background-color: #0E1638;
   padding-top: 13px;
   padding-bottom: 13px;
   margin-top: 30px;
   bottom: 0;
   position: fixed;
-  width:100%;
-
+  width: 100%;
 }
 
-.fa_custom_footer{
+.fa_custom_footer {
   color: #EAEFFA;
   text-decoration: none;
   padding-left: 10px;
   padding-bottom: 5px;
 }
 
-.fa_custom_footer:hover{
-  color:#3A4F41;
+.fa_custom_footer:hover {
+  color: #3A4F41;
 }
 
 
-/* Thank you page styling */
-.thankYouMessage{
+
+/* THANK YOU PAGE MESSAGE*/
+.thankYouMessage {
   font-family: 'Verdana', 'Andale Mono', monospace;
   font-size: 25px;
-  color:#0E1638;
-  text-align:center;
+  color: #0E1638;
+  text-align: center;
   margin-top: 12%;
 }
 
 
-/* Desktop */
 
+/************************ DESKTOP SPECIFIC SECTION **************************/
 @media screen and (min-width: 768px) {
   a.icon {
-      display: none;
+    display: none;
   }
 }
 
 
 
-/* MOBILE IMPLEMENTATION */
-@media screen and (max-width: 768px) { 
-  .contactDiv{
+/*************************** MOBILE SPECIFIC SECTION *************************/
+@media screen and (max-width: 768px) {
+  .navbar {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    top: 0;
+    position: fixed;
+    display: none
+  }
+
+  #links a {
+    color: #EAEFFA;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    padding-bottom: 5px;
+  }
+
+  /* Hamburger menu */
+  .icon {
+    display: block;
+    color: #EAEFFA;
+    font-size: 25px;
+    text-align: center;
+    top: 10px;
+    left: 10px;
+    background-color: #0E1638;
+    width: 50px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 0;
+    margin: 0;
+    padding-top: 11px;
+    position: fixed;
+    z-index: 2;
+    border: #3A4F41 solid 1px;
+  }
+
+  .imageDiv,
+  .aboutTextDiv {
+    display: block;
+    float: none;
+    width: 100%;
+  }
+
+  .imageDiv {
+    padding-top: 2%;
+  }
+
+  .aboutTextDiv {
+    padding: 10px;
+  }
+
+  .aboutMe {
+    padding-top: 3%;
+  }
+
+  .certDiv,
+  .eduDiv {
+    display: block;
+    float: none;
+    width: 100%;
+  }
+
+  .certDiv {
+    margin-bottom: 50px;
+  }
+
+  .resumeDownload {
+    margin-bottom: 50px;
+    width: 50%;
+  }
+
+  .aboutMe::after,
+  .projects::after,
+  .contact::after,
+  .aboutTextHeader::after {
+    content: '';
+    /* Add content to the pseudo-element */
+    position: absolute;
+    bottom: -10%;
+    /* Position it at the bottom of the element */
+    left: 50%;
+    /* Position it at the middle of the element */
+    transform: translateX(-50%);
+    /* Center it horizontally */
+    width: 26%;
+    /* Adjust the width as needed (e.g., 50% for half the width) */
+    border-bottom: 5px solid #3A4F41;
+    /* Set the underline properties */
+  }
+
+  .name {
+    font-size: 6vw;
+    /* Adjust the font size for mobile */
+    animation: none;
+    width: 100%;
+    border: none;
+    font-size: 200%;
+    margin-top: 60%;
+  }
+
+  .introLine {
+    font-size: 150%;
+  }
+
+  .textDiv {
+    width: auto;
+  }
+
+  .introParentDiv {
+    background-position: center;
+  }
+
+  .contact {
+    margin-top: 70px;
+  }
+
+  .contactDiv {
+    margin-bottom: 70px;
     width: 70%;
   }
 
+  #links {
+    display: none;
+  }
 
-.imageDiv, .aboutTextDiv{
-  display: block; 
-  float: none; 
-  width: 100%;
-}
+  .contactInput,
+  .contactInputMessage {
+    width: 70%;
+  }
 
-.imageDiv{
-padding-top: 2%;
-}
+  .contactSubmitButton {
+    margin-top: 25px;
+    margin-bottom: 20px;
+  }
 
-.aboutTextDiv{
-padding: 10px;
-}
+  .returnHomeBttn {
+    width: 60%;
+  }
 
-.aboutMe{
-padding-top: 3%;
-}
+  .thankYouMessage {
+    margin-top: 45%
+  }
 
-.certDiv, .eduDiv{
-  display: block; 
-  float: none; 
-  width: 100%;
-}
-
-.resumeDownload{
-  width: 50%;
-}
-
-.navbar{
-  width: 100%;
-  padding: 0;
-  margin: 0;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  top: 0; 
-  position: fixed;
-  display:none
-}
-
-
-
-.certDiv{
-  margin-bottom: 50px;
-}
-
-.resumeDownload{
-  margin-bottom: 50px;
-}
-/* Style navigation menu links */
-#links a {
-  color: #EAEFFA;
-  text-decoration: none;
-  font-size: 20px;
-  display: block;
-  padding-bottom: 5px;
-}
-
-/* Style the hamburger menu */
-.icon {
-  display: block;
-  color: #EAEFFA;
-  font-size: 25px;
-  text-align: center;
-  top: 10px;
-  left: 10px;
-  background-color: #0E1638;
-  width: 50px;
-  height: 40px;
-  border-radius: 50%;
-  padding: 0;
-  margin: 0;
-  padding-top: 11px;
-  position: fixed;
-  z-index: 2;
-  border: #3A4F41 solid 1px;
-}
-
-
-.aboutMe::after, .projects::after, .contact::after, .aboutTextHeader::after {
-content: ''; /* Add content to the pseudo-element */
-position: absolute;
-bottom: -10%; /* Position it at the bottom of the element */
-left: 50%; /* Position it at the middle of the element */
-transform: translateX(-50%); /* Center it horizontally */
-width: 26%; /* Adjust the width as needed (e.g., 50% for half the width) */
-border-bottom: 5px solid #3A4F41; /* Set the underline properties */
-}
-
-.name {
-  font-size: 6vw; /* Adjust the font size for mobile */
-  animation: none;
-  width: 100%;
-  border: none;
-  font-size: 200%;
-  margin-top: 60%;
-}
-
-.introLine {
-  font-size: 150%;
+  .introParentDiv {
+    height: 654px;
+  }
 
 }
-
-.textDiv{
-  width: auto;
-
-}
-
-.introParentDiv{
-  background-position: center;
-}
-
-.contact{
-  margin-top: 70px;
-}
-
-.contactDiv{
-  margin-bottom: 70px;
-}
-
-#links {
-  display: none;
-}
-   
-.contactInput, .contactInputMessage{
-  width: 70%;
-}
-
-.contactSubmitButton{
-  margin-top: 25px;
-  margin-bottom: 20px;
-
-}
-
-.returnHomeBttn{
-  width: 60%;
-}
-
-.thankYouMessage{
-  margin-top: 45%
-} 
-
-.introParentDiv{
-  height: 654px;
-
-}
-
-
-
-}
-
