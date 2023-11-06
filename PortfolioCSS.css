@@ -63,11 +63,11 @@ body {
 .textDiv {
   width: 22%;
   display: inline-block;
-  margin-top: 11%;
+  margin-top: 12%;
   padding: 5%;
   text-align: center;
-  border-radius: 2%;
 }
+
 
 .introParentDiv {
   display: inline-block;
@@ -624,7 +624,7 @@ footer {
   }
 
   .textDiv {
-    width: auto;
+    width: 40%;
   }
 
   .introParentDiv {
@@ -732,13 +732,7 @@ footer {
   }
 
   .textDiv {
-    width: 40%;
-    display: inline-block;
-    margin-top: 11%;
-    padding: 5%;
-    padding-top: 16%;
-    text-align: center;
-    border-radius: 2%;
+  width: 40%;
   }
 
   .name {
