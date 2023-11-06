@@ -734,9 +734,9 @@ footer {
   .textDiv {
     width: 40%;
     display: inline-block;
-    margin-top: 11%;
+    margin-top: 1%;
     padding: 5%;
-    padding-top: 16%;
+    padding-top: 10%;
     text-align: center;
     border-radius: 2%;
   }
