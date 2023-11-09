@@ -743,4 +743,28 @@ footer {
   .introParentDiv {
     justify-content: center;
   }
+
+/* TABLET SPECIFIC SECTION (768px to 1024px) */
+  .navbar {
+      display: flex; /* Use flexbox to display the navbar links in a row */
+      justify-content: center; /* Center the links horizontally within the navbar */
+      position: fixed;
+  }
+
+  .navbar #links {
+      display: flex; /* Use flexbox for the links container as well */
+      list-style: none; /* Remove the default list style */
+      padding: 0; /* Remove any default padding */
+  }
+
+  .navbar a {
+      display: inline-block; /* Display the links as inline-block elements */
+      margin: 0 10px; /* Adjust the margin between links as needed */
+  }
+
+
+
 }
+
+
+
