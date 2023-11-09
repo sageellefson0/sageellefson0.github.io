@@ -3,6 +3,7 @@
 html {
   scroll-behavior: smooth;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 html,
@@ -11,7 +12,6 @@ body {
   padding: 0px;
   background-color: #EAEFFA;
   height: auto;
-  overflow-x: hidden;
 }
 
 body {
