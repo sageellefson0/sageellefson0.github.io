@@ -735,10 +735,10 @@ footer {
   width: 40%;
   }
 
-  .name {
+  /*.name {
     animation: none;
     border-right: none;
-  }
+  } */
 
   .introParentDiv {
     justify-content: center;
@@ -761,15 +761,6 @@ footer {
       display: inline-block; 
       margin: 0 10px; 
   }
-
-  .name {
-    font-size: 6vw;
-    animation: typing 2s steps(30, end), blink-caret .75s step-end infinite;
-    width: 80%;
-    border-right: .08em solid #0E1638;
-    font-size: 200%;
-    margin-top: 60%;
-}
 
 }
 
