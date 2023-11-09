@@ -749,6 +749,7 @@ footer {
       display: flex; /* Use flexbox to display the navbar links in a row */
       justify-content: center; /* Center the links horizontally within the navbar */
       position: fixed;
+      width: auto;
   }
 
   .navbar #links {
