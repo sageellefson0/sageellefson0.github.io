@@ -679,7 +679,7 @@ footer {
   }
 
   .aboutTextDiv {
-    width: 92%;
+    width: 95%;
     justify-content: center;
     float: none;
     margin-left: 20px;
@@ -744,26 +744,32 @@ footer {
     justify-content: center;
   }
 
-/* TABLET SPECIFIC SECTION (768px to 1024px) */
   .navbar {
-      display: flex; /* Use flexbox to display the navbar links in a row */
-      justify-content: center; /* Center the links horizontally within the navbar */
+      display: flex; 
+      justify-content: center; 
       position: fixed;
       width: 100%;
   }
 
   .navbar #links {
-      display: flex; /* Use flexbox for the links container as well */
-      list-style: none; /* Remove the default list style */
-      padding: 0; /* Remove any default padding */
+      display: flex; 
+      list-style: none; 
+      padding: 0; 
   }
 
   .navbar a {
-      display: inline-block; /* Display the links as inline-block elements */
-      margin: 0 10px; /* Adjust the margin between links as needed */
+      display: inline-block; 
+      margin: 0 10px; 
   }
 
-
+  .name {
+    font-size: 6vw;
+    animation: typing 2s steps(30, end), blink-caret .75s step-end infinite;
+    width: 80%;
+    border-right: .08em solid #0E1638;
+    font-size: 200%;
+    margin-top: 60%;
+}
 
 }
 
