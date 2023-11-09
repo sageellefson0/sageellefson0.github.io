@@ -735,10 +735,10 @@ footer {
   width: 40%;
   }
 
-  /*.name {
+  .name {
     animation: none;
     border-right: none;
-  } */
+  } 
 
   .introParentDiv {
     justify-content: center;
