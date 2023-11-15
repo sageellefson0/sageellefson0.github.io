@@ -376,14 +376,17 @@ span {
 /* Language icons */
 .devicon-java-plain-wordmark,
 .devicon-android-plain-wordmark,
-.devicon-python-plain-wordmark {
+.devicon-python-plain-wordmark,
+.devicon-javascript-plain,
+.devicon-css3-plain-wordmark, .devicon-html5-plain-wordmark{
   font-size: 50px;
   color: #EAEFFA;
 }
 
 .devicon-java-plain-wordmark:hover,
 .devicon-android-plain-wordmark:hover,
-.devicon-python-plain-wordmark:hover {
+.devicon-python-plain-wordmark:hover,
+.devicon-javascript-plain:hover, .devicon-css3-plain-wordmark:hover, .devicon-html5-plain-wordmark:hover {
   color: #3A4F41;
 }
 
