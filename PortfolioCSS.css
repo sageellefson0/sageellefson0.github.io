@@ -330,7 +330,7 @@ body {
   width: 100%;
 }
 
-.placeholderImage,
+.digitDisorderImg,
 .ammaImage,
 .partProductImage,
 .pythonImage {
@@ -340,7 +340,7 @@ body {
   transition: transform .4s;
 }
 
-.placeholderImage:hover,
+.digitDisorderImg:hover,
 .ammaImage:hover,
 .pythonImage:hover,
 .partProductImage:hover {
