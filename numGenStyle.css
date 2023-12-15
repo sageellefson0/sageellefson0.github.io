@@ -368,6 +368,7 @@ canvas {
 
     #slotDiv {
         top: 75%;
+        width: 350px;
     }
 
     .radioButtons {
