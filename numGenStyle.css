@@ -378,7 +378,7 @@ canvas {
         width: 90%;
         max-width: 90%;
         top: 50%;
-        backdrop-filter: blur(7px);
+        background-color: rgba(51, 50, 50, .9);
         height: auto;    
     }
 
