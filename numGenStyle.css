@@ -1,0 +1,428 @@
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body,
+html {
+    margin: 0px;
+    padding: 0px;
+    height: auto;
+}
+
+/* Background image div. */
+#welcomeDiv {
+    background-image: url(images/backgroundImg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Game name text. */
+#welcomeText {
+    position: absolute;
+    top: 23%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ECECE9;
+    background-color: #333232;
+    border: solid 2px #ECECE9;
+    padding: 25px;
+}
+
+/* Animation for fading Digit Disorder onto the screen.*/
+.fadeIn {
+    -webkit-animation: fadeIn 5s;
+    animation: fadeIn 3s;
+}
+
+/* Keyframes for the fading game name text. */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Div that contains the generate start number button. */
+#buttonDiv {
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    top: 53%;
+    left: 50%;
+}
+
+/* The generate start number button. */
+#generateButton {
+    background-color: #007991;
+    padding: 20px;
+    border: solid 2px #ECECE9;
+    color: #ECECE9;
+    background-color: #333232;
+    font-size: 18px;
+}
+
+/* Button for how to play pop up. */
+#howToPlay {
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    top: 38%;
+    left: 50%;
+    background-color: #333232;
+    color: #ECECE9;
+    border: 2px #ECECE9 solid;
+    width: 100px;
+    height: 30px;
+    padding: 4px;
+}
+
+/* Div that contains the pop up and how to play text. */
+#howToPlayPopUp {
+    color: #ECECE9;
+    background-color: rgba(51, 50, 50, .8);
+    backdrop-filter: blur(7px);
+    display: none;
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px 0 rgba(236, 236, 233, 0.4), 0 8px 22px 0 rgba(0, 121, 145, 0.4);
+    text-align: center;
+    border: solid 2px #007991;
+}
+
+/* Button for closing the how to play pop up. */
+#closePopUpBtn {
+    color: #ECECE9;
+    padding: 10px 20px 10px 20px;
+    background-color: #333232;
+    margin-bottom: 26px;
+    border: 2px #ECECE9 solid;
+    text-align: center;
+    font-size: medium;
+}
+
+/* Text for how to play in the pop up div. */
+.howToPlayText {
+    padding: 0px 15px 0px 15px;
+    text-align: left;
+}
+
+/* Hover effect for buttons and game name. */
+#generateButton:hover,
+#welcomeText:hover,
+.slots:hover,
+#restartButton:hover,
+#howToPlay:hover,
+#closePopUpBtn:hover {
+    border: solid 2px #C1292E;
+    transition: .4s ease-in-out;
+}
+
+/* Font for various text fields and buttons. */
+.text,
+#generateButton,
+#numberPlaceholder,
+#restartButton,
+#statsTextWin,
+#statsTextLoss,
+#howToPlay,
+.slotsNum,
+#howToPlayPopUp,
+.radioButtons {
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+/* Radio buttons div. */
+.radioButtons {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    top: 44%;
+    left: 50%;
+    color: #ECECE9;
+}
+
+/* Changes the color of the radio button accents. */
+input[type=radio] {
+    accent-color: #007991;
+}
+
+/* Determines the color of the disabled slots. */
+button:disabled {
+    color: #525151;
+}
+
+/* Adds pointer on hover over buttons. */
+button:hover {
+    cursor: pointer;
+}
+
+
+/* Div that contains the slots, numbers underneath, placeholder for numbers, restart button, and stats.*/
+#slotDiv {
+    display: inline-block;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    top: 75%;
+    left: 50%;
+}
+
+/* Placeholder text holds the randomly generated numbers and win and loss statements. */
+#numberPlaceholder {
+    font-size: 20px;
+    color: #ECECE9;
+    text-align: center;
+}
+
+/* Slot buttons. */
+.slots {
+    width: 70px;
+    height: 36px;
+    border: solid 2px #333232;
+    background-color: #ECECE9;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Numbers under the slots. */
+.slotsNum {
+    display: inline-block;
+    width: 50px;
+    padding: 0 10px 0 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #ECECE9;
+}
+
+/* Restart button. */
+#restartButton {
+    color: #ECECE9;
+    padding: 10px;
+    background-color: #333232;
+    margin-bottom: 20px;
+    border: 2px #ECECE9 solid;
+    z-index: 10;
+}
+
+/* Div containing the win and loss stats. */
+.stats {
+    text-align: center;
+    color: #ECECE9;
+    width: 250px;
+    position: absolute;
+    top: 98%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+}
+
+/* Text for the win and loss stats. */
+#statsTextWin,
+#statsTextLoss {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+
+/* Mobile numbers under the slots */
+.mobileNums1 {
+    display: none;
+}
+.mobileNums2 {
+    display: none;
+}
+
+
+
+
+
+/* Winning div - contains winning display elements. */
+.celebration {
+    display: none;
+}
+
+/* Happy man div for image on the left. */
+.happyManDivLeft {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 40%;
+    left: 20%;
+    opacity: 1;
+    animation: jumpAnimation 1s infinite;
+
+}
+
+/* Happy man div for image on the right. */
+.happyManDivRight {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 40%;
+    left: 80%;
+    opacity: 1;
+    animation: jumpAnimation 1s infinite;
+
+}
+/* Image of the happy man stick figure. */
+#happyManImg {
+    width: 150px;
+    height: 300px;
+}
+
+/* Keyframes for the jump animation, causes the stick figure men height to increase and decrease, causing jumping effect. */
+@keyframes jumpAnimation {
+    0%,
+    100% {
+        height: 300px;
+    }
+    50% {
+        height: 310px;
+    }
+}
+
+/* Div containing the buff doge image.*/
+.buffDogeDiv {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 90%;
+    left: 50%;
+    opacity: 1;
+    animation: slideInAnimation 1s forwards;
+}
+
+/* Image of the buff doge. */
+#buffDogeImg {
+    width: 350px;
+    height: 450px;
+}
+
+/* Keyframges for the sliding animation on the buff doge.*/
+@keyframes slideInAnimation {
+    0% {
+        top: -300px;
+    }
+    100% {
+        top: 40%;
+    }
+}
+
+/* Canvas for the confetti. */
+canvas {
+    display: none;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    pointer-events: none;
+}
+
+
+
+/******************** Mobile Styles ***********************/
+@media screen and (max-width: 768px) {
+    #welcomeText {
+        padding: 20px;
+        font-size: x-large;
+        top: 20%;
+    }
+
+    #buttonDiv {
+        top: 51%;
+        margin: 0;
+    }
+
+    #generateButton {
+        padding: 15px;
+        font-size: 15px;
+        width: 200px;
+        margin: 0;
+    }
+
+    #howToPlay {
+        top: 36%;
+    }
+
+    .stats {
+        top: 94%;
+    }
+
+    #slotDiv {
+        top: 75%;
+    }
+
+    .radioButtons {
+        top: 42%;
+    }
+
+    #howToPlayPopUp {
+        width: 90%;
+        max-width: 90%;
+        top: 50%;
+    }
+
+    .buffDogeDiv {
+        top: 80%;
+    }
+
+    canvas {
+        display: none;
+    }
+
+    .slotsNum {
+        display: none;
+    }
+
+    .slots {
+        width: 50px;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-bottom: 20px;
+    }
+
+    .mobileNums1 {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 72%;
+        left: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .mobileNums2 {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 82%;
+        left: 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .slotsNumMobile {
+        display: inline-block;
+        font-family: Verdana, Geneva, sans-serif;
+        color: #ECECE9;
+        width: 50px;
+        margin: 0 7px;
+        text-align: center;
+    }
+
+}
