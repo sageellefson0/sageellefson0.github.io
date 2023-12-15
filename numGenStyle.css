@@ -378,6 +378,8 @@ canvas {
         width: 90%;
         max-width: 90%;
         top: 50%;
+        backdrop-filter: blur(7px);
+        height: auto;    
     }
 
     .buffDogeDiv {
