@@ -101,6 +101,7 @@ html {
     box-shadow: 0 6px 10px 0 rgba(236, 236, 233, 0.4), 0 8px 22px 0 rgba(0, 121, 145, 0.4);
     text-align: center;
     border: solid 2px #007991;
+    z-index: 11;
 }
 
 /* Button for closing the how to play pop up. */
