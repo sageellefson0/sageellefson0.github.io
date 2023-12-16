@@ -283,7 +283,7 @@ function disableAllSlots() {
 
 }
 
-      let newRandomNumber = Math.floor(Math.random() * 10) + 1;
+      let newRandomNumber = Math.floor(Math.random() * 1000) + 1;
   
 
       if (holdingList.includes(newRandomNumber)){
