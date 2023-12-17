@@ -407,7 +407,7 @@ canvas {
     .mobileNums1 {
         position: absolute;
         transform: translate(-50%, -50%);
-        top: 72%;
+        top: 71%;
         left: 50%;
         display: flex;
         justify-content: center;
