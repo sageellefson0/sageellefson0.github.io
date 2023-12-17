@@ -401,13 +401,13 @@ canvas {
         width: 50px;
         margin-left: 5px;
         margin-right: 5px;
-        margin-bottom: 20px;
+        margin-bottom: 22px;
     }
 
     .mobileNums1 {
         position: absolute;
         transform: translate(-50%, -50%);
-        top: 71%;
+        top: 72%;
         left: 50%;
         display: flex;
         justify-content: center;
@@ -435,5 +435,35 @@ canvas {
         font-size: medium;
     }
 
-
 }
+    /**************************** Tablet specific ******************************/
+    @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) {
+
+        #slotDiv {
+            top: 75%;
+            width: 650px;
+        }
+
+        .slots {
+            width: 50px;
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-bottom: 20px;
+        }
+
+        .slotsNum{
+        width: 40px;
+        padding: 0 5px 0 5px;
+        margin-left: 5px;
+        margin-right: 5px;
+        color: #ECECE9;
+        top: 40%;
+        }
+
+        #slotDiv {
+            top: 60%;
+        }
+
+
+    }
+
