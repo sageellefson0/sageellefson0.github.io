@@ -264,7 +264,6 @@ window.onload = function () {
     slot8.disabled = true;
     slot9.disabled = true;
     slot10.disabled = true;
-
   }
 
 
@@ -291,24 +290,22 @@ window.onload = function () {
       generateRandomNumber();
 
     }
-
     else {
       randomNumber = newRandomNumber;
       holdingList.push(randomNumber);
       console.log(holdingList);
       numberPlaceholder.innerText = String(randomNumber);
-
     }
   }
 
 
+// Event listener for the how to play button
   howToPlay.addEventListener("click", openPopUp);
 
+// Function to display the how to play div 
   function openPopUp() {
     howToPlayPopUp.style.display = "block";
   }
-
-
 
 
 //////////// Event listener for slots 1 - 10. //////////////
