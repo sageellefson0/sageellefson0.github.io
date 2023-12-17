@@ -379,7 +379,7 @@ canvas {
         width: 90%;
         max-width: 90%;
         top: 50%;
-        background-color: rgba(51, 50, 50, .9);
+        background-color: rgba(51, 50, 50, 1);
         height: auto;    
     }
 
@@ -414,7 +414,7 @@ canvas {
     .mobileNums2 {
         position: absolute;
         transform: translate(-50%, -50%);
-        top: 82%;
+        top: 80%;
         left: 50%;
         display: flex;
         justify-content: center;
