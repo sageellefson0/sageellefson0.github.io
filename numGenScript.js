@@ -59,7 +59,9 @@ window.onload = function () {
   const generateButton = document.getElementById("generateButton");
 
 
-
+// Event listener for radio button "5 Slots" 
+// Sets the numList to contain 5 zeros 
+// Hides the extra slots, 6-10 and the extra slot numbers
   radio5Slots.addEventListener('change', function () {
     if (radio5Slots.checked) {
       numList = ["0", "0", "0", "0", "0"];
@@ -75,7 +77,9 @@ window.onload = function () {
     }
   });
 
-
+// Event listener for radio button "10 Slots" 
+// Sets the numList to contain 10 zeros 
+// Displays the slots 6 - 10 and adjusts for mobile view as needed
   radio10Slots.addEventListener('change', function () {
     if (radio10Slots.checked) {
       numList = ["0", "0", "0", "0", "0", "0", "0", "0", "0", "0"];
@@ -117,12 +121,13 @@ window.onload = function () {
     }
   });
 
-  // keep this here, cannot move or issue with 10 slots auto winning will happen again
+
+// Sets a new event "change" on the 10 Slots radio button, as it loads selected by default
+// Keep this here
   radio10Slots.dispatchEvent(new Event('change'));
 
 
-
-
+// Hides the extra slots and slot numbering 
   function hideExtraSlotsAndNums() {
     slot6.style.display = "none";
     slot7.style.display = "none";
@@ -306,7 +311,7 @@ window.onload = function () {
 
 
 
-// Event listener for slots 1 - 10. 
+//////////// Event listener for slots 1 - 10. //////////////
 // Generates a new number when a slot is clicked, then sets the placeholder text to the next number to be placed.
 // Calls the orderCheck() function to ensure the numbers are in order after every placement. 
 // Adds the number being set to the slot to numList to keep track of the order. 
@@ -427,6 +432,7 @@ window.onload = function () {
   }
 
 
+// Checks the numList to ensure the list is in order and filters the numbers, excluding 0's, which the list is set to contain by default (restart or intialization)
   function isInNumericalOrderIgnoreZeros(list) {
     // Filter out the zeros
     const filteredList = list.filter(num => num !== "0");
@@ -446,8 +452,9 @@ window.onload = function () {
   }
 
 
-
-
+// Function to check the order of numList
+// Displays the win or loss message depending on the specified condition of the list
+// Displays the celebration elements depending on the placeholder text and conditions
   function orderCheck() {
     if (isInNumericalOrderIgnoreZeros(numList)) {
       console.log("List is in order, ignoring 0s.");
@@ -459,7 +466,6 @@ window.onload = function () {
         celebration.style.display = "block";
         canvas.style.display = "block";
 
-
         if (window.innerWidth <= 768) {
           happyManDivRight.style.display = "none";
           happyManDivLeft.style.display = "none";
@@ -469,19 +475,16 @@ window.onload = function () {
         if (radio5Slots.checked) {
           buffDogeDiv.style.display = "none";
         }
-
         radio10Slots.disabled = true;
         radio5Slots.disabled = true;
-
-
       }
     } else {
       numberPlaceholder.innerText = "You have lost.";
 
       disableButtons();
-
     }
   }
+
 
 // Disables all the slots and the generate button from being pressed
 // Calls function disableAllSlots()
@@ -491,8 +494,8 @@ window.onload = function () {
   }
 
 
-  // Confetti code below, uses canvas
-  // Credit to Smeegs for this design, which was shared here: https://jsfiddle.net/Javalsu/vxP5q/743/
+// Confetti code below, uses canvas
+// Credit to Smeegs for this design, which was shared here: https://jsfiddle.net/Javalsu/vxP5q/743/
   function confetti() {
     //canvas init
     var canvas = document.getElementById("canvas");
