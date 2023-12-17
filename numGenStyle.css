@@ -382,6 +382,7 @@ canvas {
         top: 50%;
         background-color: rgba(51, 50, 50, 1);
         height: auto;    
+        font-size: medium;
     }
 
     .buffDogeDiv {
@@ -429,5 +430,10 @@ canvas {
         margin: 0 7px;
         text-align: center;
     }
+
+    #restartButton {
+        font-size: medium;
+    }
+
 
 }
