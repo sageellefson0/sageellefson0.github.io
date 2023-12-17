@@ -142,7 +142,8 @@ html {
 #howToPlay,
 .slotsNum,
 #howToPlayPopUp,
-.radioButtons {
+.radioButtons,
+#closePopUpBtn {
     font-family: Verdana, Geneva, sans-serif;
 }
 
