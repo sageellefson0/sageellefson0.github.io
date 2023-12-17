@@ -12,6 +12,7 @@
 
 <body style="background-color:#ECECE9">
 
+<!-- Digit Disorder name and generate start button section -->
     <div id="welcomeDiv"></div>
     <div id="welcomeDivText">
         <h1 class="text" id="welcomeText"><span class="fadeIn">Digit Disorder</span></h1>
@@ -21,7 +22,7 @@
         <button id="generateButton">Generate Start Number</button>
     </div>
 
-
+<!-- How to play pop up and buttons -->
     <button id="howToPlay"> How to Play </button>
     <div id="howToPlayPopUp">
         <h5 class="howToPlayText">
@@ -43,6 +44,7 @@
     </div>
 
 
+<!-- Radio buttons for selecting 5 or 10 slots to fill -->
     <div class="radioButtons">
         <form>
             <input type="radio" id="5slots" name="slotsGroup" value="5slots">
@@ -53,6 +55,7 @@
     </div>
 
 
+<!-- Slots Div, contains the slots and numbering for the slots -->
     <div id="slotDiv">
         <h2 id="numberPlaceholder"> &nbsp; </h2>
         <button class="slots" id="slot1"></button>
@@ -103,7 +106,7 @@
         <h5 class="slotsNumMobile" id="slotsNum5">10</h5>
     </div>
 
-
+<!-- Celebration div to display when the user has won a game -->
     <div class="celebration">
         <div class="happyManDivRight">
             <img id="happyManImg" src="images/happyMan.png"
@@ -122,6 +125,8 @@
 
     </div>
 
+
+<!-- Canvas that contains the confetti displayed when the user wins -->
     <canvas id="canvas"></canvas>
 
 </body>
