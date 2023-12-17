@@ -359,6 +359,10 @@ canvas {
         margin: 0;
     }
 
+    .stats {
+        margin-top: 5px;
+    }
+
     #howToPlay {
         top: 36%;
     }
