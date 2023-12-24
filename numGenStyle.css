@@ -477,9 +477,17 @@ canvas {
             font-size: medium;
         }
 
-        .slotsNumMobile{
+        .mobileNums1, .mobileNums2{
             display: none;
         }
 
+        #slotsNum6,
+    #slotsNum7,
+    #slotsNum8,
+    #slotsNum9,
+    #slotsNum10 {
+        display: inline-block;
+        /* Add any other styling adjustments you need for iPad portrait mode */
+    }
     }
 
