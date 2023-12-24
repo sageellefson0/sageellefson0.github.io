@@ -480,8 +480,12 @@ canvas {
         .mobileNums1, .mobileNums2{
             display: none;
         }
-
-        #slotsNum6,
+    #slotsNum1,
+    #slotsNum2,
+    #slotsNum3,
+    #slotsNum4,
+    #slotsNum5,
+    #slotsNum6,
     #slotsNum7,
     #slotsNum8,
     #slotsNum9,
