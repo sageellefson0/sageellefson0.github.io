@@ -442,7 +442,7 @@ canvas {
 
 }
     /**************************** Tablet specific ******************************/
-    @media screen and (max-device-width: 1024px) {
+    @media screen and (max-device-width: 1024px) and (orientation: portrait) {
 
         #slotDiv {
             top: 75%;
