@@ -475,5 +475,9 @@ canvas {
             font-size: medium;
         }
 
+        .slotsNumMobile{
+            display: none;
+        }
+
     }
 
