@@ -446,7 +446,7 @@ canvas {
 
         #slotDiv {
             top: 75%;
-            width: 350px;
+            width: 650px;
         }
 
         .slots {
@@ -469,6 +469,11 @@ canvas {
             top: 60%;
         }
 
+        #howToPlayPopUp {
+            background-color: rgba(51, 50, 50, 1);
+            height: auto;    
+            font-size: medium;
+        }
 
     }
 
