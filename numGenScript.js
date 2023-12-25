@@ -472,6 +472,10 @@ window.onload = function () {
         if (radio5Slots.checked) {
           buffDogeDiv.style.display = "none";
         }
+
+        if (radio10Slots.checked) {
+          buffDogeDiv.style.display = "intial";
+        }
         radio10Slots.disabled = true;
         radio5Slots.disabled = true;
       }
