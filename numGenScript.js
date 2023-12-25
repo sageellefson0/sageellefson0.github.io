@@ -474,8 +474,9 @@ window.onload = function () {
         }
 
         if (radio10Slots.checked) {
-          buffDogeDiv.style.display = "intial";
+          buffDogeDiv.style.display = "initial";
         }
+
         radio10Slots.disabled = true;
         radio5Slots.disabled = true;
       }
