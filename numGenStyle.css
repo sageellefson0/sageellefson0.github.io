@@ -476,7 +476,7 @@ canvas {
             position: absolute;
             transform: translate(-50%, -50%);
             top: 77%;
-            left: 28%;
+            left: 29%;
             display: flex;
             justify-content: center;
             margin-bottom: 5px;
@@ -486,7 +486,7 @@ canvas {
             position: absolute;
             transform: translate(-50%, -50%);
             top: 77%;
-            left: 68%;
+            left: 69%;
             display: flex;
             justify-content: center;
         }
