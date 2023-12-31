@@ -78,7 +78,7 @@ window.onload = function () {
       }
 
       if (window.innerWidth >= 768 && window.innerWidth <= 1024) {
-        mobileNums1.style.top = "71%"
+        mobileNums1.style.top = "74%"
         mobileNums1.style.left = "50%"
       }
 
