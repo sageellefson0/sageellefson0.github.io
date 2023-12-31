@@ -485,8 +485,8 @@ canvas {
         .mobileNums2 {
             position: absolute;
             transform: translate(-50%, -50%);
-            top: 75%;
-            left: 75%;
+            top: 77%;
+            left: 68%;
             display: flex;
             justify-content: center;
         }
