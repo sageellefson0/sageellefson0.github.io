@@ -476,7 +476,7 @@ canvas {
             position: absolute;
             transform: translate(-50%, -50%);
             top: 77%;
-            left: 30%;
+            left: 28%;
             display: flex;
             justify-content: center;
             margin-bottom: 5px;
@@ -485,7 +485,7 @@ canvas {
         .mobileNums2 {
             position: absolute;
             transform: translate(-50%, -50%);
-            top: 77%;
+            top: 75%;
             left: 75%;
             display: flex;
             justify-content: center;
