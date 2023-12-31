@@ -76,8 +76,11 @@ window.onload = function () {
         slotDiv.style.top = "71%";
         
       }
-      mobileNums1.style.top = "";
-      mobileNums1.style.left = "";
+
+      if (window.innerWidth >= 768 && window.innerWidth <= 1024) {
+        mobileNums1.style.top = "71%"
+        mobileNums1.style.left = "50%"
+      }
 
       console.log("test");
 
@@ -95,9 +98,6 @@ window.onload = function () {
     if (radio10Slots.checked) {
       numList = ["0", "0", "0", "0", "0", "0", "0", "0", "0", "0"];
       slotDiv.style.top = "75%";
-
-      mobileNums1.style.top = "";
-      mobileNums1.style.left = "";
 
       // Check if the screen width is less than or equal to 768 pixels (mobile)
       if (window.innerWidth <= 768) {
