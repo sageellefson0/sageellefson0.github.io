@@ -476,6 +476,10 @@ canvas {
             height: auto;    
             font-size: medium;
         }
+        
+        .mobileNums1{
+            display: none;
+        }
 
      
  
