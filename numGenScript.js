@@ -99,6 +99,12 @@ window.onload = function () {
       numList = ["0", "0", "0", "0", "0", "0", "0", "0", "0", "0"];
       slotDiv.style.top = "75%";
 
+      if (window.innerWidth >= 768 && window.innerWidth <= 1024) {
+        mobileNums1.style.top = "77%"
+        mobileNums1.style.left = "29%"
+    
+      }
+
       // Check if the screen width is less than or equal to 768 pixels (mobile)
       if (window.innerWidth <= 768) {
         slotsNum6.style.display = "none";
