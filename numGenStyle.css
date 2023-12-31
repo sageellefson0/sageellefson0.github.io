@@ -457,15 +457,6 @@ canvas {
             margin-bottom: 20px;
         }
 
-        .slotsNum{
-        display: inline-block; 
-        width: 40px;
-        padding: 0 5px 0 5px;
-        margin-left: 5px;
-        margin-right: 5px;
-        color: #ECECE9;
-        top: 40%;
-        }
 
         #slotDiv {
             top: 60%;
@@ -477,7 +468,7 @@ canvas {
             font-size: medium;
         }
         
-        .mobileNums1{
+        .slotsNum{
             display: none;
         }
 
