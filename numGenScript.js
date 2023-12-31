@@ -71,16 +71,14 @@ window.onload = function () {
 
       restartButtonOperation()
 
-     
-
-      if (window.innerWidth >= 768 && window.innerWidth <= 1024) {
-        mobileNums1.style.top = "71%;"
-        mobileNums1.style.left = "50%;"
-      }
+      mobileNums1.style.top = "71%;"
+      mobileNums1.style.left = "50%;"
 
       if (window.innerWidth <= 768) {
         slotDiv.style.top = "71%";
       }
+
+      
 
       mobileNums2.style.display = "none";
     }
