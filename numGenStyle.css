@@ -472,6 +472,24 @@ canvas {
             display: none;
         }
 
+        .mobileNums1 {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 77%;
+            left: 50%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 5px;
+        }
+    
+        .mobileNums2 {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 77%;
+            left: 60%;
+            display: flex;
+            justify-content: center;
+        }
      
  
     }
