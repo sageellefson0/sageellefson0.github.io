@@ -73,6 +73,13 @@ window.onload = function () {
         slotDiv.style.top = "71%";
       }
 
+      if (window.innerWidth >= 768 && window.innerWidth <= 1024) {
+        mobileNums1.style.top = "71%;"
+        mobileNums2.style.top = "81%;"
+        mobileNums2.style.left = "50%;"
+        mobileNums1.style.left = "50%;"
+      }
+
       mobileNums2.style.display = "none";
     }
   });
