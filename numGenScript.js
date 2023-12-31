@@ -96,8 +96,8 @@ window.onload = function () {
       numList = ["0", "0", "0", "0", "0", "0", "0", "0", "0", "0"];
       slotDiv.style.top = "75%";
 
-      mobileNums1.style.top = "71%";
-      mobileNums1.style.left = "50%";
+      mobileNums1.style.top = "";
+      mobileNums1.style.left = "";
 
       // Check if the screen width is less than or equal to 768 pixels (mobile)
       if (window.innerWidth <= 768) {
