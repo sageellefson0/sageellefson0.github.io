@@ -15,6 +15,8 @@ window.onload = function () {
   let happyManDivLeft = document.getElementsByClassName("happyManDivLeft")[0];
   let buffDogeDiv = document.getElementsByClassName("buffDogeDiv")[0];
   let mobileNums2 = document.getElementsByClassName("mobileNums2")[0];
+  let mobileNums1 = document.getElementsByClassName("mobileNums1")[0];
+
 
 
   let slotDiv = document.getElementById("slotDiv");
