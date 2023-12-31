@@ -71,8 +71,8 @@ window.onload = function () {
 
       restartButtonOperation()
 
-      mobileNums1.style.top = "71%;"
-      mobileNums1.style.left = "50%;"
+      mobileNums1.style.top = ""
+      mobileNums1.style.left = ""
 
       if (window.innerWidth <= 768) {
         slotDiv.style.top = "71%";
