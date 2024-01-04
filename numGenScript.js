@@ -113,8 +113,6 @@ window.onload = function () {
         slotsNum9.style.display = "none";
         slotsNum10.style.display = "none";
 
-        slotDiv.style.top = "74%";
-
         slot6.style.display = "initial";
         slot7.style.display = "initial";
         slot8.style.display = "initial";
