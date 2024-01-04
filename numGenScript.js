@@ -97,7 +97,7 @@ window.onload = function () {
   radio10Slots.addEventListener('change', function () {
     if (radio10Slots.checked) {
       numList = ["0", "0", "0", "0", "0", "0", "0", "0", "0", "0"];
-      slotDiv.style.top = "74%";
+      slotDiv.style.top = "75%";
 
       if (window.innerWidth >= 768 && window.innerWidth <= 1024) {
         mobileNums1.style.top = "77%";
@@ -112,6 +112,8 @@ window.onload = function () {
         slotsNum8.style.display = "none";
         slotsNum9.style.display = "none";
         slotsNum10.style.display = "none";
+
+        slotDiv.style.top = "74%";
 
         slot6.style.display = "initial";
         slot7.style.display = "initial";
