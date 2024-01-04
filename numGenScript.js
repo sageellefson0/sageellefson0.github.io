@@ -74,6 +74,9 @@ window.onload = function () {
 
       if (window.innerWidth <= 768) {
         slotDiv.style.top = "70%";
+        slotDiv.style.paddingTop = "2px";
+
+
 
       }
 
