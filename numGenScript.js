@@ -102,7 +102,6 @@ window.onload = function () {
       if (window.innerWidth >= 768 && window.innerWidth <= 1024) {
         mobileNums1.style.top = "77%";
         mobileNums1.style.left = "29%";
-        slotDiv.style.top = "70%";
     
       }
 
