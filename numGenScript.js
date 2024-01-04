@@ -73,7 +73,7 @@ window.onload = function () {
 
 
       if (window.innerWidth <= 768) {
-        slotDiv.style.top = "75%";
+        slotDiv.style.top = "70%";
 
       }
 
