@@ -78,8 +78,8 @@ window.onload = function () {
       }
 
       if (window.innerWidth >= 768 && window.innerWidth <= 1024) {
-        mobileNums1.style.top = "73%"
-        mobileNums1.style.left = "50%"
+        mobileNums1.style.top = "73%";
+        mobileNums1.style.left = "50%";
       }
 
       console.log("test");
@@ -100,8 +100,8 @@ window.onload = function () {
       slotDiv.style.top = "75%";
 
       if (window.innerWidth >= 768 && window.innerWidth <= 1024) {
-        mobileNums1.style.top = "77%"
-        mobileNums1.style.left = "29%"
+        mobileNums1.style.top = "77%";
+        mobileNums1.style.left = "29%";
     
       }
 
