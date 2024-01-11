@@ -88,7 +88,6 @@ window.onload = function () {
         mobileNums1.style.left = "29%";
       }
 
-      // Check if the screen width is less than or equal to 768 pixels (mobile)
       if (window.innerWidth <= 1024) {
         slotsNum6.style.display = "none";
         slotsNum7.style.display = "none";
@@ -101,8 +100,6 @@ window.onload = function () {
         slot8.style.display = "initial";
         slot9.style.display = "initial";
         slot10.style.display = "initial";
-
-        mobileNums2.style.display = "flex";
 
       } else {
         // If not on mobile, show slots 6-10
