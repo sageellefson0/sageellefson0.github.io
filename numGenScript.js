@@ -89,7 +89,7 @@ window.onload = function () {
       }
 
       // Check if the screen width is less than or equal to 768 pixels (mobile)
-      if (window.innerWidth <= 768) {
+      if (window.innerWidth <= 1024) {
         slotsNum6.style.display = "none";
         slotsNum7.style.display = "none";
         slotsNum8.style.display = "none";
