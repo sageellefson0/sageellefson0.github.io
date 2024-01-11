@@ -102,9 +102,9 @@ window.onload = function () {
         slot10.style.display = "initial";
 
         if (window.innerWidth <= 768) {
-          mobileNums2.style.display = "none";
-        } else {
           mobileNums2.style.display = "flex";
+        } else {
+          mobileNums2.style.display = "none";
         }
 
       } else {
