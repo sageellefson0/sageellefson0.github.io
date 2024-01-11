@@ -101,6 +101,12 @@ window.onload = function () {
         slot9.style.display = "initial";
         slot10.style.display = "initial";
 
+        if (window.innerWidth <= 768) {
+          mobileNums2.style.display = "none";
+        } else {
+          mobileNums2.style.display = "flex";
+        }
+
       } else {
         // If not on mobile, show slots 6-10
         slot6.style.display = "initial";
