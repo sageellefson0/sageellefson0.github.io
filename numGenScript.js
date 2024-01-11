@@ -10,19 +10,13 @@ window.onload = function () {
   let howToPlayPopUp = document.getElementById("howToPlayPopUp");
   let closePopUpBtn = document.getElementById("closePopUpBtn");
 
-
   let happyManDivRight = document.getElementsByClassName("happyManDivRight")[0];
   let happyManDivLeft = document.getElementsByClassName("happyManDivLeft")[0];
   let buffDogeDiv = document.getElementsByClassName("buffDogeDiv")[0];
   let mobileNums2 = document.getElementsByClassName("mobileNums2")[0];
   let mobileNums1 = document.getElementsByClassName("mobileNums1")[0];
 
-
-
   let slotDiv = document.getElementById("slotDiv");
-
-
-
 
   let numList = [];
   let randomNumber;
@@ -30,19 +24,15 @@ window.onload = function () {
   let winVar = 0;
   let holdingList = [];
 
-
   let slotsNum6 = document.getElementById("slotsNum6");
   let slotsNum7 = document.getElementById("slotsNum7");
   let slotsNum8 = document.getElementById("slotsNum8");
   let slotsNum9 = document.getElementById("slotsNum9");
   let slotsNum10 = document.getElementById("slotsNum10");
 
-
-
   // Retrieves elements by radio button ID and assigns them to radio button variables
   const radio5Slots = document.getElementById('5slots');
   const radio10Slots = document.getElementById('10slots');
-
 
   // Retrieves elements by slot ID and assigns them to slot variables
   const slot1 = document.getElementById("slot1");
@@ -55,7 +45,6 @@ window.onload = function () {
   const slot8 = document.getElementById("slot8");
   const slot9 = document.getElementById("slot9");
   const slot10 = document.getElementById("slot10");
-
 
   // Retrieves generate button from document and assigns it to a variable
   const generateButton = document.getElementById("generateButton");
@@ -71,13 +60,9 @@ window.onload = function () {
 
       restartButtonOperation()
 
-
       if (window.innerWidth <= 768) {
         slotDiv.style.top = "70%";
         slotDiv.style.paddingTop = "10px";
-
-
-
       }
 
       if (window.innerWidth >= 768 && window.innerWidth <= 1024) {
@@ -86,10 +71,6 @@ window.onload = function () {
       }
 
       console.log("test");
-
-
-     
-
       mobileNums2.style.display = "none";
     }
   });
@@ -105,7 +86,6 @@ window.onload = function () {
       if (window.innerWidth >= 768 && window.innerWidth <= 1024) {
         mobileNums1.style.top = "77%";
         mobileNums1.style.left = "29%";
-    
       }
 
       // Check if the screen width is less than or equal to 768 pixels (mobile)
@@ -123,7 +103,6 @@ window.onload = function () {
         slot10.style.display = "initial";
 
         mobileNums2.style.display = "flex";
-
 
       } else {
         // If not on mobile, show slots 6-10
@@ -149,7 +128,6 @@ window.onload = function () {
 // Keep this here
   radio10Slots.dispatchEvent(new Event('change'));
 
-
 // Hides the extra slots and slot numbering 
   function hideExtraSlotsAndNums() {
     slot6.style.display = "none";
@@ -163,21 +141,14 @@ window.onload = function () {
     slotsNum8.style.display = "none";
     slotsNum9.style.display = "none";
     slotsNum10.style.display = "none";
-
   }
 
   restartButton.disabled = true;
 
-
-
-  // sets the slots to disabled on load - doesnt enable until generate start number is clicked
+  // Sets the slots to disabled on load - doesn't enable until generate start number is clicked
   disableAllSlots();
 
-  // restart button disabled on launch as it tracks ls
-
-
   // Handle the click event for the generateButton
-
   generateButton.addEventListener("click", function () {
     generateRandomNumber();
     generateButton.disabled = true;
@@ -190,8 +161,6 @@ window.onload = function () {
 
   closePopUpBtn.addEventListener("click", function () {
     howToPlayPopUp.style.display = "none";
-
-
   });
 
 
@@ -214,14 +183,11 @@ window.onload = function () {
 
     celebration.style.display = "none";
     canvas.style.display = "none";
-
-
-
   });
 
 
 
-  // restartButton function
+  // RestartButton function
   function restartButtonOperation() {
     numberPlaceholder.innerHTML = "&nbsp;";
 
@@ -236,11 +202,10 @@ window.onload = function () {
     radio10Slots.disabled = false;
     radio5Slots.disabled = false;
 
+    // Clears the holding list
     holdingList = [];
 
-
     // Reset the text content of each slot
-
     slot1.innerText = "";
     slot2.innerText = "";
     slot3.innerText = "";
@@ -255,7 +220,7 @@ window.onload = function () {
     for (let i = 0; i < slots.length; i++) {
       slots[i].style.border = "solid 2px #333232";
     }
-    // disable all slots on load, will enable when generate button is clicked
+    // Disable all slots on load, will enable when generate button is clicked
     disableAllSlots();
 
     generateButton.disabled = false;
@@ -549,8 +514,6 @@ window.onload = function () {
     //Lets draw the flakes
     function draw() {
       ctx.clearRect(0, 0, W, H);
-
-
 
       for (var i = 0; i < mp; i++) {
         var p = particles[i];
