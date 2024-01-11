@@ -472,24 +472,13 @@ canvas {
         }
 
         .mobileNums1 {
-            position: absolute;
-            transform: translate(-50%, -50%);
-            top: 77%;
-            left: 29%;
-            display: flex;
-            justify-content: center;
-            margin-bottom: 5px;
+            display: none;
         }
     
         .mobileNums2 {
-            position: absolute;
-            transform: translate(-50%, -50%);
-            top: 77%;
-            left: 70%;
-            display: flex;
-            justify-content: center;
+            display: none;
         }
      
- 
+
     }
 
