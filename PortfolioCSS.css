@@ -10,7 +10,7 @@ html,
 body {
   margin: 0px;
   padding: 0px;
-  background-color: #EAEFFA;
+  background-color: #F3F3F3;
   height: auto;
 }
 
@@ -21,11 +21,11 @@ body {
 
 /* HOME SECTION */
 .name {
-  color: #0E1638;
+  color: #16262E;
   font-family: 'Monaco', 'Andale Mono', monospace;
   overflow: hidden;
   font-size: 2.7vw;
-  border-right: .08em solid #0E1638;
+  border-right: .08em solid #16262E;
   white-space: nowrap;
   margin: 0 auto;
   animation: typing 2s steps(30, end), blink-caret .75s step-end infinite;
@@ -34,7 +34,7 @@ body {
 }
 
 .introLine {
-  color: #0E1638;
+  color: #16262E;
   font-family: 'Monaco', 'Andale Mono', monospace;
 }
 
@@ -56,7 +56,7 @@ body {
   }
 
   50% {
-    border-color: #0E1638;
+    border-color: #16262E;
   }
 }
 
@@ -74,7 +74,7 @@ body {
   height: 618px;
   width: 100%;
   text-align: center;
-  background-image: url("images/triangleBackground.png");
+  background-image: url("images/backgroundtrees.png"); 
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -89,7 +89,7 @@ body {
   z-index: 1;
   width: auto;
   text-align: center;
-  background-color: rgba(14, 22, 56, 0.9);
+  background-color: #16262E;
   backdrop-filter: blur(2px);
   font-size: 18px;
   padding: 12px 14px;
@@ -97,7 +97,7 @@ body {
 
 .navbar a {
   text-decoration: none;
-  color: #EAEFFA;
+  color: #F3F3F3;
   font-family: 'Monaco', 'Andale Mono', monospace;
   font-size: 18px;
   margin: 2%;
@@ -106,7 +106,7 @@ body {
 .navbar a:hover {
   text-decoration: none;
   text-decoration: underline;
-  text-decoration-color: #EAEFFA;
+  text-decoration-color: #F3F3F3;
   text-decoration-thickness: 3px;
   text-underline-offset: 9px;
 }
@@ -119,7 +119,7 @@ body {
 .contact,
 .aboutTextHeader {
   font-family: 'Verdana', 'Andale Mono', monospace;
-  color: #0E1638;
+  color: #16262E;
   text-align: center;
   padding-top: 4%;
   position: relative;
@@ -134,7 +134,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   width: 7%;
-  border-bottom: 5px solid #3A4F41;
+  border-bottom: 5px solid #30734B;
 }
 
 .aboutTextHeader::after {
@@ -144,7 +144,7 @@ body {
   left: 50%;
   transform: translateX(-50%);
   width: 14%;
-  border-bottom: 5px solid #3A4F41;
+  border-bottom: 5px solid #30734B;
 }
 
 
@@ -170,26 +170,26 @@ body {
   width: 50%;
   float: left;
   height: 100%;
-  text-align: center;
+  text-align: center; 
 }
 
 .headshotPic {
-  width: 50%;
-  height: 50%;
+  width: 40%;
+  height: 40%;
   border-radius: 10%;
-  box-shadow: -10px -10px 1px 10px #3A4F41;
+  box-shadow: -10px -10px 1px 10px #30734B;
 }
 
 .aboutText {
   font-family: 'Verdana', 'Andale Mono', monospace;
-  color: #0E1638;
+  color: #16262E;
   font-size: 18px;
 
 }
 
 .aboutTextCerts {
   font-family: 'Verdana', 'Andale Mono', monospace;
-  color: #0E1638;
+  color: #16262E;
   font-size: 16px;
 }
 
@@ -207,7 +207,7 @@ body {
 .certEduDiv {
   width: 100%;
   font-family: 'Verdana', 'Andale Mono', monospace;
-  color: #0E1638;
+  color: #16262E;
   font-size: 18px;
   display: inline-block;
 }
@@ -241,7 +241,7 @@ body {
 /* RESUME AND RETURN HOME BUTTONS */
 .resumeDownload,
 .returnHomeBttn {
-  background-color: #0E1638;
+  background-color: #16262E;
   text-decoration: none;
   text-align: center;
   justify-content: center;
@@ -257,27 +257,27 @@ body {
 
 @keyframes shadowPulse {
   0% {
-    box-shadow: 0 0 0px #3A4F41;
+    box-shadow: 0 0 0px #30734B;
     /* Start with a green box shadow */
   }
 
   25% {
-    box-shadow: 0 0 30px #3A4F41;
+    box-shadow: 0 0 30px #30734B;
     /* Keep the shadow green */
   }
 
   50% {
-    box-shadow: 0 0 50px #3A4F41;
+    box-shadow: 0 0 50px #30734B;
     /* Increase shadow size */
   }
 
   75% {
-    box-shadow: 0 0 30px #3A4F41;
+    box-shadow: 0 0 30px #30734B;
     /* Reduce shadow size */
   }
 
   100% {
-    box-shadow: 0 0 0px #3A4F41;
+    box-shadow: 0 0 0px #30734B;
     /* End with a green box shadow */
   }
 }
@@ -298,27 +298,27 @@ body {
 .resumeDownload:hover,
 .returnHomeBttn:hover,
 .contactSubmitButton:hover {
-  background-color: #3A4F41;
+  background-color: #30734B;
 }
 
 
 
 /* SOCIAL ICON BAR*/
 .fa_custom {
-  color: #0E1638;
+  color: #16262E;
   text-decoration: none;
   padding-left: 10px;
   padding-right: 10px;
 }
 
 .socialIconDiv {
-  background-color: #0E1638;
+  background-color: #16262E;
   padding: 10px;
   text-align: center;
 }
 
 .fa_custom:hover {
-  color: #3A4F41;
+  color: #30734B;
 }
 
 
@@ -334,10 +334,14 @@ body {
 .ammaImage,
 .partProductImage,
 .pythonImage {
-  width: 300px;
-  height: 175px;
-  box-shadow: 0 0 15px 4px rgba(23, 31, 25, 0.8);
+  width: 370px;
+  height: 230px;
+  border-bottom: 1px #30734B solid; 
+  border-top: 1px #30734B solid; 
+
+  /* box-shadow: 0 0 10px 2px rgba(23, 31, 25, 0.8); */
   transition: transform .4s;
+  border-radius: 10px;
 }
 
 .digitDisorderImg:hover,
@@ -352,21 +356,24 @@ body {
 .numberGenDiv,
 .partProductDiv,
 .pythonProjectDiv {
-  margin: 2%;
+  margin: 1%;
   vertical-align: top;
   display: inline-block;
   text-align: center;
-  width: 350px;
+  width: 420px;
   padding-top: 25px;
   padding-bottom: 25px;
-  background-color: #0E1638;
-  border-radius: 2%;
-  box-shadow: 0 0 20px 3px rgba(23, 31, 25, 0.8);
+  background-color: #F3F3F3;
+  border-radius: 10px;
+  box-shadow: 0px 7px 8px 3px rgba(23, 31, 25, 0.8);
+  /* box-shadow: 0px 0px 8px 2px rgba(23, 31, 25, 0.8); */
+
+
 }
 
 span {
   font-family: 'Verdana', 'Andale Mono', monospace;
-  color: #EAEFFA;
+  color: #16262E;
   width: 50%;
   display: inline-block;
   width: 300px;
@@ -398,25 +405,25 @@ span {
 .devicon-android-plain-wordmark:hover,
 .devicon-python-plain-wordmark:hover,
 .devicon-javascript-plain:hover, .devicon-css3-plain-wordmark:hover, .devicon-html5-plain-wordmark:hover, .xmlicon:hover {
-  color: #3A4F41;
+  color: #30734B;
 }
 
 /* Design for the "View Code" buttons on the project tabs. */
 .button {
   font: bold 11px Verdana;
   text-decoration: none;
-  background-color: #EAEFFA;
-  color: #0E1638;
-  padding: 4px 6px 4px 6px;
-  border-top: 1px solid #CCCCCC;
+  background-color: #16262E;
+  color: #F3F3F3;
+  padding: 6px 8px 6px 8px;
+  /* border-top: 1px solid #CCCCCC;
   border-right: 1px solid #333333;
   border-bottom: 1px solid #333333;
-  border-left: 1px solid #CCCCCC;
+  border-left: 1px solid #CCCCCC; */
   transition: background-color 0.2s ease-out;
 }
 
 .button:hover {
-  background-color: #C9C9C9;
+  background-color: #30734B;
 }
 
 
@@ -426,9 +433,9 @@ span {
   text-align: center;
   width: 40%;
   margin: auto;
-  background-color: #EAEFFA;
-  border-top: solid #0E1638 1px;
-  border-bottom: solid #0E1638 1px;
+  background-color: #F3F3F3;
+  /* border-top: solid #16262E 1px;
+  border-bottom: solid #16262E 1px; */
   border-width: 7px;
   padding-top: 4%;
   padding-bottom: 4%;
@@ -439,29 +446,28 @@ span {
   outline: none;
   border: none;
   width: 50%;
-  border-bottom: #0E1638 2px solid;
+  border-bottom: #16262E 2px solid;
   background-color: inherit;
   padding: 10px;
   margin: 10px;
   font-family: 'Verdana', 'Andale Mono', monospace;
-  color: #0E1638;
+  color: #16262E;
 }
 
 ::placeholder {
-  color: #0E1638;
+  color: #16262E;
 }
 
 .contactSubmitButton {
   border: none;
-  background-color: #0E1638;
+  background-color: #16262E;
   ;
   color: #EAEFFA;
   font-family: 'Verdana', 'Andale Mono', monospace;
-  border-radius: 5%;
   padding: 10px 12px 10px 12px;
   margin-top: 40px;
-  animation: shadowPulse 3s linear infinite;
   transition: background-color 0.3s ease-out;
+  cursor: pointer;
 }
 
 
@@ -472,7 +478,7 @@ footer {
   font-size: small;
   color: #EAEFFA;
   text-align: center;
-  background-color: #0E1638;
+  background-color: #16262E;
   padding-top: 13px;
   padding-bottom: 13px;
   margin-top: 30px;
@@ -492,7 +498,7 @@ footer {
   font-size: small;
   color: #EAEFFA;
   text-align: center;
-  background-color: #0E1638;
+  background-color: #16262E;
   padding-top: 13px;
   padding-bottom: 13px;
   margin-top: 30px;
@@ -509,7 +515,7 @@ footer {
 }
 
 .fa_custom_footer:hover {
-  color: #3A4F41;
+  color: #30734B;
 }
 
 
@@ -518,7 +524,7 @@ footer {
 .thankYouMessage {
   font-family: 'Verdana', 'Andale Mono', monospace;
   font-size: 25px;
-  color: #0E1638;
+  color: #16262E;
   text-align: center;
   margin-top: 12%;
 }
@@ -548,7 +554,7 @@ footer {
   }
 
   #links a {
-    color: #EAEFFA;
+    color: #F3F3F3;
     text-decoration: none;
     font-size: 20px;
     display: block;
@@ -558,12 +564,12 @@ footer {
   /* Hamburger menu */
   .icon {
     display: block;
-    color: #EAEFFA;
+    color: #F3F3F3;
     font-size: 25px;
     text-align: center;
     top: 10px;
     left: 10px;
-    background-color: #0E1638;
+    background-color: #16262E;
     width: 50px;
     height: 40px;
     border-radius: 50%;
@@ -572,7 +578,7 @@ footer {
     padding-top: 11px;
     position: fixed;
     z-index: 2;
-    border: #3A4F41 solid 1px;
+    border: #30734B solid 1px;
   }
 
   .imageDiv,
@@ -621,7 +627,7 @@ footer {
     left: 50%;
     transform: translateX(-50%);
     width: 26%;
-    border-bottom: 5px solid #3A4F41;
+    border-bottom: 5px solid #30734B;
   }
 
   .name {
@@ -708,7 +714,7 @@ footer {
     width: 35%;
     height: 35%;
     border-radius: 10%;
-    box-shadow: -10px -10px 1px 10px #3A4F41;
+    box-shadow: -10px -10px 1px 10px #30734B;
   }
 
   .certDiv {
@@ -742,7 +748,7 @@ footer {
     left: 50%;
     transform: translateX(-50%);
     width: 13%;
-    border-bottom: 5px solid #3A4F41;
+    border-bottom: 5px solid #30734B;
   }
 
   .textDiv {
