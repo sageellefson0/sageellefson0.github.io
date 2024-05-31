@@ -330,10 +330,7 @@ body {
   width: 100%;
 }
 
-.digitDisorderImg,
-.ammaImage,
-.partProductImage,
-.pythonImage {
+.projectDivImg {
   width: 370px;
   height: 230px;
   border-bottom: 1px #30734B solid; 
@@ -343,18 +340,12 @@ body {
   border-radius: 10px;
 }
 
-.digitDisorderImg:hover,
-.ammaImage:hover,
-.pythonImage:hover,
-.partProductImage:hover {
+.projectDivImg:hover {
   transform: scale(1.05);
   filter: brightness(.9);
 }
 
-.ammaDiv,
-.numberGenDiv,
-.partProductDiv,
-.pythonProjectDiv {
+.projectDiv{
   margin: 1%;
   vertical-align: top;
   display: inline-block;
@@ -684,10 +675,7 @@ footer {
     height: 654px;
   }
 
-.digitDisorderImg,
-.ammaImage,
-.partProductImage,
-.pythonImage {
+.projectDivImg{
   width: 300px;
   height: 190px;
   border-bottom: 1px #30734B solid; 
@@ -696,10 +684,7 @@ footer {
   border-radius: 10px;
 }
 
-.ammaDiv,
-.numberGenDiv,
-.partProductDiv,
-.pythonProjectDiv {
+.projectDiv {
   margin: 1%;
   vertical-align: top;
   display: inline-block;
