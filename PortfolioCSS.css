@@ -297,7 +297,7 @@ body {
 
 .resumeDownload:hover,
 .returnHomeBttn:hover,
-.contactSubmitButton:hover {
+#contactSubmitButton:hover {
   background-color: #30734B;
 }
 
@@ -448,10 +448,9 @@ span {
   color: #16262E;
 }
 
-.contactSubmitButton {
+#contactSubmitButton {
   border: none;
   background-color: #16262E;
-  ;
   color: #EAEFFA;
   font-family: 'Verdana', 'Andale Mono', monospace;
   padding: 10px 12px 10px 12px;
@@ -659,7 +658,7 @@ footer {
     width: 70%;
   }
 
-  .contactSubmitButton {
+  #contactSubmitButton {
     margin-top: 25px;
     margin-bottom: 20px;
   }

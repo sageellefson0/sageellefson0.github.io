@@ -28,7 +28,7 @@
 
     <script src="https://web3forms.com/client/script.js" async defer></script>
 
-    <script type="text/javascript">
+    <script>
         function onSubmit(token) {
             document.getElementById('my-form').submit();
         }
@@ -87,7 +87,7 @@
 
     </nav>
 
-    <a href="javascript:void(0);" class="icon" onclick="toggleMenu()" style="font-size:px">
+    <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
         <i class="fa fa-bars"></i>
     </a>
 
@@ -185,7 +185,7 @@
             <a title="View on GitHub" href="https://github.com/sageellefson0/Part-and-Product-Management"
                 target="_blank"></a>
             <img class="projectDivImg" src="images/PartProductProjectImage.webp"
-                alt="An image of the Inventory Management System project."> </a>
+                alt="An image of the Inventory Management System project.">
             <span>
                 <br>
                 <b> Inventory Management </b>
@@ -204,7 +204,6 @@
 
     </div>
 
-    </div>
 
     <!-- About Section -->
     <h1 class="aboutMe" id="about"> About Me </h1>
@@ -278,7 +277,6 @@
         </div>
     </div>
 
-    </div>
 
 
     <!-- Resume download button -->
@@ -303,7 +301,7 @@
             <input class="contactInput" type="email" placeholder="Email" name="email" required><br>
             <textarea class="contactInputMessage" name="message" placeholder="Message" required rows="6"></textarea><br>
             <input type="hidden" name="redirect" value="https://sageellefson.com/thankyou.html">
-            <button class="contactSubmitButton" type="submit" class="h-captcha"
+            <button id="contactSubmitButton" type="submit" class="h-captcha"
                 data-sitekey="15d5f54a-f07e-4c5f-9886-1217ae7ea101" data-callback="onSubmit">Send Message</button>
 
         </form>
