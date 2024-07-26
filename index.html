@@ -33,32 +33,32 @@
         function onSubmit(token) {
             document.getElementById('my-form').submit();
         }
-        // Closes the menu by default when the page loads
-        window.onload = function () {
-            closeMenu();
-        };
-        // Toggles the navigation menu
-        function toggleMenu() {
-            var navbar = document.querySelector(".navbar");
-            var links = document.getElementById("links");
+        // // Closes the menu by default when the page loads
+        // window.onload = function () {
+        //     closeMenu();
+        // };
+        // // Toggles the navigation menu
+        // function toggleMenu() {
+        //     var navbar = document.querySelector(".navbar");
+        //     var links = document.getElementById("links");
 
-            if (navbar.style.display === "block" || navbar.style.display === "") {
-                navbar.style.display = "none";
-                links.style.display = "none";
-            } else {
-                links.style.display = "block";
-                navbar.style.display = "block";
-            }
-        }
-        // Closes the navigation menu
-        function closeMenu() {
-            var links = document.getElementById("links");
-            var navbar = document.querySelector(".navbar");
-            if (links.style.display === "block") {
-                links.style.display = "none";
-                navbar.style.display = "none";
-            }
-        }
+        //     if (navbar.style.display === "block" || navbar.style.display === "") {
+        //         navbar.style.display = "none";
+        //         links.style.display = "none";
+        //     } else {
+        //         links.style.display = "block";
+        //         navbar.style.display = "block";
+        //     }
+        // }
+        // // Closes the navigation menu
+        // function closeMenu() {
+        //     var links = document.getElementById("links");
+        //     var navbar = document.querySelector(".navbar");
+        //     if (links.style.display === "block") {
+        //         links.style.display = "none";
+        //         navbar.style.display = "none";
+        //     }
+        // } 
     </script>
 </head>
 
@@ -75,7 +75,7 @@
     </div>
 
 
-    <!-- Navbar  Section -->
+    <!-- Navbar  Section
     <nav class="navbar">
 
         <div id="links">
@@ -90,7 +90,7 @@
 
     <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
         <i class="fa fa-bars"></i>
-    </a>
+    </a> -->
 
 
     <!-- Project Sections -->
